@@ -1,9 +1,13 @@
 .banner{
     width: 100%;
     height: 95vh;
-    background-image: url('../../public/images/banner_main.png');
+    padding: 10px 2%;
+    background-image: url('../../public/images/banner_main.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    overflow: hidden;
+
+
 
 }

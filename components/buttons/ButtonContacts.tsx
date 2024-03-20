@@ -4,7 +4,7 @@ type Props = {
   valueBtn: string
 }
 
-const ButtonProjects = ({valueBtn}:Props) => {
+const ButtonContacts = ({valueBtn}:Props) => {
   return (
     <button className={styles.button_project}>
       <a href="#" className={styles.link_button}><span className={styles.span_button}>{valueBtn}</span></a> 
@@ -12,4 +12,4 @@ const ButtonProjects = ({valueBtn}:Props) => {
   )
 }
 
-export default ButtonProjects
+export default ButtonContacts

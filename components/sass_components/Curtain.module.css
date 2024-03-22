@@ -1,0 +1,56 @@
+.curtain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  animation: upCurtain;
+  animation-duration: 1s;
+  animation-delay: 6s;
+}
+
+.text_curtain {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.text_curtain > * {
+  color: #fff;
+}
+
+.text_curtain span {
+  display: inline-flex;
+}
+
+.text_curtain span:nth-child(2) {
+  letter-spacing: -0.8em;
+  overflow: hidden;
+  animation: reveal 7500ms;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 1;
+    letter-spacing: -0.8em;
+  }
+  50% {
+    opacity: 1;
+    letter-spacing: 1em;
+  }
+  100% {
+    letter-spacing: -1em;
+  }
+}
+@keyframes upCurtain {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}/*# sourceMappingURL=Curtain.module.css.map */

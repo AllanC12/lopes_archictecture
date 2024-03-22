@@ -4,3 +4,7 @@
     box-sizing: border-box;
     font-family: 'roboto';
 }
+
+.page_home{
+    width: 100%;
+}

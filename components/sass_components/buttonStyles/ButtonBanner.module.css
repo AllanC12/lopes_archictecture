@@ -14,13 +14,10 @@
   background-image: none;
   color: #fff;
   cursor: pointer;
-  font-size: 100%;
-  font-weight: 900;
+  font-size: 1.9em;
   line-height: 1.5;
   margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
-  border: 1px solid #000;
 }
 
 .btn_17:disabled {
@@ -33,7 +30,6 @@
 
 .btn_17 svg {
   display: block;
-  vertical-align: middle;
 }
 
 .btn_17 [hidden] {
@@ -42,9 +38,9 @@
 
 .btn_17 {
   border-radius: 0.5rem;
-  border-width: 2px;
-  padding: 0.8rem 3rem;
+  padding: 0.4rem 3rem;
   z-index: 0;
+  border: 1px solid #fff;
 }
 
 .btn_17,
@@ -109,4 +105,8 @@
 
 .btn_17:hover:after {
   --progress: -102%;
+}
+
+.btn_17:hover {
+  border: 1px solid #000;
 }/*# sourceMappingURL=ButtonBanner.module.css.map */

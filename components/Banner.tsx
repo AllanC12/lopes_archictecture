@@ -1,5 +1,7 @@
+'use client'
 
-import ButtonBanner from "./buttons/ButtonBanner";
+import { useState } from "react";
+
 import Slogan from "./Slogan";
 
 import styles from "../components/sass_components/Banner.module.scss";
@@ -7,9 +9,15 @@ import styles from "../components/sass_components/Banner.module.scss";
 
 const Banner = () => {
 
+  const [showSlogan,setShowSlogan] = useState<Boolean>(false)
+
+  setTimeout(() => {
+    setShowSlogan(true)
+  },6200)
+
   return (
     <div className={styles.banner}>
-      <Slogan/>
+      {showSlogan && <Slogan/>}
     </div>
   );
 };

@@ -5,8 +5,7 @@
   border: 2px solid #fefefe;
   color: #fefefe;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 20px;
+  font-size: 2em;
   border-radius: 0.5rem;
 }
 
@@ -48,10 +47,9 @@
   z-index: 3;
 }
 
-.button_project {
-  background-color: none;
+.button_contact {
   text-decoration: none;
   background-color: #000;
   border: none;
   border-radius: 0.5rem;
-}/*# sourceMappingURL=ButtonProjects.module.css.map */
+}/*# sourceMappingURL=ButtonContacts.module.css.map */

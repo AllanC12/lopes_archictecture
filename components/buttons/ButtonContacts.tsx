@@ -1,4 +1,6 @@
-import styles from '../sass_components/buttonStyles/ButtonProjects.module.css'
+'use client'
+
+import styles from '../sass_components/buttonStyles/ButtonContacts.module.css'
 
 type Props = {
   valueBtn: string
@@ -6,7 +8,7 @@ type Props = {
 
 const ButtonContacts = ({valueBtn}:Props) => {
   return (
-    <button className={styles.button_project}>
+    <button data-aos='flip-right' className={styles.button_contact}>
       <a href="#" className={styles.link_button}><span className={styles.span_button}>{valueBtn}</span></a> 
     </button>
   )

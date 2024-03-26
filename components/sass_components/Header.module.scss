@@ -1,0 +1,16 @@
+@import '../../mixins/mixin.scss';
+
+.header{
+    @include flex(space-between,center);
+    position: absolute;
+    width: 100%;
+    padding: 10px 2%;
+    .logo{
+        text-align: center;
+       
+        span{
+            color: #fff;
+        }
+    }
+}
+

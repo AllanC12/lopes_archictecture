@@ -17,3 +17,15 @@
   padding-top: 40px;
   gap: 5vw;
 }
+
+@media (max-width: 780px){
+  .slogan_banner{
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 500px){
+  .slogan_banner{
+    font-size: 2.2em;
+  }
+}

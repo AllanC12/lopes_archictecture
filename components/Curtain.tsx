@@ -1,6 +1,6 @@
 'use client'
 
-import styles from "../components/sass_components/Curtain.module.scss";
+import styles from "../components/sass_components/Curtain.module.css";
 
 import { useRef,useEffect } from "react";
 

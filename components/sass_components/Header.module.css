@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 10px 2%;
+}
+.header .logo {
+  text-align: center;
+}
+.header .logo span {
+  color: #fff;
+}/*# sourceMappingURL=Header.module.css.map */

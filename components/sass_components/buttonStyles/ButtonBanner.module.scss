@@ -18,7 +18,10 @@
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  // border: 1px solid #000;
+  border-radius: 0.5rem;
+  padding: 0.4rem 3rem;
+  z-index: 0;
+  border:1px solid #fff;
 }
 
 .btn_17:disabled {
@@ -37,12 +40,6 @@
   display: none;
 }
 
-.btn_17 {
-  border-radius: 0.5rem;
-  padding: 0.4rem 3rem;
-  z-index: 0;
-  border:1px solid #fff;
-}
 
 .btn_17,
 .btn_17 .text_container {
@@ -134,4 +131,15 @@
 
 .btn_17:hover {
   border: 1px solid #000;
+}
+
+@media (max-width: 780px){
+  .btn_17{
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 500px){
+  .btn_17{
+    font-size: 1.1em;
+  }
 }

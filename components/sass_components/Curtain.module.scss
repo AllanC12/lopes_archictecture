@@ -15,7 +15,7 @@
 }
 
 .text_curtain {
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 900;
   }
   .text_curtain > * {
@@ -57,5 +57,17 @@
       height: 0;
     }
 
+  }
+
+  @media (max-width: 780px){
+    .text_curtain{
+      font-size: 1.1em;
+    }
+  }
+
+  @media (max-width: 500px){
+    .text_curtain{
+      font-size: 0.6em;
+    }
   }
   

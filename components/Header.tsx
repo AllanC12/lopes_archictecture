@@ -24,7 +24,7 @@ const Header = () => {
     <header className={styles.header}>
       {showLogo && (
         <div data-aos="zoom-out" className={styles.logo}>
-          <span>
+          <span className={styles.text_logo}>
             Lopes <br />
             Architecture
           </span>

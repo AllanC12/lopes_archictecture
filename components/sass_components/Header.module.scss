@@ -1,16 +1,27 @@
-@import '../../mixins/mixin.scss';
+@import "../../mixins/mixin.scss";
 
-.header{
-    @include flex(space-between,center);
-    position: absolute;
-    width: 100%;
-    padding: 10px 2%;
-    .logo{
-        text-align: center;
-       
-        span{
-            color: #fff;
-        }
+.header {
+  @include flex(space-between, center);
+  position: absolute;
+  width: 100%;
+  padding: 10px 2%;
+
+  .logo {
+    text-align: center;
+    cursor: pointer;
+
+    .text_logo {
+      font-size: 0.8em;
+      font-family: var(--font-syncopate);
+      color: #fff;
     }
+  }
 }
 
+@media (max-width: 500px) {
+  .text_logo {
+    font-size: 0.7em !important;
+    font-family: var(--font-syncopate);
+    color: #fff;
+  }
+}

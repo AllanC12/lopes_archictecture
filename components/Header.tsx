@@ -1,15 +1,43 @@
-import React from 'react'
+"use client";
 
-import styles from '../components/sass_components/Header.module.css'
+import AOS from "aos";
+
+import { useEffect, useState } from "react";
+
+import styles from "../components/sass_components/Header.module.css";
+import ButtonIconMenu from "./buttons/ButtonIconMenu";
 
 const Header = () => {
-  return (
-   <header className={styles.header}>
-     <div className={styles.logo}>
-        <span>Lopes <br/>Architecture</span>
-     </div>
-   </header>
-  )
-}
+  const [showLogo, setShowLogo] = useState<boolean>(false);
+  const [showIcon, setShowIcon] = useState<boolean>(false);
 
-export default Header
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+  setTimeout(() => {
+    setShowLogo(true);
+    setShowIcon(true);
+  }, 6200);
+
+  return (
+    <header className={styles.header}>
+      {showLogo && (
+        <div data-aos="zoom-out" className={styles.logo}>
+          <span className={styles.text_logo}>
+            Lopes <br />
+            Architecture
+          </span>
+        </div>
+      )}
+
+      {showIcon && (
+        <div data-aos="zoom-out" className={styles.icon_menu}>
+          <ButtonIconMenu />
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Header;

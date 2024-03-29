@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Syncopate } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Lopes Architecture",
   description: "Site de arquitetura , Lopes Architecture , Arquitetura em São Francisco de Paula",
 };
+
+
+const syncopate_init = Syncopate({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-syncopate"
+})
 
 export default function RootLayout({
   children,
@@ -16,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={syncopate_init.variable}>{children}</body>
     </html>
   );
 }

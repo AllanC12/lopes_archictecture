@@ -8,7 +8,9 @@
 }
 .header .logo {
   text-align: center;
+  cursor: pointer;
 }
 .header .logo span {
+  font-family: var(--font-syncopate);
   color: #fff;
 }/*# sourceMappingURL=Header.module.css.map */

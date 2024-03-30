@@ -3,8 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'roboto';
+
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .page_home{
     width: 100%;
+
 }

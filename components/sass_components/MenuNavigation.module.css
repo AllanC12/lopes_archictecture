@@ -1,6 +1,6 @@
 .menu_navigation {
   position: absolute;
-  right: 0;
+  right: -200px;
   top: 0;
   width: 100%;
   max-width: 200px;

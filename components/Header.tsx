@@ -7,7 +7,11 @@ import { useEffect, useState } from "react";
 import styles from "../components/sass_components/Header.module.css";
 import ButtonIconMenu from "./buttons/ButtonIconMenu";
 
-const Header = () => {
+type Props = {
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const Header = ({setMenuOpen}:Props) => {
   const [showLogo, setShowLogo] = useState<boolean>(false);
   const [showIcon, setShowIcon] = useState<boolean>(false);
 
@@ -33,7 +37,7 @@ const Header = () => {
 
       {showIcon && (
         <div data-aos="zoom-out" className={styles.icon_menu}>
-          <ButtonIconMenu />
+          <ButtonIconMenu setMenuOpen={setMenuOpen}/>
         </div>
       )}
     </header>

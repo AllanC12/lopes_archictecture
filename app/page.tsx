@@ -3,6 +3,7 @@ import './globals.css'
 import Header from '@/components/Header';
 import Curtain from '@/components/Curtain';
 import Banner from "@/components/Banner";
+import MenuNavigation from '@/components/MenuNavigation';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header/>
       <Curtain/>
       <Banner/>
+      <MenuNavigation/>
     </div>
 
   );

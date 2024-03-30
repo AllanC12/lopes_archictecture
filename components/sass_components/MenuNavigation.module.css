@@ -1,0 +1,41 @@
+.menu_navigation {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  max-width: 200px;
+  background-color: #000;
+  height: 100vh;
+  padding: 0 5px;
+  border-left: 1px solid #696868;
+}
+.menu_navigation ul {
+  list-style: none;
+  margin-top: 15vh;
+}
+.menu_navigation ul li {
+  margin: 2vh 0;
+  transition: 0.5s;
+  padding: 6px;
+}
+.menu_navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+}
+.menu_navigation ul li:hover {
+  background-color: #3b3a3a;
+}
+.menu_navigation .select_language {
+  position: relative;
+  top: 42%;
+}
+.menu_navigation .select_language .languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.menu_navigation .select_language .languages img {
+  cursor: pointer;
+}/*# sourceMappingURL=MenuNavigation.module.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sources":["Contacts.module.scss","Contacts.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,aAAA;EACA,uBAAA;ACCJ","file":"Contacts.module.css","sourcesContent":[".contacts{\r\n    width: 1200px;\r\n    height: 900px;\r\n    background-color: green;\r\n}",".contacts {\n  width: 1200px;\n  height: 900px;\n  background-color: green;\n}"]}

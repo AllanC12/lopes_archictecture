@@ -1,7 +1,7 @@
 @import '../../mixins/mixin.scss';
 
 .menu_navigation{
-    position: absolute;
+    position: fixed;
     right: -200px;
     top: 0;
     width: 100%;
@@ -10,6 +10,7 @@
     height: 100vh;
     padding: 0 5px;
     border-left: 1px solid #696868;
+    transition: .5s;
 
    ul{
     list-style: none;
@@ -24,7 +25,7 @@
             text-decoration: none;
             color: #fff;
             font-size: 1.4em;
-
+            cursor: pointer;
          }
      }
 

@@ -2,26 +2,25 @@
 
 import './globals.css'
 
-import { useState } from 'react';
+import { useRef } from 'react';
 
 import Header from '@/components/Header';
 import Curtain from '@/components/Curtain';
 import Banner from "@/components/Banner";
-import MenuNavigation from '@/components/MenuNavigation';
+import Contacts from '@/components/Contacts';
+import About from '@/components/About';
 
 export default function Home() {
 
-  const [menuOpen,setMenuOpen] = useState<boolean>(false)
-
-  console.log(menuOpen)
+ 
 
   return (
     <div className="page_home">
-      <Header setMenuOpen={setMenuOpen}/>
+      <Header/>
       <Curtain/>
       <Banner/>
-      <MenuNavigation/>
-      
+      <Contacts/>
+      <About/>
     </div>
 
   );

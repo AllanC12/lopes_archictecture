@@ -6,7 +6,7 @@ import styles from "../components/sass_components/Banner.module.scss";
 const Banner = () => {
 
   return (
-    <div className={styles.banner}>
+    <div id="home" className={styles.banner}>
       <Slogan/>
     </div>
   );

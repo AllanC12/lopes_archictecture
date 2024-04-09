@@ -2,10 +2,9 @@
 
 .header {
   @include flex(space-between, center);
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 10px 1%;
-  z-index: 1;
 
   .logo {
     text-align: center;
@@ -16,6 +15,10 @@
       font-family: var(--font-syncopate);
       color: #fff;
     }
+  }
+
+  .icon_menu{
+    z-index: 3;
   }
 }
 

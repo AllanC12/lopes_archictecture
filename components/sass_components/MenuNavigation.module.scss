@@ -1,0 +1,52 @@
+@import '../../mixins/mixin.scss';
+
+.menu_navigation{
+    position: fixed;
+    right: -200px;
+    top: 0;
+    width: 100%;
+    max-width: 200px;
+    background-color: #000;
+    height: 100vh;
+    padding: 0 5px;
+    border-left: 1px solid #696868;
+    transition: .5s;
+
+   ul{
+    list-style: none;
+    margin-top: 15vh;
+
+    li{
+        margin: 2vh 0;
+        transition: .5s;
+        padding: 6px;
+
+         a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.4em;
+            cursor: pointer;
+         }
+     }
+
+     li:hover{
+        background-color: #3b3a3a;
+     }
+
+   }
+
+   .select_language{
+    position: relative;
+    top: 42%;
+
+    .languages{
+      @include flex(center,center);
+      gap: 2vw;
+
+      img{
+        cursor: pointer;
+      }
+    }
+   }
+
+}

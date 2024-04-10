@@ -6,9 +6,9 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
+    // width: 100%;
+    // height: 100%;
+    // background-color: #000;
     animation: upCurtain;
     animation-duration: 1s;
     animation-delay: 6s;
@@ -48,16 +48,16 @@
 
   }
 
-  @keyframes upCurtain {
-    0%{
-      height: 100%;
-    }
+  // @keyframes upCurtain {
+  //   0%{
+  //     height: 100%;
+  //   }
 
-    100%{
-      height: 0;
-    }
+  //   100%{
+  //     height: 0;
+  //   }
 
-  }
+  // }
 
   @media (max-width: 780px){
     .text_curtain{

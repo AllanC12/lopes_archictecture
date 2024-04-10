@@ -2,9 +2,24 @@ import React from "react";
 
 import styles from '../sass_components/buttonStyles/ButtonIconMenu.module.scss';
 
-const ButtonIconMenu = () => {
+type Props = {
+  menuOpen: boolean
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const ButtonIconMenu = ({menuOpen,setMenuOpen}:Props) => {
+
+  const handleVisibilityMenu = () => {
+    if(menuOpen){
+      setMenuOpen(false)
+    }else{
+      setMenuOpen(true)
+    }
+  }
+
   return (
-    <div className={styles.icon}>
+    <div onClick={() => handleVisibilityMenu() } className={styles.icon}>
+      
       <input type="checkbox" className={styles.checkbox} />
       <label htmlFor="checkbox" className={styles.toggle}>
         <div className={`${styles.bars} ${styles.bar1}`}></div>

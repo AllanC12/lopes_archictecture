@@ -1,0 +1,13 @@
+.footer_banner {
+  width: 98vw;
+  height: 25vh;
+  position: absolute;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+}
+.footer_banner .column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}/*# sourceMappingURL=FooterBanner.module.css.map */

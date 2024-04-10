@@ -1,0 +1,1 @@
+{"version":3,"sources":["Projects.modue.scss","Projects.modue.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;ACCJ","file":"Projects.modue.css","sourcesContent":[".projects{\r\n    position: relative;\r\n}",".projects {\n  position: relative;\n}"]}

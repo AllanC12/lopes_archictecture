@@ -9,160 +9,316 @@ const FooterBanner = () => {
     <div className={styles.footer_banner}>
 
       <div className={styles.column}>
-       <Square isBlack={true} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={true} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
       </div>
       <div className={styles.column}>
-        <Square isBlack={true} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={false} isWhite={true} />
       </div>
       <div className={styles.column}>
-      <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
-        <Square isBlack={false} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={true}  isWhite={false} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={true}  isWhite={false} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={true} isWhite={false} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+      </div>
+      <div className={styles.column}>
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+      </div>
+      <div className={styles.column}>
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+      </div>
+      <div className={styles.column}>
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
+        <Square isTransparent={false} isWhite={true} />
       </div>
 
     </div>

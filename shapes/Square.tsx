@@ -5,16 +5,21 @@ import { useRef,useEffect } from 'react';
 import styles from '../shapes/sass_shapes/Square.module.scss';
 
 interface propsSquare {
-    isBlack: boolean
+    isWhite: boolean
+    isTransparent: boolean
 }
 
-const Square = ({isBlack}: propsSquare) => {
+const Square = ({isWhite,isTransparent}: propsSquare) => {
 
   const refSquare = useRef<HTMLDivElement | null>(null)
 
   const definePropertiesSquare = () => {
-    if(isBlack){
-      refSquare.current?.style.setProperty('background-color','black')  
+    if(isWhite){
+      refSquare.current?.style.setProperty('background-color','#f2f3f5')  
+
+    }
+    if(isTransparent){
+      refSquare.current?.style.setProperty('background-color','transparent')  
     }
  }
 

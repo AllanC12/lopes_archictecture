@@ -18,14 +18,19 @@ const Header = () => {
   const [showIcon, setShowIcon] = useState<boolean>(false);
   const [menuOpen,setMenuOpen] = useState<boolean>(false)
 
-  useEffect(() => {
+  const initAnimations = () => {
     AOS.init({ duration: 1000 });
+  }
+
+  useEffect(() => {
+    initAnimations()
   }, []);
 
   setTimeout(() => {
     setShowLogo(true);
     setShowIcon(true);
-  }, 6200);
+  }, 5850);
+
 
   return (
     <header id="home" className={styles.header}>

@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+
+import { useState } from 'react';
 
 import styles from '../sass_components/buttonStyles/ButtonIconMenu.module.scss';
 
@@ -8,6 +10,7 @@ type Props = {
 }
 
 const ButtonIconMenu = ({menuOpen,setMenuOpen}:Props) => {
+
 
   const handleVisibilityMenu = () => {
     if(menuOpen){

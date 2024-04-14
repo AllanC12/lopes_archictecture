@@ -1,3 +1,61 @@
+@import "../../mixins/mixin.scss";
+
 .projects{
     position: relative;
+    top: -45px;
+    width: 100%;
+    max-width: 1270px;
+    height: 900px;
+    margin: auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+    .title_session_projects{
+        font-size: 16px;
+        @include flex(flex-start,center);
+        gap: 1vw;
+        padding: 5vw 0;
+
+        .number_session_projects{
+            @include flex(center,center);
+            width: 25px;
+            background-color: #000;
+            color: #fff;
+            padding: 6px;
+        }
+
+    }
+
+    .session_projects{
+        @include flex(center,center);
+
+        .list_projects{
+            padding: 2vw 6vw;
+    
+            .project{
+                cursor: pointer;
+                @include flex(space-between,center);
+                padding: 10px;
+                border-bottom: 1px solid #000;
+                transition: .5s;
+    
+                .arrow{
+                    font-size: 45px;
+                }
+    
+            }
+    
+    
+        }
+
+        .slide_projects{
+            width: 50%;
+            background-color: pink;
+        }
+    }
+
+
+
+
+
 }

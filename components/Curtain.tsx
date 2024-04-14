@@ -15,9 +15,9 @@ const Curtain = () => {
     },6000)
   }
 
-  // useEffect(() => {
-  //     hideCurtain()
-  // },[])
+  useEffect(() => {
+      hideCurtain()
+  },[])
 
 
   return (

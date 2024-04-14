@@ -1,6 +1,6 @@
 'use client'
 
-import React from "react";
+import Image from "next/image";
 
 import styles from "../components/sass_components/Projects.module.css";
 
@@ -51,6 +51,7 @@ const Projects = () => {
 
   return <div className={styles.projects}>
     <h4 className={styles.title_session_projects}><span className={styles.number_session_projects}>1</span>Projetos recentes</h4>
+    
      <div className={styles.session_projects}>
 
         <div className={styles.list_projects}>
@@ -70,7 +71,10 @@ const Projects = () => {
         </div>
 
        <div className={styles.slide_projects}>
-
+          <Image src="" width={100} height={100} alt="Imagem de projeto"/>
+          <Image src="" width={100} height={100} alt="Imagem de projeto"/>
+          <Image src="" width={100} height={100} alt="Imagem de projeto"/>
+          <Image src="" width={100} height={100} alt="Imagem de projeto"/>
        </div>
     </div>
   </div>;

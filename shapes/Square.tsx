@@ -15,7 +15,7 @@ const Square = ({isWhite,isTransparent}: propsSquare) => {
 
   const definePropertiesSquare = () => {
     if(isWhite){
-      refSquare.current?.style.setProperty('background-color','#fff')  
+      refSquare.current?.style.setProperty('background-color','#f5f6f7')  
 
     }
     if(isTransparent){

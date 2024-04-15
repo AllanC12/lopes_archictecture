@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import styles from "../sass_components/buttonStyles/ButtonBanner.module.css";
+import styles from "./buttonStyles/ButtonBanner.module.css";
 
 type Props = {
   valueBtn: string;

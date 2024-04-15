@@ -1,12 +1,10 @@
 .projects {
   position: relative;
-  top: -45px;
   width: 100%;
   max-width: 1270px;
-  height: 900px;
   margin: auto;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  border-left: 1px solid #7e7c7c;
+  border-right: 1px solid #7e7c7c;
 }
 .projects .title_session_projects {
   font-size: 16px;
@@ -27,25 +25,64 @@
 }
 .projects .session_projects {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
 }
 .projects .session_projects .list_projects {
-  padding: 2vw 6vw;
+  padding: 2vw 0;
+  width: 50%;
 }
 .projects .session_projects .list_projects .project {
   cursor: pointer;
+  padding: 10px 2vw;
+  border-bottom: 1px solid #ccc;
+  transition: 0.5s;
+  overflow: hidden;
+  height: 55px;
+  position: relative;
+}
+.projects .session_projects .list_projects .project .name_project {
+  font-size: 22px;
+  font-weight: 300;
+}
+.projects .session_projects .list_projects .project .wraper_project {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #000;
+  gap: 30px;
+}
+.projects .session_projects .list_projects .project .wraper_project .arrow_project {
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+.projects .session_projects .list_projects .project .wraper_project .arrow {
+  font-size: 45px;
+  position: absolute;
+  right: 0.5vw;
   transition: 0.5s;
 }
-.projects .session_projects .list_projects .project .arrow {
-  font-size: 45px;
+.projects .session_projects .list_projects .project .description_project {
+  margin: 15px 0;
+  max-width: 350px;
+}
+.projects .session_projects .list_projects .project .animation_border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: #000;
 }
 .projects .session_projects .slide_projects {
+  position: relative;
   width: 50%;
-  background-color: pink;
+  height: 400px;
+}
+.projects .session_projects .slide_projects img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 100%;
+  max-width: 100%;
 }/*# sourceMappingURL=Projects.module.css.map */

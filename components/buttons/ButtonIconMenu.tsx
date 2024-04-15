@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import styles from '../sass_components/buttonStyles/ButtonIconMenu.module.scss';
+import styles from './buttonStyles/ButtonIconMenu.module.scss';
 
 type Props = {
   menuOpen: boolean

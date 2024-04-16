@@ -53,19 +53,23 @@
   gap: 30px;
 }
 .projects .session_projects .list_projects .project .wraper_project .arrow_project {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   z-index: 1;
 }
 .projects .session_projects .list_projects .project .wraper_project .arrow {
   font-size: 45px;
   position: absolute;
-  right: 0.5vw;
+  right: 1.4vw;
   transition: 0.5s;
 }
 .projects .session_projects .list_projects .project .description_project {
   margin: 15px 0;
   max-width: 350px;
+}
+.projects .session_projects .list_projects .project a {
+  font-size: 30px;
+  color: #000;
 }
 .projects .session_projects .list_projects .project .animation_border {
   position: absolute;
@@ -73,6 +77,7 @@
   left: 0;
   height: 1px;
   background-color: #000;
+  transition: width 0.6s ease !important;
 }
 .projects .session_projects .slide_projects {
   position: relative;

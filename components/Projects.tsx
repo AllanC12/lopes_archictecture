@@ -16,7 +16,7 @@ import { listProjects } from "@/app/projects/projects";
 
 
 const Projects = () => {
-
+ 
   const refProject= useRef<HTMLDivElement[]>([])
   const [amountProject,setAmountProject] = useState<number>(4)  
 

@@ -51,15 +51,15 @@
                     gap: 30px;
 
                     .arrow_project{
-                        width: 20px;
-                        height: 20px;
+                        width: 40px;
+                        height: 40px;
                         z-index: 1;
                     }
                    
                    .arrow{
                     font-size: 45px;
                     position: absolute;
-                    right: 0.5vw;
+                    right: 1.4vw;
                     transition: .5s;
                   }
 
@@ -70,12 +70,18 @@
                     max-width: 350px;
                 }
 
+                a{
+                    font-size: 30px;
+                    color: #000;
+                }
+
                 .animation_border{
                     position: absolute;
                     bottom: 0;
                     left: 0;
                     height: 1px;
                     background-color: #000;
+                    transition: width .6s ease !important;
                 }
     
             }

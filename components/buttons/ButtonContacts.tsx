@@ -1,6 +1,6 @@
 'use client'
 
-import styles from './buttonStyles/ButtonContacts.module.css'
+import styles from './sass_buttons/ButtonContacts.module.css'
 
 type Props = {
   valueBtn: string

@@ -28,7 +28,9 @@ const Square = ({isWhite,isTransparent}: propsSquare) => {
  },[])
 
   return (
-    <div className={styles.square} ref={refSquare}></div>
+    <div className={styles.square} ref={refSquare}>
+      
+    </div>
   )
 }
 

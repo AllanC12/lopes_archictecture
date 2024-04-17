@@ -2,9 +2,10 @@
   position: relative;
   width: 100%;
   max-width: 1270px;
-  margin: auto;
+  margin: 0 auto;
   border-left: 1px solid #7e7c7c;
   border-right: 1px solid #7e7c7c;
+  padding-bottom: 20vh;
 }
 .projects .title_session_projects {
   font-size: 16px;

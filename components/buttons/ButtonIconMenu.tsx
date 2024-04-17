@@ -1,8 +1,6 @@
 'use client'
 
-import { useState } from 'react';
-
-import styles from './buttonStyles/ButtonIconMenu.module.scss';
+import styles from './sass_buttons/ButtonIconMenu.module.scss';
 
 type Props = {
   menuOpen: boolean

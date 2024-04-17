@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './buttonStyles/ButtonAllProjects.module.scss';
+import styles from './sass_buttons/ButtonAllProjects.module.scss';
 
 const ButtonAllProjects = () => {
   return (

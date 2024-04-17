@@ -19,6 +19,7 @@ const Projects = () => {
  
   const refProject= useRef<HTMLDivElement[]>([])
   const [amountProject,setAmountProject] = useState<number>(4)  
+  let animationBorder: Function
 
   const showDetailsProject = (e: MouseEvent) => {
     const target = e.target as HTMLElement
@@ -43,14 +44,17 @@ const Projects = () => {
     refProject.current =  refProject.current.slice(0,listProjects.length)
   },[])
   
-  const animationBorder = (indexElement: number,border: string) => {
+   animationBorder = (indexElement: number,border: string) => {
     const borderElementAnimation = refProject.current[indexElement].childNodes[3] as HTMLDivElement
+      borderElementAnimation.style.setProperty('width','0px')
 
-      if(border === 'increase'){
-        borderElementAnimation.style.setProperty('width','100%')
-      }else{
-        borderElementAnimation.style.setProperty('width','0px')
-      }
+      setTimeout(() => {
+        if(border === 'increase'){
+          borderElementAnimation.style.setProperty('width','100%')
+        }else{
+          borderElementAnimation.style.setProperty('width','0px')
+        }
+      },10)
 
   }
 

@@ -1,9 +1,19 @@
+'use client'
+
+import { useEffect } from "react";
 
 import Image from "next/image";
 
 import styles from "../components/sass_components/About.module.scss";
 
+import { initAnimations } from "@/aos/aos";
+
 const About = () => {
+
+  useEffect(() => { 
+    initAnimations()
+  },[])
+
   return (
     <div id="about" className={styles.about}>
       <h2 className={styles.title_session_about}>
@@ -14,7 +24,7 @@ const About = () => {
 
       <div className={styles.container_text_photo}>
 
-        <div className={styles.text_about}>
+        <div data-aos="fade-right"className={styles.text_about}>
           <p className={styles.text}>
             In reprehenderit consectetur do et non officia dolore anim excepteur
             dolor fugiat minim. Voluptate velit magna aliquip do et veniam
@@ -25,7 +35,7 @@ const About = () => {
 
         <div className={styles.container_photo}>
             <div className={styles.photo}>
-                <Image src="/images/architect.jpg" width={320} height={370} alt="arquiteto"/>
+                <Image data-aos="fade-down-right"src="/images/architect.jpg" width={320} height={370} alt="arquiteto"/>
             </div>
         </div>
       </div>

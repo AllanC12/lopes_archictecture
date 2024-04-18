@@ -7,6 +7,7 @@
   text-decoration: none;
   font-size: 2em;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .link_button::before {

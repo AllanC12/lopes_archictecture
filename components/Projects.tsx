@@ -1,21 +1,24 @@
 "use client";
 
+import { initAnimations } from "@/aos/aos";
+
 import { MouseEvent,useEffect,useRef, useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
+import ButtonAllProjects from "./buttons/ButtonAllProjects";
 
 import styles from "../components/sass_components/Projects.module.css";
 
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { FaGoogleDrive } from "react-icons/fa";
 
-import ButtonAllProjects from "./buttons/ButtonAllProjects";
 
 import { listProjects } from "@/app/projects/projects";
 
 
-const Projects = () => {
+const Projects = () => { 
+
  
   const refProject= useRef<HTMLDivElement[]>([])
   const [amountProject,setAmountProject] = useState<number>(4)  
@@ -42,6 +45,7 @@ const Projects = () => {
 
   useEffect(() =>{
     refProject.current =  refProject.current.slice(0,listProjects.length)
+    initAnimations()
   },[])
   
    animationBorder = (indexElement: number,border: string) => {
@@ -58,9 +62,10 @@ const Projects = () => {
 
   }
 
+
   return (
 
-    <div className={styles.projects}>
+    <div className={styles.projects} id="projects">
       <h4 className={styles.title_session_projects}>
         <span className={styles.number_session_projects}>1</span>Projetos recentes
       </h4>
@@ -75,6 +80,7 @@ const Projects = () => {
                    ref={element =>  element && (refProject.current[index] = element)} 
                    key={item.id}
                    className={styles.project}
+                   data-aos="fade-right"
                   >
                 <div className={styles.wraper_project}>
 
@@ -103,7 +109,7 @@ const Projects = () => {
            </div>
         </div>
 
-        <div className={styles.slide_projects}>
+        <div data-aos="fade-left" className={styles.slide_projects}>
           <Image
             src="/images/slide_1.jpg"
             width={500}

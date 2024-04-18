@@ -1,12 +1,11 @@
 .contacts {
-  padding: 20px 0;
   position: relative;
   width: 100%;
   max-width: 1270px;
-  height: 900px;
   margin: 0 auto;
   border-left: 1px solid #7e7c7c;
   border-right: 1px solid #7e7c7c;
+  border-bottom: 1px solid #7e7c7c;
 }
 .contacts .title_session_contacts {
   font-size: 16px;
@@ -14,7 +13,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1vw;
-  padding: 5vw 0;
+  padding: 4.5vw 0;
 }
 .contacts .title_session_contacts .number_session_contacts {
   display: flex;
@@ -39,4 +38,36 @@
   position: absolute;
   top: 30px;
   right: 30px;
+}
+.contacts .title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contacts .title_container .line {
+  width: 100%;
+  max-width: 50px;
+  height: 2px;
+  background-color: #000;
+}
+.contacts .title_container .title_contact_us {
+  text-align: center;
+}
+.contacts .container_logo {
+  cursor: pointer;
+  width: 100%;
+  max-width: 500px;
+  max-height: 400px;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+.contacts .container_logo img {
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  left: 15px;
+  top: 10px;
 }/*# sourceMappingURL=Contacts.module.css.map */

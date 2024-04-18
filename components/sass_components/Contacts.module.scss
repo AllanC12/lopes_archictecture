@@ -1,20 +1,19 @@
 @import "../../mixins/mixin.scss";
 
 .contacts{
-    padding: 20px 0;
     position: relative;
     width: 100%;
     max-width: 1270px;
-    height: 900px;
     margin: 0 auto;
     border-left: 1px solid #7e7c7c;
     border-right: 1px solid #7e7c7c;  
+    border-bottom: 1px solid #7e7c7c;  
 
     .title_session_contacts{
         font-size: 16px;
         @include flex(flex-start,center);
         gap: 1vw;
-        padding: 5vw 0;
+        padding: 4.5vw 0;
 
         .number_session_contacts{
             @include flex(center,center);
@@ -43,4 +42,42 @@
         top: 30px;
         right: 30px;
     }
+
+    .title_container{
+
+        @include flex(center,center);
+        gap: 10px;
+
+        .line{
+            width: 100%;
+            max-width: 50px;
+            height: 2px;
+            background-color: #000;
+        }
+
+        .title_contact_us{
+            text-align: center;
+        }
+
+    }
+
+    .container_logo{
+        cursor: pointer;
+        width: 100%;
+        max-width: 500px;
+        max-height: 400px;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #000;
+        border-radius: 15px;
+
+        img{
+            width: 100%;
+            border-radius: 15px;
+            position: relative;
+            left: 15px;
+            top: 10px;
+        }
+    }
+
 }

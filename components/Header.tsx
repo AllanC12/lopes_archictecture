@@ -1,6 +1,6 @@
 "use client";
 
-import AOS from "aos";
+import { initAnimations } from "@/aos/aos";
 
 import { useEffect, useState } from "react";
 
@@ -17,10 +17,6 @@ const Header = () => {
   const [showLogo, setShowLogo] = useState<boolean>(false);
   const [showIcon, setShowIcon] = useState<boolean>(false);
   const [menuOpen,setMenuOpen] = useState<boolean>(false)
-
-  const initAnimations = () => {
-    AOS.init({ duration: 1000 });
-  }
 
   useEffect(() => {
     initAnimations()

@@ -4,7 +4,7 @@
     width: 98vw;
     height: 21vh;
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     left: 0;
 
     .column{
@@ -12,4 +12,18 @@
     }
 
 }
+
+@media (max-width: 640px){
+    .footer_banner{
+        bottom: -70px;
+    }
+}
+
+@media (max-width: 500px){
+    .footer_banner{
+        bottom: -90px;
+    }
+}
+
+
 

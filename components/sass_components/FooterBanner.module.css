@@ -2,11 +2,22 @@
   width: 98vw;
   height: 21vh;
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
 }
 .footer_banner .column {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+@media (max-width: 640px) {
+  .footer_banner {
+    bottom: -70px;
+  }
+}
+@media (max-width: 500px) {
+  .footer_banner {
+    bottom: -90px;
+  }
 }/*# sourceMappingURL=FooterBanner.module.css.map */

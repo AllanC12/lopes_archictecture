@@ -2,7 +2,7 @@
 
 .about{
     position: relative;
-    max-width: 1270px;
+    max-width: 1300px;
     margin: 0 auto;
     background-color: #000;
     border-right: 1px solid #7e7c7c;
@@ -24,8 +24,6 @@
         }
 
     }
-
-
 
     .square{
         background-color: #f5f6f7;
@@ -79,6 +77,20 @@
             border-radius: 0px 50px 0px 100px;
 
           }
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .text_about{
+        width: 50%;
+        max-width: 400px;
+
+        .text{
+            font-size: 20px;
+            color: #f5f6f7;
         }
     }
 

@@ -3,24 +3,26 @@
 .projects{
     position: relative;
     width: 100%;
-    max-width: 1270px;
+    max-width: 1300px;
     margin: 0 auto;
     border-left: 1px solid #7e7c7c;
     border-right: 1px solid #7e7c7c;
     padding-bottom: 20vh;
 
     .title_session_projects{
-        font-size: 16px;
-        @include flex(flex-start,center);
+        font-size: 25px;
+        @include flex(flex-start,flex-end);
         gap: 1vw;
-        padding: 5vw 0;
+        padding: 5vh 0 0 0;
+        border-bottom: 6px solid #000;
+        max-width: 30%;
 
         .number_session_projects{
             @include flex(center,center);
-            width: 25px;
+            width: 60px;
             background-color: #000;
             color: #fff;
-            padding: 6px;
+            padding: 20px;
         }
 
     }
@@ -125,5 +127,15 @@
     .list_projects{
         width: 100% !important;
         display: block;
+    }
+
+    .slide_projects{
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 500px){
+    .slide_projects{
+        height: 250px;
     }
 }

@@ -5,17 +5,17 @@
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    border-left: 1px solid #7e7c7c;
-    border-right: 1px solid #7e7c7c;
+
     padding-bottom: 20vh;
 
     .title_session_projects{
-        font-size: 25px;
+        font-size: 27px;
         @include flex(flex-start,flex-end);
         gap: 1vw;
         padding: 5vh 0 0 0;
         border-bottom: 6px solid #000;
         max-width: 30%;
+        font-weight: 100;
 
         .number_session_projects{
             @include flex(center,center);
@@ -29,6 +29,7 @@
 
     .session_projects{
         @include flex(space-around,flex-start);
+        border-top: 1px solid #ccc;
         gap: 50px;
 
         .list_projects{
@@ -46,7 +47,7 @@
 
                 .name_project{
                     font-size: 22px;
-                    font-weight: 300;
+                    font-weight: 100;
                 }
                 
                 .wraper_project{
@@ -71,11 +72,29 @@
                 .description_project{
                     margin: 15px 0;
                     max-width: 350px;
+                    overflow-y: auto;
+                    max-height: 90px;
                 }
 
                 a{
-                    font-size: 30px;
                     color: #000;
+                    font-size: 20px;
+                    text-decoration: none;
+                    transition: .5s;
+                    margin-bottom: 5px;
+
+                    svg{
+                        font-size: 25px;
+                        margin-right: 10px;
+                    }
+                }
+
+                a:hover{
+                    background-color: #000;
+                    color: #fff;
+                    border: 1px solid #000;
+                    border-radius:5px;
+                    padding: 10px 15px;
                 }
 
                 .animation_border{

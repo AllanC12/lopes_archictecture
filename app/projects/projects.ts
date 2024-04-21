@@ -16,7 +16,7 @@ export const listProjects: propProject[] = [
         "https://www.google.com/imgres?q=arquitetura%20projetos&imgurl=https%3A%2F%2Fwww.cnnbrasil.com.br%2Fwp-content%2Fuploads%2Fsites%2F12%2F2024%2F01%2Farquitetura-singapura.jpg&imgrefurl=https%3A%2F%2Fwww.cnnbrasil.com.br%2Flifestyle%2F10-projetos-de-design-e-arquitetura-que-prometem-moldar-o-mundo-em-2024%2F&docid=dN6rIbRbDZdnMM&tbnid=ebMeXiQtFFhWmM&vet=12ahUKEwieud_OzLuFAxVajpUCHaVkAf0QM3oECHoQAA..i&w=1850&h=1152&hcb=2&ved=2ahUKEwieud_OzLuFAxVajpUCHaVkAf0QM3oECHoQAA",
       ],
       description:
-        "lorem ipsum dolor sit amet, consectetur adipis cillum dolore magna aliqu Lorem ipsum dolor sit amet, consectet  durit esse cillum dolore magna aliqu Lorem",
+        "lorem ipsum dolor sit amet, consectetur adipis cillum dolore magna aliqu Lorem ipsum dolor sit amet, consectet  durit esse cillum dolore magna aliqu Lorem,lorem ipsum dolor sit amet, consectetur adipislorem ipsum dolor sit amet, consectetur adipis cillum dolore magna aliqu Lorem ipsum dolor sit amet, consectet  durit esse cillum dolore magna aliqu Lorem cillum dolore magna aliqu Lorem ipsum dolor sit amet, consectet  durit esse cillum dolore magna aliqu Lorem",
     },
     { id: 2,
       name: "Quantum Urban Oasis",

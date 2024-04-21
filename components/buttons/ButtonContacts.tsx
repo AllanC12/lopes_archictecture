@@ -9,7 +9,7 @@ type Props = {
 
 const ButtonContacts = ({ valueBtn }: Props) => {
   return (
-    <button data-aos="flip-right" className={styles.button_contact}>
+    <button data-aos="flip-right" className={styles.btn}>
       <Link
         to="contacts"
         spy={true}
@@ -17,8 +17,8 @@ const ButtonContacts = ({ valueBtn }: Props) => {
         duration={600}
         className={styles.link_button}
       >
-        <span className={styles.span_button}>{valueBtn}</span>
-      </Link>
+        {valueBtn}
+    </Link>
     </button>
   );
 };

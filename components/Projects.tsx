@@ -11,7 +11,7 @@ import ButtonAllProjects from "./buttons/ButtonAllProjects";
 import styles from "../components/sass_components/Projects.module.css";
 
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { FaGoogleDrive } from "react-icons/fa";
+import { FaDownload  } from "react-icons/fa";
 
 
 import { listProjects } from "@/app/projects/projects";
@@ -19,7 +19,6 @@ import { listProjects } from "@/app/projects/projects";
 
 const Projects = () => { 
 
- 
   const refProject= useRef<HTMLDivElement[]>([])
   const [amountProject,setAmountProject] = useState<number>(4)  
   let animationBorder: Function
@@ -30,7 +29,7 @@ const Projects = () => {
     const projectItem = projectWraper.parentElement as HTMLDivElement
     const arrowProject = projectItem.childNodes[0].childNodes[2] as SVGElement
     const heightDefault: string = '55px'
-    const fullHeight: string = "35vh"
+    const fullHeight: string = "37vh"
 
     if(window.getComputedStyle(projectItem).height === heightDefault){
       projectItem.style.setProperty('height',`${fullHeight}`)
@@ -95,8 +94,9 @@ const Projects = () => {
 
                 <p className={styles.description_project}>{item.description}</p>
 
-                <Link title="Ver no Drive" href={item.linkForDrive}>
-                  <FaGoogleDrive />
+                <Link href={item.linkForDrive}>
+                  <FaDownload />
+                  Baixar no drive
                 </Link>
 
                 <div className={styles.animation_border}></div>

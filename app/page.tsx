@@ -8,17 +8,16 @@ import Contacts from "@/components/Contacts";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 
-
 export default function Home() {
   return (
     <div className="page_home">
-        <Header />
-        {/* <Curtain /> */}
-        <Banner />
-        <Projects />
-        <About/>
-        <Contacts/>
-        <Footer/>
+      <Header />
+      <Curtain />
+      <Banner />
+      <Projects />
+      <About />
+      <Contacts />
+      <Footer />
     </div>
   );
 }

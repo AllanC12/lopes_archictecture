@@ -25,7 +25,7 @@ const Header = () => {
   setTimeout(() => {
     setShowLogo(true);
     setShowIcon(true);
-  }, 5850);
+  }, 5500);
 
 
   return (

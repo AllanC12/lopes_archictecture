@@ -1,69 +1,48 @@
-.link_button {
+.btn {
+  font-size: 35px;
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  color: #f8f8f8;
   position: relative;
-  display: inline-block;
-  padding: 12px 30px;
-  border: 2px solid #fefefe;
-  color: #fefefe;
-  text-decoration: none;
-  font-size: 2em;
-  border-radius: 0.5rem;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
-.link_button::before {
+.btn::before {
   content: "";
   position: absolute;
-  top: 6px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - 12px);
-  background-color: #000;
-  transition: 0.3s ease-in-out;
-  transform: scaleY(1);
+  right: 0;
+  top: 0;
+  height: 2px;
+  width: 0;
+  background-color: #f8f8f8;
+  transition: 0.5s ease;
 }
 
-.link_button:hover::before {
-  transform: scaleY(0);
+.btn:hover {
+  color: #fff;
+  transition-delay: 0.5s;
 }
 
-.link_button::after {
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
   content: "";
   position: absolute;
-  left: 6px;
-  top: -2px;
-  height: calc(100% + 4px);
-  width: calc(100% - 12px);
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
   background-color: #000;
-  transition: 0.3s ease-in-out;
-  transform: scaleX(1);
-  transition-delay: 0.2s;
+  transition: 0.4s ease;
+  z-index: -1;
+  border-radius: 5px;
 }
 
-.link_button:hover::after {
-  transform: scaleX(0);
-}
-
-.link_button .span_button {
-  position: relative;
-  z-index: 3;
-}
-
-.button_contact {
-  text-decoration: none;
-  background-color: #000;
-  border: none;
-  border-radius: 0.5rem;
-}
-
-@media (max-width: 780px) {
-  .link_button {
-    font-size: 1.5em;
-    padding: 10px 30px;
-  }
-}
-@media (max-width: 500px) {
-  .link_button {
-    font-size: 1.1em;
-    padding: 10px 30px;
-  }
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
 }/*# sourceMappingURL=ButtonContacts.module.css.map */

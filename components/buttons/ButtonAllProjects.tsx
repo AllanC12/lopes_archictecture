@@ -1,16 +1,26 @@
-import React from 'react'
 
-import styles from './sass_buttons/ButtonAllProjects.module.scss';
+import styles from "./sass_buttons/ButtonAllProjects.module.scss";
 
-const ButtonAllProjects = () => {
+import { Link } from "react-scroll";
+
+type Props = {
+  valueBtn: string;
+};
+
+const ButtonContacts = ({ valueBtn }: Props) => {
   return (
-    <span className={styles.fancy}>
-    <span className={styles.top_key}></span>
-    <span className={styles.text}>Ver Mais</span>
-    <span className={styles.bottom_key_1}></span>
-    <span className={styles.bottom_key_2}></span>
-  </span>
-  )
-}
+    <button data-aos="flip-right" className={styles.btn}>
+      <Link
+        to="contacts"
+        spy={true}
+        smooth={true}
+        duration={600}
+        className={styles.link_button}
+      >
+        {valueBtn}
+    </Link>
+    </button>
+  );
+};
 
-export default ButtonAllProjects
+export default ButtonContacts;

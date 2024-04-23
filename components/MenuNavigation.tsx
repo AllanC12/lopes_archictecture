@@ -26,7 +26,7 @@ const MenuNavigation = ({menuOpen} :propsMenuNavigation) => {
     <nav ref={menuNavigation} className={styles.menu_navigation}>
       <ul>
         <li>
-          <Link to="begin" spy={true} smooth={true} duration={600}>
+          <Link to="init" spy={true} smooth={true} duration={600}>
             Início
           </Link>
         </li>

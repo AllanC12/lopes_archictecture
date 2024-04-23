@@ -1,12 +1,14 @@
 "use client";
 
-import { initAnimations } from "@/aos/aos";
+import { initAnimationsAos } from "@/aos/aos";
 
 import { useEffect, useState } from "react";
 
 import styles from "../components/sass_components/Header.module.css";
 import ButtonIconMenu from "./buttons/ButtonIconMenu";
 import MenuNavigation from "./MenuNavigation";
+
+import Logo from "./Logo";
 
 type Props = {
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
@@ -19,7 +21,7 @@ const Header = () => {
   const [menuOpen,setMenuOpen] = useState<boolean>(false)
 
   useEffect(() => {
-    initAnimations()
+    initAnimationsAos()
   }, []);
 
   setTimeout(() => {
@@ -32,10 +34,7 @@ const Header = () => {
     <header id="home" className={styles.header}>
       {showLogo && (
         <div data-aos="zoom-out" className={styles.logo}>
-          <span className={styles.text_logo}>
-            Lopes <br />
-            Architecture
-          </span>
+          <Logo sizeTitleOne={18} sizeTitleTwo={14} width={30} height={30}/>
         </div>
       )}
 

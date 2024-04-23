@@ -7,7 +7,7 @@ import FooterBanner from "./FooterBanner";
 
 const Banner = () => {
   return (
-    <div id="begin" className={styles.banner}>
+    <div id="init" className={styles.banner}>
       <Slogan/>
       <FooterBanner/>
     </div>

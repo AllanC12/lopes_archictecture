@@ -6,18 +6,18 @@ import Image from "next/image";
 
 import styles from "../components/sass_components/About.module.scss";
 
-import { initAnimations } from "@/aos/aos";
+import { initAnimationsAos } from "@/aos/aos";
 
 const About = () => {
 
   useEffect(() => { 
-    initAnimations()
+    initAnimationsAos()
   },[])
 
   return (
     <div id="about" className={styles.about}>
       <h2 className={styles.title_session_about}>
-        <span className={styles.number_session_about}>2</span> Sobre nós
+        <span className={styles.number_session_about}>2</span> Sobre mim
       </h2>
       <div className={`${styles.square_one} ${styles.square}`}></div>
       <div className={`${styles.square_two} ${styles.square}`}></div>

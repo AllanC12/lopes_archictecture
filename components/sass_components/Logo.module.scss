@@ -1,0 +1,19 @@
+@import "../../mixins/mixin.scss";
+
+.span_logo{
+  @include flex(center,center);
+  flex-direction: column;
+  color: #fff;
+
+  .title_part_one{
+    font-weight: 200;
+    font-size: 22px;
+    font-family: var(--roboto_condensed);
+    text-transform: uppercase;
+  }
+
+  .title_part_two{
+    display: block;
+    font-weight: lighter;
+  }
+}

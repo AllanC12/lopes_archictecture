@@ -1,102 +1,49 @@
-.fancy {
-  background-color: transparent;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  letter-spacing: 0.05em;
-  overflow: visible;
-  padding: 1.25em 2em;
+.btn {
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
   position: relative;
-  left: 15vw;
-  top: 6vh;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  font-size: 13px;
-  border-radius: 0.5rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 30px 0;
 }
 
-.fancy::before {
-  content: " ";
-  width: 1.5625rem;
-  height: 2px;
-  background: black;
-  top: 50%;
-  left: 1.5em;
+.btn::before {
+  content: "";
   position: absolute;
-  transform: translateY(-50%);
-  transform-origin: center;
-  transition: 0.3s linear, width 0.3s linear;
-}
-
-.fancy .text {
-  font-size: 1.125em;
-  line-height: 1.33333em;
-  padding-left: 2em;
-  display: block;
-  text-align: left;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-}
-
-.fancy .top_key {
-  height: 2px;
-  width: 1.5625rem;
-  top: -2px;
-  left: 0.625rem;
-  position: absolute;
-  background: #bbbaba;
-  transition: width 0.5s ease-out, left 0.3s ease-out;
-}
-
-.fancy .bottom_key_1 {
-  height: 2px;
-  width: 1.5625rem;
-  right: 1.875rem;
-  bottom: -2px;
-  position: absolute;
-  background: #bbbaba;
-  transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-
-.fancy .bottom_key_2 {
-  height: 2px;
-  width: 0.625rem;
-  right: 0.625rem;
-  bottom: -2px;
-  position: absolute;
-  background: #bbbaba;
-  transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-
-.fancy:hover {
-  color: white;
-  background: black;
-}
-
-.fancy:hover::before {
-  width: 0.9375rem;
-  background: white;
-}
-
-.fancy:hover .text {
-  color: white;
-  padding-left: 1.5em;
-}
-
-.fancy:hover .top_key {
-  left: -2px;
-  width: 0px;
-}
-
-.fancy:hover .bottom_key_1,
-.fancy:hover .bottom_key_2 {
   right: 0;
+  top: 0;
+  height: 2px;
   width: 0;
+  background-color: #000;
+  transition: 0.4s ease;
+}
+
+.btn:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #000;
+  transition: 0.4s ease;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
 }/*# sourceMappingURL=ButtonAllProjects.module.css.map */

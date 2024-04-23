@@ -1,10 +1,45 @@
 .footer {
   width: 100%;
-  height: 40px;
-  padding: 10px 0;
   background-color: #000;
   border-top: 1px solid #fff;
   color: #fff;
   text-align: center;
   margin-top: 10px;
+  padding: 25px 0;
+}
+.footer .social_medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+.footer .social_medias a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 30px;
+  color: #000;
+  transition: 0.5s;
+}
+.footer .social_medias .whatsapp:hover {
+  background-color: #4eb332;
+  color: #fff;
+}
+.footer .social_medias .email:hover {
+  background-color: #47a1f5;
+  color: #fff;
+}
+.footer .address {
+  display: inline-block;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 4px 0;
+  text-decoration: none;
+}
+.footer .logo {
+  margin: 20px 0;
 }/*# sourceMappingURL=Footer.module.css.map */

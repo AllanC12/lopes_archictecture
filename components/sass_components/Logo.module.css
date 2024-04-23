@@ -1,0 +1,17 @@
+.span_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.span_logo .title_part_one {
+  font-weight: 200;
+  font-size: 22px;
+  font-family: var(--roboto_condensed);
+  text-transform: uppercase;
+}
+.span_logo .title_part_two {
+  display: block;
+  font-weight: lighter;
+}/*# sourceMappingURL=Logo.module.css.map */

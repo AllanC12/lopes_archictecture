@@ -1,10 +1,49 @@
+@import "../../mixins/mixin.scss";
+
 .footer{
     width: 100%;
-    height: 40px;
-    padding: 10px 0;
     background-color: #000;
     border-top: 1px solid #fff;
     color: #fff;
     text-align: center;
     margin-top: 10px;
+    padding: 25px 0;
+
+
+    .social_medias{
+        @include flex(center,center);
+        gap: 15px;
+        margin: 15px 0;
+
+        a{
+          @include flex(center,center);           
+          background-color: #fff;
+          border-radius: 50%;
+          padding: 10px;
+          font-size: 30px;
+          color: #000;
+          transition: .5s;
+        }
+
+        .whatsapp:hover{
+          background-color: #4eb332;
+          color: #fff;
+        }
+        .email:hover{
+          background-color: #47a1f5;
+          color: #fff;
+        }
+    }
+
+    .address{
+        display: inline-block;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        padding: 4px 0;
+        text-decoration: none;
+   }
+
+   .logo{
+    margin: 20px 0;
+   }
 }

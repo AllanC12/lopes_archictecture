@@ -2,19 +2,17 @@
 
 import { useEffect } from "react";
 
-import { initAnimations } from "@/aos/aos";
+import { initAnimationsAos } from "@/aos/aos";
 
 import Image from "next/image";
 import SocialMediaButtons from "./buttons/SocialMediaButtons";
 
 import styles from "../components/sass_components/Contacts.module.css";
 
-
 const Contacts = () => {
-
   useEffect(() => {
-    initAnimations()
-  },[])
+    initAnimationsAos();
+  }, []);
 
   return (
     <div id="contacts" className={styles.contacts}>
@@ -38,8 +36,8 @@ const Contacts = () => {
           alt="Imagem da logomarca"
           data-aos="fade-down-right"
         />
-        
-        <SocialMediaButtons/>
+
+        <SocialMediaButtons />
       </div>
     </div>
   );

@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <div className="page_home">
       <Header />
-      <Curtain />
+      {/* <Curtain /> */}
       <Banner />
       <Projects />
       <About />
-      <Contacts />
+      {/* <Contacts /> */}
       <Footer />
     </div>
   );

@@ -1,36 +1,46 @@
-'use client'
+"use client";
 
 import { SetStateAction, useRef } from "react";
 
-import Image from "next/image"
+import Image from "next/image";
 
-import { IProject } from "@/app/projects/projects"
+import { IProject } from "@/app/projects/projects";
 
-import styles from '../components/sass_components/Modal.module.scss';
+import styles from "../components/sass_components/Modal.module.scss";
 
 import { IoMdClose } from "react-icons/io";
+import { FaArrowLeft,FaArrowRight } from "react-icons/fa";
 
 interface propModal {
-    setShowModal: React.Dispatch<SetStateAction<boolean>>
-    project: IProject | null
+  setShowModal: React.Dispatch<SetStateAction<boolean>>;
+  project: IProject | null;
 }
 
-const ModalImages = ({setShowModal,project}:propModal) => {
+const ModalImages = ({ setShowModal, project }: propModal) => {
 
-  const refModal = useRef<HTMLDivElement>(null)
+  const listImages: string[] | undefined = project?.images
 
-  const hideModal = () => {
-    refModal.current?.style.setProperty('display','none')
-  }
-    
   return (
-    <div ref={refModal} className={styles.modal}>
+    <div className={styles.modal}>
       <div className={styles.closeModal}>
-        <IoMdClose onClick={() => setShowModal(false)}/>
+        <IoMdClose onClick={() => setShowModal(false)} />
       </div>
 
-    </div>
-  )
-}
+      <div className={styles.slides}>
+        <div className={styles.main_slide}>
+            <FaArrowLeft/>
+            <div className={styles.image_main_slide}></div>
+            <FaArrowRight/>
+        </div>
 
-export default ModalImages
+        <div className={styles.slide_secondary}>
+            {listImages?.map((srcImage: string) => (
+                <Image src={srcImage} width={100} height={100} alt="Imagem de projeto" />
+            ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ModalImages;

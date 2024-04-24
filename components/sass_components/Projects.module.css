@@ -70,7 +70,20 @@
   margin: 15px 0;
   max-width: 350px;
   overflow-y: auto;
-  max-height: 90px;
+  max-height: 100px;
+}
+.projects .session_projects .list_projects .project .view_image {
+  margin-right: 20px;
+  font-size: 20px;
+  transition: 0.5s;
+  margin-bottom: 5px;
+}
+.projects .session_projects .list_projects .project .view_image:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 8px 15px;
 }
 .projects .session_projects .list_projects .project a {
   color: #000;
@@ -80,7 +93,7 @@
   margin-bottom: 5px;
 }
 .projects .session_projects .list_projects .project a svg {
-  font-size: 25px;
+  font-size: 20px;
   margin-right: 10px;
 }
 .projects .session_projects .list_projects .project a:hover {

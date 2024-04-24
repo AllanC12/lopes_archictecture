@@ -1,0 +1,68 @@
+@import "../../mixins/mixin.scss";
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+
+    .closeModal{
+        color: #fff;
+
+        svg{
+            position: absolute;
+            right: 2vw;
+            top: 2vh;
+            font-size: 50px;
+            cursor: pointer;
+        }
+    }
+
+    .slides{
+        @include flex(center,center);
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+
+        .main_slide{
+            @include flex(center,center);
+            gap: 5vw;
+            width: 100%;
+            height: 60vh;
+
+            svg{
+                cursor: pointer;
+                color: #fff;
+                font-size: 3rem;
+            }
+
+            .image_main_slide{
+                height: 100%;
+                width: 500px;
+                background-color: green;
+            }
+
+        }
+        
+        .slide_secondary{
+            @include flex(center,center);
+           margin-top: 30px;
+            width: 100%;
+            max-width: 60vw;
+            height: 25vh;
+            gap: 20px;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+         }
+    }
+
+
+}

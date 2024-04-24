@@ -34,7 +34,7 @@ const Header = () => {
     <header id="home" className={styles.header}>
       {showLogo && (
         <div data-aos="zoom-out" className={styles.logo}>
-          <Logo sizeTitleOne={18} sizeTitleTwo={14} width={30} height={30}/>
+          <Logo sizeTitleOne={18} sizeTitleTwo={12} width={30} height={30}/>
         </div>
       )}
 

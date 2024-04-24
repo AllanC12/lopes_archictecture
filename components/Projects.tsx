@@ -1,4 +1,6 @@
 "use client";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { FaDownload } from "react-icons/fa";
 
 import { initAnimationsAos } from "@/aos/aos";
 
@@ -7,18 +9,18 @@ import { MouseEvent, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ButtonAllProjects from "./buttons/ButtonAllProjects";
+import ModalImages from "./ModalImages";
 
 import styles from "../components/sass_components/Projects.module.css";
 
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { FaDownload } from "react-icons/fa";
-
-import { listProjects } from "@/app/projects/projects";
+import { IProject, listProjects } from "@/app/projects/projects";
 
 const Projects = () => {
   const refProject = useRef<HTMLDivElement[]>([]);
   const [amountProject, setAmountProject] = useState<number>(4);
   let animationBorder: Function;
+  const [showModal, setShowModal] = useState<boolean>(false);
+  const [projectClicked, setProjectClicked] = useState<IProject | null>(null);
 
   const showDetailsProject = (e: MouseEvent) => {
     const target = e.target as HTMLElement;
@@ -54,6 +56,10 @@ const Projects = () => {
         borderElementAnimation.style.setProperty("width", "0px");
       }
     }, 10);
+  };
+
+  const getProjectClicked = (item: IProject): IProject[] => {
+    return listProjects.filter((project) => project.id === item.id);
   };
 
   return (
@@ -94,6 +100,16 @@ const Projects = () => {
 
                 <p className={styles.description_project}>{item.description}</p>
 
+                <span
+                  onClick={() => {
+                    setShowModal(true)
+                    setProjectClicked(item);
+                  }}
+                  className={styles.view_image}
+                >
+                  Ver imagens
+                </span>
+
                 <Link href={item.linkForDrive}>
                   <FaDownload />
                   Baixar no drive
@@ -103,6 +119,9 @@ const Projects = () => {
               </div>
             );
           })}
+
+          {showModal && <ModalImages setShowModal={setShowModal} project={projectClicked} />}
+
           <div
             onClick={() => setAmountProject(amountProject + 2)}
             className={styles.buttonAllProjects}

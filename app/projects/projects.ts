@@ -1,4 +1,4 @@
-interface propProject {
+export interface IProject {
     id: number
     name: string;
     linkForDrive: string;
@@ -6,7 +6,7 @@ interface propProject {
     description: string;
   }
 
-export const listProjects: propProject[] = [
+export const listProjects: IProject[] = [
     { id: 1,
       name: "Elisian Heights Residence",
       linkForDrive: "https://www.googledrive.com/lopesarchitecture/elisian",

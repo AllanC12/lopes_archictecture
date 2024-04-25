@@ -40,7 +40,11 @@
 }
 .modal .slides .main_slide .image_main_slide {
   height: 100%;
-  width: 500px;
+  width: 100%;
+  max-width: 600px;
+}
+.modal .slides .main_slide .image_main_slide img {
+  width: 100%;
 }
 .modal .slides .slide_secondary {
   display: flex;

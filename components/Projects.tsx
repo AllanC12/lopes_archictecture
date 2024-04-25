@@ -45,8 +45,7 @@ const Projects = () => {
   }, []);
 
   animationBorder = (indexElement: number, border: string) => {
-    const borderElementAnimation = refProject.current[indexElement]
-      .childNodes[3] as HTMLDivElement;
+    const borderElementAnimation = refProject.current[indexElement].childNodes[3] as HTMLDivElement;
     borderElementAnimation.style.setProperty("width", "0px");
 
     setTimeout(() => {

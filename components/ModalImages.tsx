@@ -1,6 +1,6 @@
 "use client";
 
-import { SetStateAction, useRef } from "react";
+import { SetStateAction, useRef,useState } from "react";
 
 import Image from "next/image";
 
@@ -19,6 +19,22 @@ interface propModal {
 const ModalImages = ({ setShowModal, project }: propModal) => {
 
   const listImages: string[] | undefined = project?.images
+  const [indexMaxImage] = useState<number>(listImages!.length)
+  const [indexCurrentImage,setIndexCurrentImage] = useState<number>(0)
+
+  const showNextImage = () => {
+    if(indexCurrentImage === indexMaxImage - 1){
+      return
+    }
+    setIndexCurrentImage(indexCurrentImage + 1)
+   }
+
+  const showPreviousImage = () => {
+    if(indexCurrentImage === 0){
+      return
+    }
+    setIndexCurrentImage(indexCurrentImage - 1)
+  }
 
   return (
     <div className={styles.modal}>
@@ -28,14 +44,18 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
 
       <div className={styles.slides}>
         <div className={styles.main_slide}>
-            <FaArrowLeft/>
-            <div className={styles.image_main_slide}></div>
-            <FaArrowRight/>
+            <FaArrowLeft onClick={showPreviousImage} />
+            <div className={styles.image_main_slide}>
+              <Image src={listImages![indexCurrentImage]} width={500} height={360} alt="Imagem exibida" />
+            </div>
+            <FaArrowRight onClick={showNextImage}/>
         </div>
 
         <div className={styles.slide_secondary}>
-            {listImages?.map((srcImage: string) => (
-                <Image src={srcImage} width={100} height={100} alt="Imagem de projeto" />
+            {listImages?.map((srcImage: string,index:number) => (
+                <div key={index} className={styles.box_image}>
+                  <Image src={srcImage} width={100} height={100} alt="Imagem de projeto" />
+                </div>
             ))}
         </div>
       </div>

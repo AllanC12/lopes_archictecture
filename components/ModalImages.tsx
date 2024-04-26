@@ -1,5 +1,7 @@
 "use client";
 
+import { MouseEvent, MutableRefObject } from "react";
+
 import { SetStateAction, useRef,useState, useEffect } from "react";
 
 import Image from "next/image";
@@ -18,35 +20,63 @@ interface propModal {
 
 const ModalImages = ({ setShowModal, project }: propModal) => {
   
+  const [sourceBiggerImage,setSourceBiggerImage] = useState<string>('')
+  const refBiggerImage = useRef<HTMLImageElement>(null)
   const refBoxImage = useRef<HTMLDivElement[]>([])
-
-  
   const listImages: string[] | undefined = project?.images
   const [indexMaxImage] = useState<number>(listImages!.length)
   const [indexCurrentImage,setIndexCurrentImage] = useState<number>(0)
   
-  const showNextImage = () => {
+  const showNextImage = ():void => {
     if(indexCurrentImage === indexMaxImage - 1){
       return
     }
     setIndexCurrentImage(indexCurrentImage + 1)
   }
   
-  const showPreviousImage = () => {
+  const showPreviousImage = ():void => {
     if(indexCurrentImage === 0){
       return
     }
     setIndexCurrentImage(indexCurrentImage - 1)
   }
 
-  const applyBorder = (element: HTMLDivElement) => {
-    const image = element.children[0] as HTMLElement
-    image.style.setProperty("border",'4px solid #000')
+  const resetBorderSelected = ():void => {
+    refBoxImage.current.forEach((item: HTMLDivElement) => {
+      item.style.setProperty('border','none')
+    })
+  }
+
+  const applyBorderImageSelected = (target: HTMLDivElement | null = null) => {
+    resetBorderSelected()
+    refBoxImage.current[indexCurrentImage].style.setProperty('border','1px solid #000')
+
+    if(target){
+      resetBorderSelected()
+      target.style.setProperty('border','1px solid #000')
+    }
+  }
+
+  const showImageSelected = (image: Element) => {
+    const biggerImage: HTMLImageElement | null = refBiggerImage.current
+    const htmlImageElement = image as HTMLImageElement
+    setSourceBiggerImage(htmlImageElement.src)
+    biggerImage?.setAttribute('srcset', sourceBiggerImage)
+  }
+
+  const selectImageInSlide = () => {
+    refBoxImage.current.forEach((item: HTMLDivElement,index: number) => {
+      item.children[0].addEventListener('click',() => {
+        applyBorderImageSelected(item)
+        showImageSelected(item.children[0])
+      })
+    })
   }
   
   useEffect(() => {
     refBoxImage.current = refBoxImage.current?.slice(0,listImages!.length)
-    applyBorder(refBoxImage.current[indexCurrentImage])
+    applyBorderImageSelected()
+    selectImageInSlide()
   })
 
   return (
@@ -60,7 +90,7 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
         <div className={styles.main_slide}>
             <FaArrowLeft onClick={showPreviousImage} />
             <div className={styles.image_main_slide}>
-              <Image src={listImages![indexCurrentImage]} width={500} height={360} alt="Imagem exibida" />
+              <Image ref={refBiggerImage} src={listImages![indexCurrentImage]} width={500} height={360} alt="Imagem exibida" />
             </div>
             <FaArrowRight onClick={showNextImage}/>
         </div>

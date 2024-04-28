@@ -48,11 +48,12 @@
 }
 .modal .slides .slide_secondary {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 30px;
+  overflow-x: auto;
   width: 100%;
-  max-width: 1320px;
+  max-width: 560px;
   background-color: #8a8989;
   padding: 10px;
   height: 25vh;
@@ -74,6 +75,20 @@
 .modal .slides .slide_secondary .selected {
   border: 2px solid #000;
 }
-.modal .slides .slide_secondary .box_image:hover {
-  scale: 1.05;
+
+@media (max-width: 768px) {
+  .image_main_slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image_main_slide img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .image_main_slide img {
+    height: 70%;
+    width: 100%;
+  }
 }/*# sourceMappingURL=Modal.module.css.map */

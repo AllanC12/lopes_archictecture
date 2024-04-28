@@ -53,10 +53,11 @@
         }
         
         .slide_secondary{
-            @include flex(center,center);
+            @include flex(flex-start,center);
             margin-top: 30px;
+            overflow-x: auto;
             width: 100%;
-            max-width: 1320px;
+            max-width: 560px;
             background-color: #8a8989;
             padding: 10px;
             height: 25vh;
@@ -81,14 +82,30 @@
                 border: 2px solid #000;
             }
             
-            .box_image:hover{
-                scale: 1.05;
-            }
-            
-
+        
 
          }
     }
 
 
 }
+
+@media (max-width: 768px){
+    .image_main_slide{
+         @include flex(center,center);  
+        img{
+           width: 100%
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .image_main_slide{
+
+        img{
+          height: 70%;
+           width: 100%;
+        }
+    }
+}
+

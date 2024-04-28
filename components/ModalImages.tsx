@@ -20,9 +20,11 @@ interface propModal {
 
 const ModalImages = ({ setShowModal, project }: propModal) => {
   
-  const [sourceBiggerImage,setSourceBiggerImage] = useState<string>('')
+  const refPrevArrow = useRef<HTMLDivElement>(null)
+  const refNextArrow = useRef<HTMLDivElement>(null)
   const refBiggerImage = useRef<HTMLImageElement>(null)
-  const refBoxImage = useRef<HTMLDivElement[]>([])
+  const refSlideSecondary = useRef<HTMLDivElement>(null)
+  const refBoxImage = useRef<HTMLImageElement[]>([])
   const listImages: string[] | undefined = project?.images
   const [indexMaxImage] = useState<number>(listImages!.length)
   const [indexCurrentImage,setIndexCurrentImage] = useState<number>(0)
@@ -32,6 +34,7 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
       return
     }
     setIndexCurrentImage(indexCurrentImage + 1)
+    applyBorderImageSelected()
   }
   
   const showPreviousImage = ():void => {
@@ -39,6 +42,7 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
       return
     }
     setIndexCurrentImage(indexCurrentImage - 1)
+    applyBorderImageSelected()
   }
 
   const resetBorderSelected = ():void => {
@@ -47,36 +51,22 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
     })
   }
 
-  const applyBorderImageSelected = (target: HTMLDivElement | null = null) => {
+  const applyBorderImageSelected = () => {
     resetBorderSelected()
     refBoxImage.current[indexCurrentImage].style.setProperty('border','1px solid #000')
 
-    if(target){
-      resetBorderSelected()
-      target.style.setProperty('border','1px solid #000')
+  }
+
+  const validateSlideSecondary = () => {
+    if(listImages!.length < 5){
+      refSlideSecondary.current?.style.setProperty('justify-content','center')
     }
-  }
-
-  const showImageSelected = (image: Element) => {
-    const biggerImage: HTMLImageElement | null = refBiggerImage.current
-    const htmlImageElement = image as HTMLImageElement
-    setSourceBiggerImage(htmlImageElement.src)
-    biggerImage?.setAttribute('srcset', sourceBiggerImage)
-  }
-
-  const selectImageInSlide = () => {
-    refBoxImage.current.forEach((item: HTMLDivElement,index: number) => {
-      item.children[0].addEventListener('click',() => {
-        applyBorderImageSelected(item)
-        showImageSelected(item.children[0])
-      })
-    })
   }
   
   useEffect(() => {
     refBoxImage.current = refBoxImage.current?.slice(0,listImages!.length)
     applyBorderImageSelected()
-    selectImageInSlide()
+    validateSlideSecondary()
   })
 
   return (
@@ -88,21 +78,25 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
 
       <div className={styles.slides}>
         <div className={styles.main_slide}>
+           <div ref={refPrevArrow}>
             <FaArrowLeft onClick={showPreviousImage} />
+           </div>
             <div className={styles.image_main_slide}>
               <Image ref={refBiggerImage} src={listImages![indexCurrentImage]} width={500} height={360} alt="Imagem exibida" />
             </div>
-            <FaArrowRight onClick={showNextImage}/>
+            <div ref={refNextArrow} >
+              <FaArrowRight onClick={showNextImage}/>
+            </div>
         </div>
 
-        <div className={styles.slide_secondary}>
+        <div ref={refSlideSecondary} className={styles.slide_secondary}>
             {listImages?.map((srcImage: string,index:number) => (
-                <div 
-                 key={index} 
-                 className={styles.box_image}
-                 ref={(element) => element && (refBoxImage.current[index] = element) }
-                 >
-                  <Image src={srcImage} width={100} height={100} alt="Imagem de projeto" />
+                <div key={index} className={styles.box_image}>
+                  <Image ref={(element) => element && (refBoxImage.current[index] = element) }
+                  src={srcImage} 
+                  width={100}
+                  height={100}
+                  alt="Imagem de projeto" />
                 </div>
             ))}
         </div>

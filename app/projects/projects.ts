@@ -34,6 +34,9 @@ export const listProjects: IProject[] = [
         "https://images6.alphacoders.com/617/617254.jpg",
         "https://images4.alphacoders.com/177/thumb-1920-177016.jpg",
         "https://avatarfiles.alphacoders.com/116/116794.jpg",
+        "https://images6.alphacoders.com/617/617254.jpg",
+        "https://images4.alphacoders.com/177/thumb-1920-177016.jpg",
+        "https://avatarfiles.alphacoders.com/116/116794.jpg",
       ],
       description:
         "lorem ipsum dolor sit amet, consectetur adipis cillum dolore magna aliqu Lorem ipsum dolor sit amet, consectet  durit esse cillum dolore magna aliqu Lorem",
@@ -42,6 +45,9 @@ export const listProjects: IProject[] = [
       name: "Serenity Skyscape Tower",
       linkForDrive: "https://www.googledrive.com/lopesarchitecture/serenity",
       images: [
+        "https://avatarfiles.alphacoders.com/116/116794.jpg",
+        "https://images6.alphacoders.com/617/617254.jpg",
+        "https://images4.alphacoders.com/177/thumb-1920-177016.jpg",
         "https://avatarfiles.alphacoders.com/116/116794.jpg",
         "https://images6.alphacoders.com/617/617254.jpg",
         "https://images4.alphacoders.com/177/thumb-1920-177016.jpg",
@@ -56,6 +62,9 @@ export const listProjects: IProject[] = [
         "https://images3.alphacoders.com/168/168629.jpg",
         "https://avatarfiles.alphacoders.com/116/116791.jpg",
         "https://images5.alphacoders.com/484/thumb-1920-484403.jpg",
+        "https://images3.alphacoders.com/168/168629.jpg",
+        "https://avatarfiles.alphacoders.com/116/116791.jpg",
+        "https://images5.alphacoders.com/484/thumb-1920-484403.jpg",
       ],
       description:
         "lorem ipsum dolor sit amet, consectetur adipis cillum dolore magna aliqu Lorem ipsum dolor sit amet, consectet  durit esse cillum dolore magna aliqu Lorem",
@@ -64,6 +73,9 @@ export const listProjects: IProject[] = [
       name: "Elisian Heights Residence",
       linkForDrive: "https://www.googledrive.com/lopesarchitecture/elisian",
       images: [
+        "https://avatarfiles.alphacoders.com/116/116794.jpg",
+        "https://images6.alphacoders.com/617/617254.jpg",
+        "https://images4.alphacoders.com/177/thumb-1920-177016.jpg",
         "https://avatarfiles.alphacoders.com/116/116794.jpg",
         "https://images6.alphacoders.com/617/617254.jpg",
         "https://images4.alphacoders.com/177/thumb-1920-177016.jpg",
@@ -86,6 +98,9 @@ export const listProjects: IProject[] = [
       name: "Serenity Skyscape Tower",
       linkForDrive: "https://www.googledrive.com/lopesarchitecture/serenity",
       images: [
+        "https://avatarfiles.alphacoders.com/116/116794.jpg",
+        "https://images6.alphacoders.com/617/617254.jpg",
+        "https://images4.alphacoders.com/177/thumb-1920-177016.jpg",
         "https://avatarfiles.alphacoders.com/116/116794.jpg",
         "https://images6.alphacoders.com/617/617254.jpg",
         "https://images4.alphacoders.com/177/thumb-1920-177016.jpg",

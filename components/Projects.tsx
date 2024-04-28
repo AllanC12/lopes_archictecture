@@ -16,13 +16,15 @@ import styles from "../components/sass_components/Projects.module.css";
 import { IProject, listProjects } from "@/app/projects/projects";
 
 const Projects = () => {
+
   const refProject = useRef<HTMLDivElement[]>([]);
   const [amountProject, setAmountProject] = useState<number>(4);
-  let animationBorder: Function;
   const [showModal, setShowModal] = useState<boolean>(false);
   const [projectClicked, setProjectClicked] = useState<IProject | null>(null);
+  let animationBorder: Function;
 
   const showDetailsProject = (e: MouseEvent) => {
+
     const target = e.target as HTMLElement;
     const projectWraper = target.parentElement as HTMLDivElement;
     const projectItem = projectWraper.parentElement as HTMLDivElement;
@@ -55,10 +57,6 @@ const Projects = () => {
         borderElementAnimation.style.setProperty("width", "0px");
       }
     }, 10);
-  };
-
-  const getProjectClicked = (item: IProject): IProject[] => {
-    return listProjects.filter((project) => project.id === item.id);
   };
 
   return (

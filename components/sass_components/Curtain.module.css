@@ -41,7 +41,7 @@
   }
   50% {
     opacity: 1;
-    letter-spacing: 1em;
+    letter-spacing: 0.7em;
   }
   100% {
     letter-spacing: -1em;

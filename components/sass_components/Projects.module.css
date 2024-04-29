@@ -133,6 +133,7 @@
     flex-wrap: wrap;
   }
   .list_projects {
+    order: 2;
     width: 100% !important;
     display: block;
   }
@@ -141,7 +142,19 @@
   }
 }
 @media (max-width: 500px) {
+  .session_projects {
+    width: 100%;
+  }
+  .projects {
+    padding-bottom: 0;
+  }
   .slide_projects {
-    height: 250px;
+    position: static;
+    width: 100% !important;
+    height: 400px !important;
+  }
+  .slide_projects img {
+    height: 100%;
+    width: 100%;
   }
 }/*# sourceMappingURL=Projects.module.css.map */

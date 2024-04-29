@@ -1,5 +1,5 @@
 .banner{
-    width: 100%;
+    width: 100vw;
     height: 104vh;
     padding: 10px 2%;
     background-image: url('../../public/images/banner_main.jpg');
@@ -12,5 +12,11 @@
 @media (max-width: 780px){
     .banner{
         background-size: cover;
+    }
+}
+
+@media (max-width: 500px){
+    .banner{
+        height: 100vh !important;
     }
 }

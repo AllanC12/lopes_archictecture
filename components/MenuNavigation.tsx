@@ -19,7 +19,7 @@ const MenuNavigation = ({menuOpen} :propsMenuNavigation) => {
   if(menuOpen){
     menuNavigation.current?.style.setProperty('right','0px')
   }else{
-    menuNavigation.current?.style.setProperty('right','-300px')
+    menuNavigation.current?.style.setProperty('right','-200px')
   }
 
   return (

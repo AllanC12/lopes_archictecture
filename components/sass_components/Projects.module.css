@@ -121,11 +121,17 @@
   height: 400px;
 }
 .projects .session_projects .slide_projects img {
+  opacity: 0;
   position: absolute;
   top: 0;
   right: 0;
   max-height: 100%;
   max-width: 100%;
+}
+.projects .session_projects .slide_projects .selected {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

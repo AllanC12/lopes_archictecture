@@ -16,22 +16,24 @@ import styles from "../components/sass_components/Projects.module.css";
 import { IProject, listProjects } from "@/app/projects/projects";
 
 const Projects = () => {
-
+ 
   const refProject = useRef<HTMLDivElement[]>([]);
+  const refContainerSlide = useRef<HTMLDivElement>(null);
+  let indexMin: number = 0
   const [amountProject, setAmountProject] = useState<number>(4);
   const [showModal, setShowModal] = useState<boolean>(false);
   const [projectClicked, setProjectClicked] = useState<IProject | null>(null);
   let animationBorder: Function;
-
+  
   const showDetailsProject = (e: MouseEvent) => {
-
+    
     const target = e.target as HTMLElement;
     const projectWraper = target.parentElement as HTMLDivElement;
     const projectItem = projectWraper.parentElement as HTMLDivElement;
     const arrowProject = projectItem.childNodes[0].childNodes[2] as SVGElement;
     const heightDefault: string = "55px";
     const fullHeight: string = "37vh";
-
+    
     if (window.getComputedStyle(projectItem).height === heightDefault) {
       projectItem.style.setProperty("height", `${fullHeight}`);
       arrowProject.style.setProperty("rotate", "180deg");
@@ -40,16 +42,12 @@ const Projects = () => {
       arrowProject.style.setProperty("rotate", "0deg");
     }
   };
-
-  useEffect(() => {
-    refProject.current = refProject.current.slice(0, listProjects.length);
-    initAnimationsAos();
-  }, []);
-
+  
+  
   animationBorder = (indexElement: number, border: string) => {
     const borderElementAnimation = refProject.current[indexElement].childNodes[3] as HTMLDivElement;
     borderElementAnimation.style.setProperty("width", "0px");
-
+    
     setTimeout(() => {
       if (border === "increase") {
         borderElementAnimation.style.setProperty("width", "100%");
@@ -58,12 +56,40 @@ const Projects = () => {
       }
     }, 10);
   };
+  
+  const slideImageProjects = () => {
+    
+    const imagesList = refContainerSlide.current?.children
+    const image = imagesList![indexMin] as HTMLImageElement
+    let indexMax: number | undefined = refContainerSlide.current?.childNodes.length
+    
+    image.classList.remove('selected')
+    indexMin++
+    if(indexMin === indexMax! - 1){
+      indexMin = 0
+    }
+    image.classList.add('selected')
+    
+      
+  }
+  
+  const initSlide = () => {
+    setInterval(() => {
+      slideImageProjects()
+    }, 1000);
+  }
+  
+  useEffect(() => {
+    refProject.current = refProject.current.slice(0, listProjects.length);
+    initAnimationsAos();
+    initSlide()
+  }, []);
+  
 
   return (
     <div className={styles.projects} id="projects">
       <h4 className={styles.title_session_projects}>
-        <span className={styles.number_session_projects}>1</span>Projetos
-        recentes
+        <span className={styles.number_session_projects}>1</span>Projetos recentes
       </h4>
 
       <div className={styles.session_projects}>
@@ -127,8 +153,9 @@ const Projects = () => {
           </div>
         </div>
 
-        <div data-aos="fade-left" className={styles.slide_projects}>
+        <div ref={refContainerSlide} data-aos="fade-left" className={styles.slide_projects}>
           <Image
+            className={styles.selected}
             src="/images/slide_1.jpg"
             width={500}
             height={500}

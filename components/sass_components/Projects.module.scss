@@ -140,12 +140,19 @@
             height: 400px;
 
             img{
+                opacity: 0;
                 position: absolute;
                 top: 0;
                 right: 0;
                 max-height: 100%;
                 max-width: 100%;
                 
+            }
+
+            .selected{
+                position: relative;
+                opacity: 1;
+                z-index: 1;
             }
         }
     }

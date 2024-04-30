@@ -74,12 +74,20 @@
 }
 
 @media (max-width: 768px) {
+  .container_text_photo {
+    flex-wrap: wrap;
+  }
+  .container_photo {
+    margin: 10px 0;
+  }
   .text_about {
-    width: 50%;
-    max-width: 400px;
+    order: 2;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   .text_about .text {
-    font-size: 20px;
+    text-align: justify;
+    font-size: 1.5em !important;
     color: #f5f6f7;
   }
 }/*# sourceMappingURL=About.module.css.map */

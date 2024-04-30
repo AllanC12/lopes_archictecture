@@ -2,7 +2,7 @@
   position: fixed;
   right: -200px;
   top: 0;
-  width: 100%;
+  width: 100vw;
   max-width: 200px;
   background-color: #000;
   height: 100vh;
@@ -30,7 +30,7 @@
 }
 .menu_navigation .select_language {
   position: relative;
-  top: 42%;
+  top: 35vh;
 }
 .menu_navigation .select_language .languages {
   display: flex;

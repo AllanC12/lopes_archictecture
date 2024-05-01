@@ -45,7 +45,7 @@ const Projects = () => {
   
   
   animationBorder = (indexElement: number, border: string) => {
-    const borderElementAnimation = refProject.current[indexElement].childNodes[3] as HTMLDivElement;
+    const borderElementAnimation = refProject.current[indexElement].childNodes[4] as HTMLDivElement;
     borderElementAnimation.style.setProperty("width", "0px");
     
     setTimeout(() => {
@@ -54,7 +54,9 @@ const Projects = () => {
       } else {
         borderElementAnimation.style.setProperty("width", "0px");
       }
-    }, 10);
+    }, 100);
+
+
   };
   
   const slideImageProjects = () => {

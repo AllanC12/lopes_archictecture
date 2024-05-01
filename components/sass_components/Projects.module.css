@@ -131,7 +131,6 @@
 }
 .projects .session_projects .slide_projects .selected {
   opacity: 1;
-  z-index: 1;
 }
 
 @media (max-width: 768px) {

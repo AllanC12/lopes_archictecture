@@ -1,26 +1,30 @@
-'use client'
-import { useRef } from 'react'
+"use client";
+import { useEffect, useRef } from "react";
 
-import Image from 'next/image'
+import Image from "next/image";
 
-import styles from '../components/sass_components/MenuNavigation.module.css'
+import styles from "../components/sass_components/MenuNavigation.module.css";
 
-import { Link } from 'react-scroll'
-
+import { Link } from "react-scroll";
 
 interface propsMenuNavigation {
-  menuOpen: boolean
+  menuOpen: boolean;
 }
 
-const MenuNavigation = ({menuOpen} :propsMenuNavigation) => {
+const MenuNavigation = ({ menuOpen }: propsMenuNavigation) => {
+  const menuNavigation = useRef<HTMLElement | null>(null);
 
-  const menuNavigation = useRef<HTMLElement | null>(null)
+  const verifyMenuOpen = () => {
+    if (menuOpen) {
+      menuNavigation.current?.style.setProperty("right", "0px");
+    } else {
+      menuNavigation.current?.style.setProperty("right", "-200px");
+    }
+  };
 
-  if(menuOpen){
-    menuNavigation.current?.style.setProperty('right','0px')
-  }else{
-    menuNavigation.current?.style.setProperty('right','-200px')
-  }
+  useEffect(() => {
+    verifyMenuOpen();
+  }, [menuOpen]);
 
   return (
     <nav ref={menuNavigation} className={styles.menu_navigation}>
@@ -49,18 +53,13 @@ const MenuNavigation = ({menuOpen} :propsMenuNavigation) => {
 
       <div className={styles.select_language}>
         <div className={styles.languages}>
-          <Image src="/images/brasil.png" width={24} height={24} alt="Brasil" />
-          <Image src="/images/usa.png" width={24} height={24} alt="Brasil" />
-          <Image
-            src="/images/spanish.png"
-            width={24}
-            height={24}
-            alt="Brasil"
-          />
+          <Image src="/images/brasil.png" width={20} height={20} alt="Brasil" />
+          <Image src="/images/usa.png" width={20} height={20} alt="Brasil" />
+          <Image src="/images/spanish.png" width={20} height={20} alt="Brasil"/>
         </div>
       </div>
     </nav>
   );
-}
+};
 
-export default MenuNavigation
+export default MenuNavigation;

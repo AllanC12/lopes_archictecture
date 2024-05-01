@@ -1,4 +1,3 @@
-'use client'
 
 import styles from './sass_buttons/ButtonIconMenu.module.scss';
 
@@ -8,8 +7,7 @@ type Props = {
 }
 
 const ButtonIconMenu = ({menuOpen,setMenuOpen}:Props) => {
-
-
+  
   const handleVisibilityMenu = () => {
     if(menuOpen){
       setMenuOpen(false)
@@ -19,7 +17,7 @@ const ButtonIconMenu = ({menuOpen,setMenuOpen}:Props) => {
   }
 
   return (
-    <div onClick={() => handleVisibilityMenu() } className={styles.icon}>
+    <div onClick={handleVisibilityMenu} className={styles.icon}>
       
       <input type="checkbox" className={styles.checkbox} />
       <label htmlFor="checkbox" className={styles.toggle}>

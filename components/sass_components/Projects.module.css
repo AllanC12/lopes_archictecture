@@ -127,6 +127,7 @@
   right: 0;
   max-height: 100%;
   max-width: 100%;
+  transition: 1s;
 }
 .projects .session_projects .slide_projects .selected {
   opacity: 1;

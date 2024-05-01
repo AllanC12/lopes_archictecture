@@ -19,7 +19,6 @@ const Projects = () => {
  
   const refProject = useRef<HTMLDivElement[]>([]);
   const refContainerSlide = useRef<HTMLDivElement>(null);
-  const [alternateImage,setAlternateImage] = useState<boolean>(false)
   const [amountProject, setAmountProject] = useState<number>(4);
   const [showModal, setShowModal] = useState<boolean>(false);
   const [projectClicked, setProjectClicked] = useState<IProject | null>(null);
@@ -59,36 +58,42 @@ const Projects = () => {
 
   };
 
-  
-  // const alternateImageSlide = () => {
-  //   const imageList = refContainerSlide.current?.children
-  //   const indexMax: number | undefined = refContainerSlide.current?.childNodes.length! - 1
-  //   setInterval(() => {
-  //     imageList![indexMin].classList.remove('selected')
-  //   },1000)
-  // }
 
+ const defineOpacityImage = (action: string,element: Element) => {
+  if(element instanceof HTMLElement){
+    if(action === 'remove'){
+      element.style.setProperty('opacity','0')
+    }else if(action === 'add'){
+      element.style.setProperty('opacity','1')
+    }
+  }
 
- useEffect(() => {
-    refProject.current = refProject.current.slice(0, listProjects.length);
-    initAnimationsAos();
-    // alternateImageSlide()
- }, []);
+ }
 
- 
- useEffect(() => {
+ const alternateBetweenImages = () => {
   const imageList = refContainerSlide.current?.children as HTMLCollection
   let index: number = 0;
   let indexMax: number = imageList!.length - 1;
-  imageList![0].classList.add("selected");
 
-  setInterval(() => {
+  imageList![index].classList.add("selected");
+  defineOpacityImage('add', imageList![index])
+
+   setInterval(() => {
     imageList![index].classList.remove("selected");
+    defineOpacityImage('remove', imageList![index])
     index++;
-    if (index > indexMax) index = 0;
+    if(index > indexMax) index = 0
     imageList![index].classList.add("selected");
-  }, 1000);
-}, []);
+    defineOpacityImage('add', imageList![index])
+   },3000)
+ }
+
+ useEffect(() => {
+  refProject.current = refProject.current.slice(0, listProjects.length);
+  initAnimationsAos();
+  alternateBetweenImages()
+ },[])
+
 
   return (
     <div className={styles.projects} id="projects">

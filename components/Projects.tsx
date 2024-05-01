@@ -19,7 +19,7 @@ const Projects = () => {
  
   const refProject = useRef<HTMLDivElement[]>([]);
   const refContainerSlide = useRef<HTMLDivElement>(null);
-  let indexMin: number = 0
+  const [alternateImage,setAlternateImage] = useState<boolean>(false)
   const [amountProject, setAmountProject] = useState<number>(4);
   const [showModal, setShowModal] = useState<boolean>(false);
   const [projectClicked, setProjectClicked] = useState<IProject | null>(null);
@@ -45,7 +45,7 @@ const Projects = () => {
   
   
   animationBorder = (indexElement: number, border: string) => {
-    const borderElementAnimation = refProject.current[indexElement].childNodes[3] as HTMLDivElement;
+    const borderElementAnimation = refProject.current[indexElement].childNodes[4] as HTMLDivElement;
     borderElementAnimation.style.setProperty("width", "0px");
     
     setTimeout(() => {
@@ -54,37 +54,41 @@ const Projects = () => {
       } else {
         borderElementAnimation.style.setProperty("width", "0px");
       }
-    }, 10);
+    }, 100);
+
+
   };
+
   
-  const slideImageProjects = () => {
-    
-    const imagesList = refContainerSlide.current?.children
-    const image = imagesList![indexMin] as HTMLImageElement
-    let indexMax: number | undefined = refContainerSlide.current?.childNodes.length
-    
-    image.classList.remove('selected')
-    indexMin++
-    if(indexMin === indexMax! - 1){
-      indexMin = 0
-    }
-    image.classList.add('selected')
-    
-      
-  }
-  
-  const initSlide = () => {
-    setInterval(() => {
-      slideImageProjects()
-    }, 1000);
-  }
-  
-  useEffect(() => {
+  // const alternateImageSlide = () => {
+  //   const imageList = refContainerSlide.current?.children
+  //   const indexMax: number | undefined = refContainerSlide.current?.childNodes.length! - 1
+  //   setInterval(() => {
+  //     imageList![indexMin].classList.remove('selected')
+  //   },1000)
+  // }
+
+
+ useEffect(() => {
     refProject.current = refProject.current.slice(0, listProjects.length);
     initAnimationsAos();
-    initSlide()
-  }, []);
-  
+    // alternateImageSlide()
+ }, []);
+
+ 
+ useEffect(() => {
+  const imageList = refContainerSlide.current?.children as HTMLCollection
+  let index: number = 0;
+  let indexMax: number = imageList!.length - 1;
+  imageList![0].classList.add("selected");
+
+  setInterval(() => {
+    imageList![index].classList.remove("selected");
+    index++;
+    if (index > indexMax) index = 0;
+    imageList![index].classList.add("selected");
+  }, 1000);
+}, []);
 
   return (
     <div className={styles.projects} id="projects">

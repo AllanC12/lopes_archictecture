@@ -44,7 +44,7 @@ const Header = () => {
         </div>
       )}
 
-       <MenuNavigation menuOpen={menuOpen} />
+       <MenuNavigation menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
     </header>
   );
 };

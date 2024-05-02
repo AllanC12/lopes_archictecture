@@ -36,17 +36,17 @@
   margin-left: 13px;
 }
 
+.checkbox:checked + .toggle .bar1 {
+  transform: rotate(45deg);
+  transition-duration: 0.3s;
+  transform-origin: left center;
+}
+
 .checkbox:checked + .toggle .bar2 {
   transform: rotate(135deg);
   margin-left: 0;
   transform-origin: center;
   transition-duration: 0.3s;
-}
-
-.checkbox:checked + .toggle .bar1 {
-  transform: rotate(45deg);
-  transition-duration: 0.3s;
-  transform-origin: left center;
 }
 
 .checkbox:checked + .toggle .bar3 {

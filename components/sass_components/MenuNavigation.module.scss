@@ -37,11 +37,11 @@
 
    .select_language{
     position: relative;
-    top: 35vh;
+    top: 44vh;
 
     .languages{
       @include flex(center,center);
-      gap: 2vw;
+      gap: 50px;
 
       img{
         cursor: pointer;

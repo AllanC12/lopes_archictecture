@@ -30,13 +30,13 @@
 }
 .menu_navigation .select_language {
   position: relative;
-  top: 35vh;
+  top: 44vh;
 }
 .menu_navigation .select_language .languages {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2vw;
+  gap: 50px;
 }
 .menu_navigation .select_language .languages img {
   cursor: pointer;

@@ -20,4 +20,9 @@
   .footer_banner {
     bottom: -90px;
   }
+}
+@media (max-height: 700px) {
+  .footer_banner {
+    bottom: -120px;
+  }
 }/*# sourceMappingURL=FooterBanner.module.css.map */

@@ -46,4 +46,10 @@
   height: 100%;
   transition-delay: 0.4s;
   color: aliceblue;
+}
+
+@media (max-width: 400px) {
+  .btn {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=ButtonBanner.module.css.map */

@@ -46,3 +46,9 @@
   height: 100%;
   transition-delay: 0.4s;
 }
+
+@media (max-width: 400px){
+  .btn{
+    font-size: 30px;
+  }
+}

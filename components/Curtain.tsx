@@ -14,7 +14,7 @@ const Curtain = () => {
     if(curtain.current !== null){
       curtain.current?.style.setProperty('display', 'none')
     }
-    },4000)
+    },4500)
   }
 
   useEffect(() => {

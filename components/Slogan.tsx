@@ -22,7 +22,7 @@ const Slogan = () => {
 
   setTimeout(() => {
     setShowSlogan(true);
-  }, 5500);
+  }, 6000);
 
 
   return (

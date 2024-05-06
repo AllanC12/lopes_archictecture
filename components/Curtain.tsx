@@ -9,7 +9,7 @@ const Curtain = () => {
   const curtain = useRef<HTMLDivElement>(null)
   const [pageLoaded,setPageLoaded] = useState<boolean>(false)
   const timeInDevEnv = 4000
-  const timeInProdEnv = 5100
+  const timeInProdEnv = 5000
 
   const hideCurtain = () => {
     setTimeout(() => {

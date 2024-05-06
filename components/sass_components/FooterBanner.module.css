@@ -25,4 +25,9 @@
   .footer_banner {
     bottom: -110px;
   }
+}
+@media (min-height: 1000px) {
+  .footer_banner {
+    bottom: -160px;
+  }
 }/*# sourceMappingURL=FooterBanner.module.css.map */

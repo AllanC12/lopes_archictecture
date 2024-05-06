@@ -33,7 +33,7 @@
   @keyframes reveal {
     0% {
       opacity: 1;
-      letter-spacing:-1em;
+      letter-spacing:-1em !important;
     }
 
     50% {

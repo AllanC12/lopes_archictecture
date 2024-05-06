@@ -1,5 +1,6 @@
 .menu_navigation {
   position: fixed;
+  display: none;
   right: -200px;
   top: 0;
   width: 100vw;
@@ -30,7 +31,7 @@
 }
 .menu_navigation .select_language {
   position: relative;
-  top: 41vh;
+  top: 38vh;
 }
 .menu_navigation .select_language .languages {
   display: flex;

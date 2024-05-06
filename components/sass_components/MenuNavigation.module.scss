@@ -2,6 +2,7 @@
 
 .menu_navigation{
     position: fixed;
+    display: none;
     right: -200px;
     top: 0;
     width: 100vw;
@@ -37,7 +38,7 @@
 
    .select_language{
     position: relative;
-    top: 41vh;
+    top: 38vh;
 
     .languages{
       @include flex(center,center);

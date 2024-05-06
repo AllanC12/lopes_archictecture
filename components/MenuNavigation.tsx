@@ -16,9 +16,16 @@ const MenuNavigation = ({ menuOpen }: propsMenuNavigation) => {
 
   const verifyMenuOpen = () => {
     if (menuOpen) {
-      menuNavigation.current?.style.setProperty("right", "0px");
+      menuNavigation.current?.style.setProperty("display","block")
+      setTimeout(() => {
+        menuNavigation.current?.style.setProperty("right", "0px");
+      }, 100);
     } else {
       menuNavigation.current?.style.setProperty("right", "-200px");
+      setTimeout(() => {
+        menuNavigation.current?.style.setProperty("display","none")
+      }, 500);
+
     }
   };
 

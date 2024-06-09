@@ -165,25 +165,25 @@ const Projects = () => {
         <div ref={refContainerSlide} data-aos="fade-left" className={styles.slide_projects}>
           <Image
             className={styles.selected}
-            src="/images/project_1/img_r4/slide_1.jpg"
+            src="/images/project_1/img_r4.jpg"
             width={500}
             height={500}
             alt="Imagem de projeto"
           />
           <Image
-            src="/images/project_1/img_r2/slide_2.jpeg"
+            src="/images/project_1/img_r2.jpeg"
             width={500}
             height={500}
             alt="Imagem de projeto"
           />
           <Image
-            src="/images/project_1/img_r3/slide_3.jpg"
+            src="/images/project_1/img_r3.jpg"
             width={500}
             height={500}
             alt="Imagem de projeto"
           />
           <Image
-            src="/images/project_1/img_r1/slide_4.jpg"
+            src="/images/project_1/img_r1.jpg"
             width={500}
             height={500}
             alt="Imagem de projeto"

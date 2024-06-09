@@ -171,7 +171,7 @@ const Projects = () => {
             alt="Imagem de projeto"
           />
           <Image
-            src="/images/project_1/img_r2.jpeg"
+            src="/images/project_1/img_r2.jpg"
             width={500}
             height={500}
             alt="Imagem de projeto"

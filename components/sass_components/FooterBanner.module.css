@@ -2,7 +2,7 @@
   width: 98vw;
   height: 21vh;
   position: absolute;
-  bottom: -50px;
+  bottom: -45px;
   left: 0;
 }
 .footer_banner .column {
@@ -28,6 +28,6 @@
 }
 @media (min-height: 700px) {
   .footer_banner {
-    bottom: -115px;
+    bottom: -110px;
   }
 }/*# sourceMappingURL=FooterBanner.module.css.map */

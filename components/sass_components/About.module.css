@@ -1,10 +1,14 @@
-.about {
+.wraper_about {
+  padding-top: 11vh;
+}
+.wraper_about .about {
   position: relative;
   max-width: 1300px;
   margin: 0 auto;
   background-color: #000;
+  padding: 5vh 0;
 }
-.about .title_session_about {
+.wraper_about .about .title_session_about {
   font-size: 27px;
   color: #fff;
   display: flex;
@@ -16,7 +20,7 @@
   max-width: 30%;
   font-weight: 100;
 }
-.about .title_session_about .number_session_about {
+.wraper_about .about .title_session_about .number_session_about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,46 +29,46 @@
   color: #000;
   padding: 20px;
 }
-.about .square {
+.wraper_about .about .square {
   background-color: #f5f6f7;
   width: 30px;
   height: 30px;
 }
-.about .square_one {
+.wraper_about .about .square_one {
   position: absolute;
   right: 0;
   top: 0;
 }
-.about .square_two {
+.wraper_about .about .square_two {
   position: absolute;
   top: 30px;
   right: 30px;
 }
-.about .container_text_photo {
+.wraper_about .about .container_text_photo {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 70px;
   padding: 5%;
 }
-.about .text_about {
+.wraper_about .about .text_about {
   width: 50%;
   max-width: 500px;
 }
-.about .text_about .text {
+.wraper_about .about .text_about .text {
   font-size: 2em;
   color: #f5f6f7;
 }
-.about .container_photo {
+.wraper_about .about .container_photo {
   width: 50%;
   max-width: 300px;
 }
-.about .container_photo .photo {
+.wraper_about .about .container_photo .photo {
   position: relative;
   border: 2px solid #fff;
   border-radius: 0px 50px 0px 100px;
 }
-.about .container_photo .photo img {
+.wraper_about .about .container_photo .photo img {
   position: relative;
   top: 20px;
   left: 30px;

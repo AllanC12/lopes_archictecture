@@ -1,9 +1,9 @@
 .banner {
   width: 100%;
-  height: 104vh;
+  height: 114vh;
   padding: 10px 2%;
   background-image: url("../../public/images/project_1/img_r4.jpg");
-  background-size: cover;
+  background-size: cover !important;
   background-position: top;
   background-repeat: no-repeat;
   position: relative;

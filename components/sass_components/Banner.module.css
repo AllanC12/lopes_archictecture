@@ -1,5 +1,5 @@
 .banner {
-  width: 100%;
+  width: 100% !important;
   height: 114vh;
   padding: 10px 2%;
   background-image: url("../../public/images/project_1/img_r4.jpg");

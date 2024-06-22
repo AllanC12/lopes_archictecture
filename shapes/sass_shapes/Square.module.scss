@@ -2,4 +2,27 @@
   width: 100%;
   max-width: 7vh;
   padding-top: 2%;
+  margin: none !important;
+  border: none !important;
+}
+
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:landscape) 
+{
+   .square{
+    margin: none !important;
+    border: none !important;
+   }
+}
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:portrait) 
+{
+  .square{
+    margin: none !important;
+    border: none !important;
+   }
 }

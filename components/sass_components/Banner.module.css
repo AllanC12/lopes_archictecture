@@ -2,6 +2,7 @@
   width: 100vw !important;
   height: 114vh;
   padding: 10px 2%;
+  z-index: 1;
 }
 
 @media (max-width: 780px) {

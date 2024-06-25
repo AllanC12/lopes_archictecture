@@ -15,7 +15,7 @@ import styles from "../components/sass_components/Footer.module.css";
 
 const Footer = () => {
   const urlWhatsApp: string = 'https:wa.me/+5537999817403';
-  const urlEmail: string = 'https://mail.google.com/mail/?view=cm&fs=1&to=kadusanttos25@gmail.com'
+  const urlEmail: string = 'https://mail.google.com/mail/?view=cm&fs=1&to=lopesarchportfolio@gmail.com'
 
   useEffect(() => {
     initAnimationsAos()

@@ -2,13 +2,14 @@
 
 .footer_banner{
     width: 98vw;
-    height: 21vh;
+    height: 24vh;
     position: absolute;
-    bottom: -50px;
+    bottom: -60px;
     left: 0;
 
     .column{
         @include flex(flex-start,flex-start);
+        flex-shrink: 0;
     }
 
 }
@@ -34,9 +35,8 @@
 
 @media (min-height: 700px){
     .footer_banner{
-        bottom: -115px;
+        bottom: -130px;
     }
 }
-
 
 

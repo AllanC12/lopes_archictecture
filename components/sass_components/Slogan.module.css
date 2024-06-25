@@ -1,8 +1,9 @@
 .slogan_banner {
-  z-index: 1;
+  z-index: 999;
   color: #fff;
   font-size: 2.8em;
   padding-top: 30vh;
+  position: relative;
 }
 .slogan_banner .span_slogan {
   display: block;

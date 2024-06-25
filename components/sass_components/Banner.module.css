@@ -1,12 +1,7 @@
 .banner {
-  width: 100% !important;
+  width: 100vw !important;
   height: 114vh;
   padding: 10px 2%;
-  background-image: url("../../public/images/project_1/img_r4.jpg");
-  background-size: cover !important;
-  background-position: top;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 @media (max-width: 780px) {

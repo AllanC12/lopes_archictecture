@@ -1,14 +1,15 @@
 .footer_banner {
   width: 98vw;
-  height: 21vh;
+  height: 24vh;
   position: absolute;
-  bottom: -50px;
+  bottom: -60px;
   left: 0;
 }
 .footer_banner .column {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-shrink: 0;
 }
 
 @media (max-width: 640px) {
@@ -28,6 +29,6 @@
 }
 @media (min-height: 700px) {
   .footer_banner {
-    bottom: -115px;
+    bottom: -130px;
   }
 }/*# sourceMappingURL=FooterBanner.module.css.map */

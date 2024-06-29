@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "../components/sass_components/FooterBanner.module.scss";
 import Square from "@/shapes/Square";
+import { BsHandIndex } from "react-icons/bs";
 
 const FooterBanner = () => {
   const allPositions = Array.from({ length: 50 }).map((_, index) => index);
@@ -13,8 +14,8 @@ const FooterBanner = () => {
     <div className={styles.footer_banner}>
       <div className={styles.column}>
 
-        {allPositions.map((element) => (
-          <>
+        {allPositions.map((element,index) => (
+          <div key={index}>
             {
               columnOne.includes(element) ? (
                 <Square isTransparent={false} isWhite={true} />
@@ -23,14 +24,14 @@ const FooterBanner = () => {
 
               )
             }
-          </>
+          </div>
 
         ))}
 
       </div>
       <div className={styles.column}>
-      {allPositions.map((element) => (
-          <>
+      {allPositions.map((element,index) => (
+          <div key={index}>
             {
               columnTwo.includes(element) ? (
                 <Square isTransparent={false} isWhite={true} />
@@ -39,13 +40,13 @@ const FooterBanner = () => {
 
               )
             }
-          </>
+          </div>
 
         ))}
       </div>
       <div className={styles.column}>
-      {allPositions.map((element) => (
-          <>
+      {allPositions.map((element,index) => (
+          <div key={index}>
             {
               columnThree.includes(element) ? (
                 <Square isTransparent={true} isWhite={false} />
@@ -54,7 +55,7 @@ const FooterBanner = () => {
 
               )
             }
-          </>
+          </div>
 
         ))}
       </div>

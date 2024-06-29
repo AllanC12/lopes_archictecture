@@ -15,47 +15,47 @@ const FooterBanner = () => {
       <div className={styles.column}>
 
         {allPositions.map((element,index) => (
-          <div key={index}>
+          <>
             {
               columnOne.includes(element) ? (
-                <Square isTransparent={false} isWhite={true} />
+                <Square key={index} isTransparent={false} isWhite={true} />
               ) : (
-                <Square isTransparent={true} isWhite={false} />
+                <Square key={index} isTransparent={true} isWhite={false} />
 
               )
             }
-          </div>
+          </>
 
         ))}
 
       </div>
       <div className={styles.column}>
       {allPositions.map((element,index) => (
-          <div key={index}>
+          <>
             {
               columnTwo.includes(element) ? (
-                <Square isTransparent={false} isWhite={true} />
+                <Square key={index} isTransparent={false} isWhite={true} />
               ) : (
-                <Square isTransparent={true} isWhite={false} />
+                <Square key={index} isTransparent={true} isWhite={false} />
 
               )
             }
-          </div>
+          </>
 
         ))}
       </div>
       <div className={styles.column}>
       {allPositions.map((element,index) => (
-          <div key={index}>
+          <>
             {
               columnThree.includes(element) ? (
-                <Square isTransparent={true} isWhite={false} />
+                <Square key={index} isTransparent={true} isWhite={false} />
               ) : (
-                <Square isTransparent={false} isWhite={true} />
+                <Square key={index} isTransparent={false} isWhite={true} />
 
               )
             }
-          </div>
+          </>
 
         ))}
       </div>

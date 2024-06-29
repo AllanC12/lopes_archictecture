@@ -9,4 +9,9 @@
   .square {
     top: 15vh;
   }
+}
+@media (min-height: 1000px) {
+  .square {
+    top: 15vh;
+  }
 }/*# sourceMappingURL=Square.module.css.map */

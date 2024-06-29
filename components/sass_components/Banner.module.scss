@@ -1,9 +1,13 @@
 .banner{
-    width: 100vw !important;
-    height: 114vh;
-    padding: 10px 2%;
+    position: relative;
     z-index: 1;
-
+    width: 100vw !important;
+    height: 130vh;
+    padding: 10px 2%;
+    background-image: url('../../public/images/project_1/img_r4.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 780px){

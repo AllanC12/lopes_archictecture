@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import type {Viewport} from 'next'
 import { Syncopate,Roboto_Condensed } from "next/font/google";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false
+}
 
 export const metadata: Metadata = {
   title: "Lopes Architecture",

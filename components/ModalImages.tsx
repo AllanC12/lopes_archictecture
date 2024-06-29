@@ -1,7 +1,5 @@
 "use client";
 
-import { MouseEvent, MutableRefObject } from "react";
-
 import { SetStateAction, useRef,useState, useEffect } from "react";
 
 import Image from "next/image";

@@ -61,27 +61,27 @@ const FooterBanner = () => {
       </div>
       <div className={styles.column}>
         {Array.from({ length: 50 }).map((_, index) => (
-          <Square isTransparent={false} isWhite={true} />
+          <Square key={index} isTransparent={false} isWhite={true} />
         ))}
       </div>
       <div className={styles.column}>
         {Array.from({ length: 50 }).map((_, index) => (
-          <Square isTransparent={false} isWhite={true} />
+          <Square key={index} isTransparent={false} isWhite={true} />
         ))}
       </div>
       <div className={styles.column}>
         {Array.from({ length: 50 }).map((_, index) => (
-          <Square isTransparent={false} isWhite={true} />
+          <Square key={index} isTransparent={false} isWhite={true} />
         ))}
       </div>
       <div className={styles.column}>
         {Array.from({ length: 50 }).map((_, index) => (
-          <Square isTransparent={false} isWhite={true} />
+          <Square key={index} isTransparent={false} isWhite={true} />
         ))}
       </div>
       <div className={styles.column}>
         {Array.from({ length: 50 }).map((_, index) => (
-          <Square isTransparent={false} isWhite={true} />
+          <Square key={index} isTransparent={false} isWhite={true} />
         ))}
       </div>
     </div>

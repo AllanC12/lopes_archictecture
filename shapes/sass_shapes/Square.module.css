@@ -2,17 +2,11 @@
   width: 100%;
   max-width: 7vh;
   padding-top: 2%;
+  position: relative;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (max-width: 500px) {
   .square {
-    margin: none !important;
-    border: none !important;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .square {
-    margin: none !important;
-    border: none !important;
+    top: 15vh;
   }
 }/*# sourceMappingURL=Square.module.css.map */

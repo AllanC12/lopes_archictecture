@@ -2,33 +2,17 @@
   width: 98vw;
   height: 24vh;
   position: absolute;
-  bottom: -60px;
+  bottom: 0;
   left: 0;
 }
 .footer_banner .column {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-shrink: 0;
 }
 
 @media (max-width: 640px) {
   .footer_banner {
-    bottom: -70px;
-  }
-}
-@media (max-width: 500px) {
-  .footer_banner {
-    bottom: -80px;
-  }
-}
-@media (max-width: 400px) {
-  .footer_banner {
-    bottom: -110px;
-  }
-}
-@media (min-height: 700px) {
-  .footer_banner {
-    bottom: -130px;
+    bottom: -30px;
   }
 }/*# sourceMappingURL=FooterBanner.module.css.map */

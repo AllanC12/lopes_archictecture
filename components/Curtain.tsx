@@ -21,7 +21,6 @@ const Curtain = () => {
 
   useEffect(() => {
     setPageLoaded(true)
-    console.log('v3')
   },[])
 
   useEffect(() => {

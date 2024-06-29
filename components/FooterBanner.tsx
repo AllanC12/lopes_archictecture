@@ -2,7 +2,6 @@ import React from "react";
 
 import styles from "../components/sass_components/FooterBanner.module.scss";
 import Square from "@/shapes/Square";
-import { BsHandIndex } from "react-icons/bs";
 
 const FooterBanner = () => {
   const allPositions = Array.from({ length: 50 }).map((_, index) => index);

@@ -3,6 +3,7 @@
   font-size: 2.8em;
   position: relative;
   top: 28vh;
+  -webkit-overflow-x: hidden !important;
 }
 .slogan_banner .span_slogan {
   display: block;

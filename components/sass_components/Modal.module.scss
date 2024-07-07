@@ -4,10 +4,10 @@
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 4;
     width: 100%;
     height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.7);
+    background-color: rgba($color: #000000, $alpha: 0.9);
 
     .closeModal{
         color: #fff;
@@ -26,27 +26,38 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
+
+        a.title_project{
+          position: absolute;
+          left: 1%;
+          top: 1.5%;
+          color: #fff;
+        }
         
 
         .main_slide{
             @include flex(center,center);
             gap: 5vw;
             width: 100%;
-            height: 60vh;
+            height: 100vh;
 
             svg{
                 cursor: pointer;
                 color: #fff;
-                font-size: 3rem;
+                font-size: 5rem;
+                font-weight:normal;
             }
 
             .image_main_slide{
+                padding: 1%;
+                @include flex(center,center);
                 height: 100%;
-                width: 100%;
-                max-width: 600px;
+                width: 90%;
                 
                 img{
-                   width: 100%
+                   width: 100%;
+                   height: 100%;
+                   object-fit:contain;
                 }
             }
 
@@ -100,11 +111,25 @@
 }
 
 @media (max-width: 500px){
+
+    a.title_project{
+        top: 4% !important;
+      }
+
+    .btn_prev svg,.btn_next svg{
+        font-size: 3.3rem !important;
+        z-index: 3 !important;
+        position: relative;
+
+   }
     .image_main_slide{
 
         img{
-          height: 70%;
-           width: 100%;
+           z-index: 2;
+           position: absolute;
+           height: 40% !important;
+           width: 110% !important;
+           object-fit:cover !important;
         }
     }
 }

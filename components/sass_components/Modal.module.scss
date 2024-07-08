@@ -41,6 +41,15 @@
             width: 100%;
             height: 100vh;
 
+            .btn_prev svg,.btn_next svg{
+               transition: .3s;
+             }
+
+             .btn_prev svg:hover, .btn_next svg:hover{
+                opacity: 1;
+                color: #464545;
+             }
+
             svg{
                 cursor: pointer;
                 color: #fff;
@@ -127,6 +136,10 @@
         position: relative;
 
    }
+
+   .btn_prev svg:hover, .btn_next svg:hover{
+    color: #fff !important;
+ }
     .image_main_slide{
 
         img{

@@ -28,25 +28,26 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
   const refBoxImage = useRef<HTMLImageElement[]>([])
   const listImages: string[] | undefined = project?.images
   const [indexMaxImage] = useState<number>(listImages!.length)
+  const [counterImages,setCounterImages] = useState<number>(1)
   const [indexCurrentImage,setIndexCurrentImage] = useState<number>(0)
   const name = project?.name ? project.name : null
-  console.log(project?.name)
+  console.log(project)
   
-  // const showNextImage = ():void => {
-  //   if(indexCurrentImage === indexMaxImage - 1){
-  //     return
-  //   }
-  //   setIndexCurrentImage(indexCurrentImage + 1)
-  //   applyBorderImageSelected()
-  // }
+  const showNextImage = ():void => {
+    if(indexCurrentImage === indexMaxImage - 1){
+      return
+    }
+    setIndexCurrentImage(indexCurrentImage + 1)
+    // applyBorderImageSelected()
+  }
   
-  // const showPreviousImage = ():void => {
-  //   if(indexCurrentImage === 0){
-  //     return
-  //   }
-  //   setIndexCurrentImage(indexCurrentImage - 1)
-  //   applyBorderImageSelected()
-  // }
+  const showPreviousImage = ():void => {
+    if(indexCurrentImage === 0){
+      return
+    }
+    setIndexCurrentImage(indexCurrentImage - 1)
+    // applyBorderImageSelected()
+  }
 
   // const resetBorderSelected = ():void => {
   //   refBoxImage.current.forEach((item: HTMLDivElement) => {
@@ -64,6 +65,18 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
   //     refSlideSecondary.current?.style.setProperty('justify-content','center')
   //   }
   // }
+
+  const countPrevImages = ():void => {
+    if(counterImages === 1) return
+    showPreviousImage()
+    setCounterImages(prevCounter => prevCounter - 1)
+  }
+
+  const countNextImages = ():void => {
+    if(counterImages === indexMaxImage) return
+    showNextImage()
+    setCounterImages(prevCounter => prevCounter + 1)
+  }
   
   useEffect(() => {
     refBoxImage.current = refBoxImage.current?.slice(0,listImages!.length)
@@ -81,15 +94,18 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
       <div className={styles.slides}>
         <Link target="_blank" href={`${project?.linkForDrive}`} className={styles.title_project}>{name}</Link>
         <div className={styles.main_slide}>
-           <div className={styles.btn_prev}ref={refPrevArrow}>
+           <div onClick={countPrevImages} className={styles.btn_prev}ref={refPrevArrow}>
             <AiOutlineLeft/>
            </div>
             <div className={styles.image_main_slide}>
               <Image ref={refBiggerImage} src={listImages![indexCurrentImage]} width={500} height={360} alt="Imagem exibida" />
             </div>
-            <div className={styles.btn_next}ref={refNextArrow} >
+            <div onClick={countNextImages} className={styles.btn_next}ref={refNextArrow} >
               <AiOutlineRight />
             </div>
+            <span className={styles.amountImages}>
+              {counterImages}/{indexMaxImage}
+            </span>
         </div>
 
         {/* <div ref={refSlideSecondary} className={styles.slide_secondary}>

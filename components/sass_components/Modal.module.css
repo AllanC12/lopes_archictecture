@@ -88,6 +88,12 @@
 .modal .slides .slide_secondary .selected {
   border: 2px solid #000;
 }
+.modal .amountImages {
+  color: #fff;
+  position: absolute;
+  left: 1%;
+  bottom: 2%;
+}
 
 @media (max-width: 768px) {
   .image_main_slide {

@@ -120,7 +120,7 @@ const Projects = () => {
                 data-aos="fade-right"
               >
                 <div className={styles.wraper_project}>
-                  <h2 className={styles.name_project}>{item.name}</h2>
+                  <h2 onClick={showDetailsProject} className={styles.name_project}>{item.name}</h2>
 
                   <div
                     onClick={(e) => showDetailsProject(e)}

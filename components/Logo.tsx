@@ -31,23 +31,23 @@ const Logo = ({ sizeTitleOne, sizeTitleTwo, width, height }: propsLogo) => {
 
   return (
     <span data-aos="zoom-in-up" className={styles.span_logo} id="begin">
-      <Image
+      {/* <Image
         src="/images/logo_image.png"
         width={width}
         height={height}
         alt="logomarca"
-      />
+      /> */}
       <span
         ref={refTitleOne}
         className={styles.title_part_one}
       >
-        Carlos E. Lopes
+        Portfólio de arquitetura
       </span>
       <span
         ref={refTitleTwo}
         className={styles.title_part_two}
       >
-        Architecture Portfólio
+       por Carlos Eduardo Lopes
       </span>
     </span>
   );

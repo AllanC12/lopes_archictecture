@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import { SetStateAction, useRef,useState, useEffect } from "react";
+import { SetStateAction, useRef, useState, useEffect } from "react";
 
 import Image from "next/image";
 
@@ -11,8 +11,8 @@ import { IProject } from "@/app/projects/projects";
 import styles from "../components/sass_components/Modal.module.scss";
 
 import { IoMdClose } from "react-icons/io";
-import {FaChevronLeft,FaChevronRight } from "react-icons/fa";
-import { AiOutlineRight,AiOutlineLeft } from "react-icons/ai";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 
 interface propModal {
   setShowModal: React.Dispatch<SetStateAction<boolean>>;
@@ -20,105 +20,111 @@ interface propModal {
 }
 
 const ModalImages = ({ setShowModal, project }: propModal) => {
-  
-  const refPrevArrow = useRef<HTMLDivElement>(null)
-  const refNextArrow = useRef<HTMLDivElement>(null)
-  const refBiggerImage = useRef<HTMLImageElement>(null)
-  const refSlideSecondary = useRef<HTMLDivElement>(null)
-  const refBoxImage = useRef<HTMLImageElement[]>([])
-  const listImages: string[] | undefined = project?.images
-  const [indexMaxImage] = useState<number>(listImages!.length)
-  const [counterImages,setCounterImages] = useState<number>(1)
-  const [indexCurrentImage,setIndexCurrentImage] = useState<number>(0)
-  const name = project?.name ? project.name : null
-  console.log(project)
-  
-  const showNextImage = ():void => {
-    if(indexCurrentImage === indexMaxImage - 1){
-      return
+  const refHeaderBlur = useRef<HTMLDivElement>(null);
+  const refFooterBlur = useRef<HTMLDivElement>(null);
+  const refPrevArrow = useRef<HTMLDivElement>(null);
+  const refNextArrow = useRef<HTMLDivElement>(null);
+  const refBiggerImage = useRef<HTMLImageElement>(null);
+  const refBoxImage = useRef<HTMLImageElement[]>([]);
+  const listImages: string[] | undefined = project?.images;
+  const [indexMaxImage] = useState<number>(listImages!.length);
+  const [counterImages, setCounterImages] = useState<number>(1);
+  const [indexCurrentImage, setIndexCurrentImage] = useState<number>(0);
+  const name = project?.name ? project.name : null;
+
+  const showNextImage = (): void => {
+    if (indexCurrentImage === indexMaxImage - 1) {
+      return;
     }
-    setIndexCurrentImage(indexCurrentImage + 1)
-    // applyBorderImageSelected()
-  }
-  
-  const showPreviousImage = ():void => {
-    if(indexCurrentImage === 0){
-      return
+    setIndexCurrentImage(indexCurrentImage + 1);
+  };
+
+  const showPreviousImage = (): void => {
+    if (indexCurrentImage === 0) {
+      return;
     }
-    setIndexCurrentImage(indexCurrentImage - 1)
-    // applyBorderImageSelected()
-  }
+    setIndexCurrentImage(indexCurrentImage - 1);
+  };
 
-  // const resetBorderSelected = ():void => {
-  //   refBoxImage.current.forEach((item: HTMLDivElement) => {
-  //     item.style.setProperty('border','none')
-  //   })  // }
+  const countPrevImages = (): void => {
+    if (counterImages === 1) return;
+    showPreviousImage();
+    setCounterImages((prevCounter) => prevCounter - 1);
+  };
 
-  // const applyBorderImageSelected = () => {
-  //   resetBorderSelected()
-  //   refBoxImage.current[indexCurrentImage].style.setProperty('border','1px solid #000')
+  const countNextImages = (): void => {
+    if (counterImages === indexMaxImage) return;
+    showNextImage();
+    setCounterImages((prevCounter) => prevCounter + 1);
+  };
 
-  // }
+  const effectFocus = (opacity: string): void => {
+    const headerBlur = refHeaderBlur.current;
+    const footerBlur = refFooterBlur.current;
 
-  // const validateSlideSecondary = () => {
-  //   if(listImages!.length < 5){
-  //     refSlideSecondary.current?.style.setProperty('justify-content','center')
-  //   }
-  // }
+    headerBlur?.style.setProperty("opacity", opacity);
+    footerBlur?.style.setProperty("opacity", opacity);
+  };
 
-  const countPrevImages = ():void => {
-    if(counterImages === 1) return
-    showPreviousImage()
-    setCounterImages(prevCounter => prevCounter - 1)
-  }
-
-  const countNextImages = ():void => {
-    if(counterImages === indexMaxImage) return
-    showNextImage()
-    setCounterImages(prevCounter => prevCounter + 1)
-  }
-  
   useEffect(() => {
-    refBoxImage.current = refBoxImage.current?.slice(0,listImages!.length)
-    // applyBorderImageSelected()
-    // validateSlideSecondary()
-  })
+    refBoxImage.current = refBoxImage.current?.slice(0, listImages!.length);
+  });
 
   return (
-    
     <div className={styles.modal}>
       <div className={styles.closeModal}>
         <IoMdClose onClick={() => setShowModal(false)} />
       </div>
 
       <div className={styles.slides}>
-        <Link target="_blank" href={`${project?.linkForDrive}`} className={styles.title_project}>{name}</Link>
         <div className={styles.main_slide}>
-           <div onClick={countPrevImages} className={styles.btn_prev}ref={refPrevArrow}>
-            <AiOutlineLeft/>
-           </div>
-            <div className={styles.image_main_slide}>
-              <Image ref={refBiggerImage} src={listImages![indexCurrentImage]} width={500} height={360} alt="Imagem exibida" />
+          <div
+            onClick={countPrevImages}
+            className={styles.btn_prev}
+            ref={refPrevArrow}
+          >
+            <AiOutlineLeft />
+          </div>
+          <div className={styles.image_main_slide}>
+            <div
+              onMouseOver={() => effectFocus("1")}
+              onMouseOut={() => effectFocus("0")}
+              ref={refHeaderBlur}
+              className={styles.header_blur}
+            >
+              <Link
+                target="_blank"
+                href={`${project?.linkForDrive}`}
+                className={styles.title_project}
+              >
+                {name}
+              </Link>
             </div>
-            <div onClick={countNextImages} className={styles.btn_next}ref={refNextArrow} >
-              <AiOutlineRight />
-            </div>
-            <span className={styles.amountImages}>
-              {counterImages}/{indexMaxImage}
-            </span>
-        </div>
 
-        {/* <div ref={refSlideSecondary} className={styles.slide_secondary}>
-            {listImages?.map((srcImage: string,index:number) => (
-                <div key={index} className={styles.box_image}>
-                  <Image ref={(element) => element && (refBoxImage.current[index] = element) }
-                  src={srcImage} 
-                  width={100}
-                  height={100}
-                  alt="Imagem de projeto" />
-                </div>
-            ))}
-        </div> */}
+            <Image
+              onMouseOver={() => effectFocus("1")}
+              onMouseOut={() => effectFocus("0")}
+              ref={refBiggerImage}
+              src={listImages![indexCurrentImage]}
+              width={500}
+              height={360}
+              alt="Imagem exibida"
+            />
+
+            <div ref={refFooterBlur} className={styles.footer_blur}>
+              <span className={styles.amountImages}>
+                {counterImages}/{indexMaxImage}
+              </span>
+            </div>
+          </div>
+          <div
+            onClick={countNextImages}
+            className={styles.btn_next}
+            ref={refNextArrow}
+          >
+            <AiOutlineRight />
+          </div>
+        </div>
       </div>
     </div>
   );

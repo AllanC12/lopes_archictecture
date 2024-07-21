@@ -7,11 +7,12 @@
 }
 .span_logo .title_part_one {
   font-weight: 200;
-  font-size: 22px;
+  font-size: 16px;
   font-family: var(--roboto_condensed);
   text-transform: uppercase;
 }
 .span_logo .title_part_two {
   display: block;
   font-weight: lighter;
+  font-size: 12px;
 }/*# sourceMappingURL=Logo.module.css.map */

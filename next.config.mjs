@@ -8,6 +8,7 @@ const nextConfig = {
       "images6.alphacoders.com",
       "images4.alphacoders.com",
       "avatarfiles.alphacoders.com",
+      "drive.google.com"
     ],
   },
 };

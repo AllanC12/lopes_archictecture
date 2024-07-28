@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   z-index: 2;
   position: fixed;
   left: 0;
@@ -11,12 +12,16 @@
   background-color: #000;
   animation: upCurtain;
   animation-duration: 1.5s !important;
-  animation-delay: 4s;
+  animation-delay: 5s;
 }
 
 .text_curtain {
   font-size: 1.7em;
   font-weight: 900;
+}
+
+.text_curtain_two {
+  font-size: 1.1em;
 }
 
 .text_curtain > * {
@@ -30,7 +35,7 @@
 .text_curtain span:nth-child(2) {
   letter-spacing: -1em;
   overflow: hidden;
-  animation: reveal 4000ms;
+  animation: reveal 5000ms;
   animation-delay: 1s;
 }
 
@@ -62,6 +67,6 @@
 }
 @media (max-width: 500px) {
   .text_curtain {
-    font-size: 0.9em;
+    font-size: 0.75em;
   }
 }/*# sourceMappingURL=Curtain.module.css.map */

@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Portfólio de arquitetura por Carlos Eduardo Lopes",
+  title: "Portfólio de Arquitetura por Carlos Eduardo Lopes",
   description: "Site de arquitetura Carlos Eduardo Lopes , Portfólio de arquitetura , Arquitetura em São Francisco de Paula MG",
 };
 

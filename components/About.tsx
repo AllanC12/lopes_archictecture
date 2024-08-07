@@ -15,7 +15,7 @@ const About = () => {
 
   return (
     <div id="about" className={styles.wraper_about}>
-      <div  className={styles.about}>
+      <div className={styles.about}>
         <h2 className={styles.title_session_about}>
           <span className={styles.number_session_about}>2</span> Sobre mim
         </h2>
@@ -25,11 +25,15 @@ const About = () => {
         <div className={styles.container_text_photo}>
           <div data-aos="fade-right" className={styles.text_about}>
             <p className={styles.text}>
-              In reprehenderit consectetur do et non officia dolore anim
-              excepteur dolor fugiat minim. Voluptate velit magna aliquip do et
-              veniam dolore. Lorem irure excepteur esse est aute duis minim.
-              Nisi Lorem in ut magna dolore velit occaecat anim mollit
-              cupidatat.
+              Olá, sou Carlos Eduardo Lopes, estudante de Arquitetura e
+              Urbanismo na Anhanguera Divinópolis, atualmente cursando o sexto
+              período. Com 23 anos, estou em uma fase de aprendizado e
+              crescimento contínuos, onde busco aliar criatividade e técnica em
+              meus projetos. Estou comprometido em desenvolver soluções
+              inovadoras que equilibrem estética, funcionalidade e
+              sustentabilidade. No meu portfólio, você encontrará trabalhos que
+              refletem essa busca por excelência e o meu entusiasmo pelo
+              campo do design.
             </p>
           </div>
 

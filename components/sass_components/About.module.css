@@ -53,10 +53,10 @@
 }
 .wraper_about .about .text_about {
   width: 50%;
-  max-width: 500px;
+  max-width: 700px;
 }
 .wraper_about .about .text_about .text {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #f5f6f7;
 }
 .wraper_about .about .container_photo {

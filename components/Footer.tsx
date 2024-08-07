@@ -14,7 +14,7 @@ import Logo from "./Logo";
 import styles from "../components/sass_components/Footer.module.css";
 
 const Footer = () => {
-  const urlWhatsApp: string = 'https:wa.me/+5537999817403';
+  const urlWhatsApp: string = 'https://wa.me/+5537999817403';
   const urlEmail: string = 'https://mail.google.com/mail/?view=cm&fs=1&to=lopesarchportfolio@gmail.com'
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <footer id="contacts" className={styles.footer}>
       <div className={styles.social_medias}>
-        <Link data-aos="fade-right"target="_blank" href={urlWhatsApp} className={styles.whatsapp}>
+        <Link data-aos="fade-right" target="_blank" href={urlWhatsApp} className={styles.whatsapp}>
           <FaWhatsapp />
         </Link>
         <Link data-aos="fade-left" target="_blank" href={urlEmail} className={styles.email}>

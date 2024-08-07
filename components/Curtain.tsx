@@ -24,7 +24,7 @@ const Curtain = () => {
   },[])
 
   useEffect(() => {
-    hideElements(text_curtain.current, timeInProdEnv - 1400)
+    hideElements(text_curtain.current, timeInProdEnv - 100)
     hideElements(curtain.current,timeInProdEnv)
   },[pageLoaded])
 

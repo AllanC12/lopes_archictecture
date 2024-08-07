@@ -3,35 +3,36 @@
 import { Braah_One } from "next/font/google";
 import styles from "../components/sass_components/Curtain.module.css";
 
-import { useRef,useEffect,useState } from "react";
+import { useRef,useEffect,useState, RefObject } from "react";
 
 const Curtain = () => {
-  
+  const text_curtain = useRef<HTMLDivElement>(null)
   const curtain = useRef<HTMLDivElement>(null)
   const [pageLoaded,setPageLoaded] = useState<boolean>(false)
   const timeInDevEnv = 3200
   const timeInProdEnv = 5800
 
-  const hideCurtain = () => {
+  const hideElements = (element: HTMLDivElement | null,timer: number) => {
     setTimeout(() => {
-      if(curtain.current !== null){
-        curtain.current?.style.setProperty('display', 'none')
+      if(element !== null){
+        element?.style.setProperty('display', 'none')
       }
-    },timeInProdEnv)
+    },timer)
   }
-
   useEffect(() => {
     setPageLoaded(true)
   },[])
 
   useEffect(() => {
-    hideCurtain()
+    hideElements(text_curtain.current, timeInProdEnv - 1400)
+    hideElements(curtain.current,timeInProdEnv)
   },[pageLoaded])
 
 
 
   return (
     <div ref={curtain} className={styles.curtain}>
+      <div ref={text_curtain}>
       <div className={styles.text_curtain}>
         <span></span>
         <span>{pageLoaded && "PORTFÓLIO DE ARQUITETURA"}</span>
@@ -42,6 +43,8 @@ const Curtain = () => {
         <span>{pageLoaded && "por Carlos Eduardo Lopes"}</span>
         <span></span>
       </div>
+      </div>
+
     </div>
   );
 };

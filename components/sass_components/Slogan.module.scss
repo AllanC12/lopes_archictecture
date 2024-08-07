@@ -4,7 +4,7 @@
     color: #fff;
     font-size: 2.8em;
     position: relative;
-    top: 28vh;
+    top: 42vh;
     -webkit-overflow-x: hidden !important;
     
     .span_slogan{
@@ -15,7 +15,7 @@
   
   .buttons{
     @include flex(flex-start,center);
-    padding-top: 40vh;
+    padding-top: 48vh;
     gap: 5vw;
   }
   
@@ -41,7 +41,7 @@
 @media (max-width: 400px){
   .slogan_banner{
     font-size: 1.5em;  
-    padding-top: 40vh;
+    padding-top: 12vh;
   }
 
 }

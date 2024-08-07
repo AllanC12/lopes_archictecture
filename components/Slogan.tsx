@@ -35,22 +35,22 @@ const Slogan = () => {
               className={styles.span_slogan}
               data-aos="fade-right"
             >
-              Arquitetura que ecoa a história,
+              Onde a funcionalidade 
             </span>
             <span
               ref={span_two}
               className={styles.span_slogan}
               data-aos="fade-left"
             >
-              celebra o presente
+             guia a estética.
             </span>
-            <span
+            {/* <span
               ref={span_three}
               className={styles.span_slogan}
               data-aos="fade-right"
             >
               e vislumbra o futuro.
-            </span>
+            </span> */}
           </p>
           <div className={styles.buttons}>
             <ButtonBanner valueBtn="Sobre" />

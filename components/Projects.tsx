@@ -15,9 +15,11 @@ import styles from "../components/sass_components/Projects.module.css";
 
 import { IProject, listProjects } from "@/app/projects/projects";
 
+import alternateBetweenImages from "@/app/slider_config/run_slide";
+
 const Projects = () => {
-  const refProject = useRef<HTMLDivElement[]>([]);
   const refContainerSlide = useRef<HTMLDivElement>(null);
+  const refProject = useRef<HTMLDivElement[]>([]);
   const [amountProject, setAmountProject] = useState<number>(4);
   const [showModal, setShowModal] = useState<boolean>(false);
   const [projectClicked, setProjectClicked] = useState<IProject | null>(null);
@@ -54,38 +56,10 @@ const Projects = () => {
     }, 100);
   };
 
-  const defineOpacityImage = (action: string, element: Element) => {
-    if (element instanceof HTMLElement) {
-      if (action === "remove") {
-        element.style.setProperty("opacity", "0");
-      } else if (action === "add") {
-        element.style.setProperty("opacity", "1");
-      }
-    }
-  };
-
-  const alternateBetweenImages = () => {
-    const imageList = refContainerSlide.current?.children as HTMLCollection;
-    let index: number = 0;
-    let indexMax: number = imageList!.length - 1;
-
-    imageList![index].classList.add("selected");
-    defineOpacityImage("add", imageList![index]);
-
-    setInterval(() => {
-      imageList![index].classList.remove("selected");
-      defineOpacityImage("remove", imageList![index]);
-      index++;
-      if (index > indexMax) index = 0;
-      imageList![index].classList.add("selected");
-      defineOpacityImage("add", imageList![index]);
-    }, 3000);
-  };
-
   useEffect(() => {
     refProject.current = refProject.current.slice(0, listProjects.length);
     initAnimationsAos();
-    alternateBetweenImages();
+    alternateBetweenImages(refContainerSlide);
   }, []);
 
   return (

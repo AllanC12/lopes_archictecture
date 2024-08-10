@@ -38,7 +38,6 @@
   width: 50%;
 }
 .projects .session_projects .list_projects .project {
-  cursor: pointer;
   padding: 20px 2vw;
   border-bottom: 1px solid #ccc;
   transition: 1s;
@@ -49,6 +48,7 @@
 .projects .session_projects .list_projects .project .name_project {
   font-size: 26px;
   font-weight: bold;
+  cursor: pointer;
 }
 .projects .session_projects .list_projects .project .wraper_project {
   display: flex;
@@ -60,6 +60,7 @@
   width: 40px;
   height: 40px;
   z-index: 1;
+  cursor: pointer;
 }
 .projects .session_projects .list_projects .project .wraper_project .arrow {
   font-size: 45px;

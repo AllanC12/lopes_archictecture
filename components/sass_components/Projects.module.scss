@@ -29,24 +29,25 @@
     .session_projects{
         @include flex(space-around,flex-start);
         border-top: 1px solid #ccc;
-        gap: 50px;
+        gap: 60px;
 
         .list_projects{
+            order: 1;
             padding: 2vw 0;
             width: 50%;
     
             .project{
-                cursor: pointer;
-                padding: 10px 2vw;
+                padding: 20px 2vw;
                 border-bottom: 1px solid #ccc;
-                transition: .5s;
+                transition: 1s;
                 overflow: hidden;
                 height:55px;
                 position: relative;
 
                 .name_project{
-                    font-size: 22px;
-                    font-weight: 100;
+                    font-size: 26px;
+                    font-weight: bold;
+                    cursor: pointer
                 }
                 
                 .wraper_project{
@@ -57,6 +58,7 @@
                         width: 40px;
                         height: 40px;
                         z-index: 1;
+                        cursor: pointer
                         
                     }
                    
@@ -70,11 +72,15 @@
 
                 }
 
+                .headline{
+                    @include flex(flex-start,flex-start);
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
                 .description_project{
-                    margin: 15px 0;
-                    max-width: 350px;
-                    overflow-y: auto;
-                    max-height: 100px;
+                    margin: 0px 0 30px 0;
+                    max-width: 500px;
                 }
 
                 .view_image{
@@ -139,10 +145,11 @@
             height: 400px;
 
             img{
+                object-fit: contain;
                 opacity: 0;
                 position: absolute;
                 top: 0;
-                right: 0;
+                left: 0;
                 max-height: 100%;
                 max-width: 100%;
                 transition: 1s;

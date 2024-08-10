@@ -106,8 +106,10 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
               onMouseOut={() => effectFocus("0")}
               ref={refBiggerImage}
               src={listImages![indexCurrentImage]}
-              width={500}
-              height={360}
+              width={890}
+              height={490}
+              priority
+              quality={100}
               alt="Imagem exibida"
             />
 

@@ -30,24 +30,25 @@
   justify-content: space-around;
   align-items: flex-start;
   border-top: 1px solid #ccc;
-  gap: 50px;
+  gap: 60px;
 }
 .projects .session_projects .list_projects {
+  order: 1;
   padding: 2vw 0;
   width: 50%;
 }
 .projects .session_projects .list_projects .project {
-  cursor: pointer;
-  padding: 10px 2vw;
+  padding: 20px 2vw;
   border-bottom: 1px solid #ccc;
-  transition: 0.5s;
+  transition: 1s;
   overflow: hidden;
   height: 55px;
   position: relative;
 }
 .projects .session_projects .list_projects .project .name_project {
-  font-size: 22px;
-  font-weight: 100;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
 }
 .projects .session_projects .list_projects .project .wraper_project {
   display: flex;
@@ -59,6 +60,7 @@
   width: 40px;
   height: 40px;
   z-index: 1;
+  cursor: pointer;
 }
 .projects .session_projects .list_projects .project .wraper_project .arrow {
   font-size: 45px;
@@ -66,11 +68,16 @@
   right: 1.4vw;
   transition: 0.5s;
 }
+.projects .session_projects .list_projects .project .headline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
 .projects .session_projects .list_projects .project .description_project {
-  margin: 15px 0;
-  max-width: 350px;
-  overflow-y: auto;
-  max-height: 100px;
+  margin: 0px 0 30px 0;
+  max-width: 500px;
 }
 .projects .session_projects .list_projects .project .view_image {
   margin-right: 20px;
@@ -121,10 +128,12 @@
   height: 400px;
 }
 .projects .session_projects .slide_projects img {
+  -o-object-fit: contain;
+     object-fit: contain;
   opacity: 0;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   max-height: 100%;
   max-width: 100%;
   transition: 1s;

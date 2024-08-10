@@ -53,13 +53,15 @@
     
         .container_text_photo{
             @include flex(center,flex-start);
-            gap: 70px;
+            gap: 120px;
             padding: 5%;
         }
     
         .text_about{
             width: 50%;
             max-width: 700px;
+            order: 1;
+
     
             .text{
                 font-size: 1.5em;

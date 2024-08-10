@@ -48,12 +48,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 70px;
+  gap: 120px;
   padding: 5%;
 }
 .wraper_about .about .text_about {
   width: 50%;
   max-width: 700px;
+  order: 1;
 }
 .wraper_about .about .text_about .text {
   font-size: 1.5em;

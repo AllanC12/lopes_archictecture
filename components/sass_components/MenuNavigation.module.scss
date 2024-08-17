@@ -52,9 +52,9 @@
 
 }
 
-@media (max-width: 1920px){
+@media (min-width: 1920px){
   .menu_navigation ul{
-  margin-top: 5vh !important;
+    margin-top: 5vh !important;
   }
 
   .select_language{

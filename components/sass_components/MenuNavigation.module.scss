@@ -52,6 +52,16 @@
 
 }
 
+@media (max-width: 1920px){
+  .menu_navigation ul{
+  margin-top: 5vh !important;
+  }
+
+  .select_language{
+    top: 63vh !important;
+  }
+}
+
 @media (max-width: 900px){
   .menu_navigation ul{
     margin-top: 5vh;

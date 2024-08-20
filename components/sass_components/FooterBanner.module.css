@@ -11,8 +11,18 @@
   align-items: flex-start;
 }
 
+@media (max-width: 790px) {
+  .footer_banner {
+    bottom: -50px;
+  }
+}
 @media (max-width: 640px) {
   .footer_banner {
     bottom: -30px;
+  }
+}
+@media (max-width: 590px) {
+  .footer_banner {
+    bottom: -60px;
   }
 }/*# sourceMappingURL=FooterBanner.module.css.map */

@@ -13,7 +13,7 @@
 }
 .menu_navigation ul {
   list-style: none;
-  margin-top: 15vh;
+  margin-top: 8vh;
 }
 .menu_navigation ul li {
   margin: 2vh 0;
@@ -31,7 +31,7 @@
 }
 .menu_navigation .select_language {
   position: relative;
-  top: 38vh;
+  top: 50vh;
 }
 .menu_navigation .select_language .languages {
   display: flex;
@@ -41,4 +41,29 @@
 }
 .menu_navigation .select_language .languages img {
   cursor: pointer;
+}
+
+@media (min-width: 1920px) {
+  .menu_navigation ul {
+    margin-top: 5vh !important;
+  }
+  .select_language {
+    top: 63vh !important;
+  }
+}
+@media (max-width: 900px) {
+  .menu_navigation ul {
+    margin-top: 5vh;
+  }
+  .select_language {
+    top: 62vh !important;
+  }
+}
+@media (max-width: 500px) {
+  .menu_navigation ul {
+    margin-top: 6vh;
+  }
+  .select_language {
+    top: 56vh !important;
+  }
 }/*# sourceMappingURL=MenuNavigation.module.css.map */

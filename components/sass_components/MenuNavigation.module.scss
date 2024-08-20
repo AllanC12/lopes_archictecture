@@ -15,7 +15,7 @@
 
    ul{
     list-style: none;
-    margin-top: 15vh;
+    margin-top: 8vh;
 
     li{
         margin: 2vh 0;
@@ -38,7 +38,7 @@
 
    .select_language{
     position: relative;
-    top: 38vh;
+    top: 50vh;
 
     .languages{
       @include flex(center,center);
@@ -50,5 +50,34 @@
     }
    }
 
+}
+
+@media (min-width: 1920px){
+  .menu_navigation ul{
+    margin-top: 5vh !important;
+  }
+
+  .select_language{
+    top: 63vh !important;
+  }
+}
+
+@media (max-width: 900px){
+  .menu_navigation ul{
+    margin-top: 5vh;
+   }
+   .select_language{
+    top: 62vh !important;
+  }
+}
+
+@media (max-width: 500px){
+  .menu_navigation ul{
+   margin-top: 6vh;
+  }
+
+  .select_language{
+    top: 56vh !important;
+  }
 }
 

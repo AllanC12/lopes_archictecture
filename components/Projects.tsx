@@ -66,7 +66,7 @@ const Projects = () => {
     <div className={styles.projects} id="projects">
       <h4 className={styles.title_session_projects}>
         <span className={styles.number_session_projects}>1</span>Projetos
-        recentes
+  
       </h4>
 
       <div className={styles.session_projects}>

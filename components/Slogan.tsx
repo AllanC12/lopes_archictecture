@@ -44,13 +44,6 @@ const Slogan = () => {
             >
              guia a estética.
             </span>
-            {/* <span
-              ref={span_three}
-              className={styles.span_slogan}
-              data-aos="fade-right"
-            >
-              e vislumbra o futuro.
-            </span> */}
           </p>
           <div className={styles.buttons}>
             <ButtonBanner valueBtn="Sobre" />

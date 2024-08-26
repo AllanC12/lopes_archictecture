@@ -15,7 +15,7 @@ import styles from "../components/sass_components/Projects.module.css";
 
 import { IProject, listProjects } from "@/app/projects/projects";
 
-import alternateBetweenImages from "@/app/slider_config/run_slide";
+import runSlides from "@/app/slider_config/run_slide";
 
 const Projects = () => {
   const refContainerSlide = useRef<HTMLDivElement>(null);
@@ -59,7 +59,7 @@ const Projects = () => {
   useEffect(() => {
     refProject.current = refProject.current.slice(0, listProjects.length);
     initAnimationsAos();
-    alternateBetweenImages(refContainerSlide);
+    runSlides(refContainerSlide);
   }, []);
 
   return (

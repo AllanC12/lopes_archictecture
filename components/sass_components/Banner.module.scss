@@ -1,19 +1,34 @@
 .banner{
     position: relative;
-    z-index: 1;
-    max-width: 100% !important;
-    height: 125vh;
-    padding: 10px 1%;
-    background-image: url('../../public/images/banner_one.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 24vh 1%;
+
+    .slide_banner{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 100% !important;
+        height: 125vh;
+
+        .selected{
+            opacity: 1;
+        }
+
+        img{
+            position: absolute;
+            transition: 1s;
+            left: 0;
+            top: 0;
+        }
+    }
 
 }
 
 @media (max-width: 780px){
     .banner{
         background-size: cover;
+        padding: 24vh 1%;
+
     }
 }
 

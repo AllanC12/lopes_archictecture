@@ -10,7 +10,7 @@ const defineOpacityImage = (action: string, element: Element) => {
     }
   };
 
-  const alternateBetweenImages = (refContainer: RefObject<HTMLDivElement>) => {
+  const runSlides = (refContainer: RefObject<HTMLDivElement>) => {
     const imageList = refContainer.current?.children as HTMLCollection;
     let index: number = 0;
     let indexMax: number = imageList!.length - 1;
@@ -28,4 +28,4 @@ const defineOpacityImage = (action: string, element: Element) => {
     }, 3000);
   };
 
-  export default alternateBetweenImages
+  export default runSlides

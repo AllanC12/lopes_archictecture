@@ -1,11 +1,10 @@
 @import "../../mixins/mixin.scss";
 
 .projects{
-    position: relative;
     width: 100%;
     max-width: 1300px;
-    margin: 0 auto;
-    padding: 7vh 0;
+    margin: 65vh auto 0 auto;
+    padding: 9vh 0;
 
     .title_session_projects{
         font-size: 34px;
@@ -144,7 +143,6 @@
             position: relative;
             width: 50%;
             height: 400px;
-            // background-color: red;
 
             img{
                 object-fit: contain;
@@ -196,11 +194,18 @@
 
     .session_projects{
         width: 100%;
+        gap: 0px !important;
     }
 
     .projects{
         padding-bottom: 0;
+        margin: 0 auto !important;
+
+        .project{
+            margin-top: 20px;
+        }
     }
+
 
     .slide_projects{
         position:static;

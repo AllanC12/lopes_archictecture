@@ -4,6 +4,7 @@
   width: 98vw;
   height: 24vh;
   position: absolute;
+  top: 107vh;
   bottom: 0;
   left: 0;
 
@@ -12,21 +13,21 @@
   }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 900px) {
   .footer_banner {
-    bottom: -50px;
+    top: 112vh !important;
   }
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
     .footer_banner {
-        bottom: -30px;
+       top: 116vh !important;
     }
 }
 
-@media (max-width: 590px) {
-  .footer_banner {
-     bottom: -60px;
-  }
-}
+// @media (max-width: 590px) {
+//   .footer_banner {
+//     top: 118vh !important;
+//  }
+// }

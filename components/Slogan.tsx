@@ -45,10 +45,10 @@ const Slogan = () => {
              guia a estética.
             </span>
           </p>
-          <div className={styles.buttons}>
+          {/* <div className={styles.buttons}>
             <ButtonBanner valueBtn="Sobre" />
             <ButtonContacts valueBtn="Contatos" />
-          </div>
+          </div> */}
         </>
       )}
     </>

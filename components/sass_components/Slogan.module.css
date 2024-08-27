@@ -1,22 +1,14 @@
 .slogan_banner {
-  z-index: 2;
+  z-index: 1;
   color: #fff;
   font-size: 2.8em;
   position: relative;
-  top: 42vh;
+  top: 20vh;
   overflow-x: hidden;
   -webkit-overflow-x: hidden !important;
 }
 .slogan_banner .span_slogan {
   display: block;
-}
-
-.buttons {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 48vh;
-  gap: 5vw;
 }
 
 @media (max-width: 780px) {

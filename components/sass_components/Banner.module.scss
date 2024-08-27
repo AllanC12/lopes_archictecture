@@ -15,6 +15,7 @@
         }
 
         img{
+            object-position: top;
             position: absolute;
             transition: 1s;
             left: 0;
@@ -36,5 +37,9 @@
     .banner{
         height: 100vh !important;
         background-image: url('../../public/images/project_1/img_r1.jpg');
+    }
+
+    .slide_banner{
+        display: none;
     }
 }

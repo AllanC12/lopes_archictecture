@@ -2,7 +2,7 @@
 
 import { useRef,useEffect } from 'react'
 
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 
 import runSlides from '../app/slider_config/run_slide'
 
@@ -28,17 +28,17 @@ const Banner = () => {
         >
           <Image
             className={styles.selected}
-            src="/images/Banner_one.png"
+            src="/images/banner_one.png"
             layout="fill" objectFit="cover"
             alt="Imagem de projeto"
           />
           <Image
-            src="/images/Banner_two.png"
+            src="/images/banner_two.png"
             layout="fill" objectFit="cover"
             alt="Imagem de projeto"
           />
           <Image
-            src="/images/Banner_three.png"
+            src="/images/banner_three.png"
             layout="fill" objectFit="cover"
             alt="Imagem de projeto"
           />

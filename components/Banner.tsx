@@ -2,7 +2,7 @@
 
 import { useRef,useEffect } from 'react'
 
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 import runSlides from '../app/slider_config/run_slide'
 

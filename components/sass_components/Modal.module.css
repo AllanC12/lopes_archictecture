@@ -128,9 +128,7 @@
   }
   .image_main_slide img {
     z-index: 2;
-    position: absolute;
     height: 40% !important;
-    width: 110% !important;
     -o-object-fit: cover !important;
        object-fit: cover !important;
   }

@@ -31,7 +31,7 @@ const Projects = () => {
     const projectItem = projectWraper.parentElement as HTMLDivElement;
     const arrowProject = projectItem.childNodes[0].childNodes[2] as SVGElement;
     const heightDefault: string = "55px";
-    const fullHeight: string = "109vh";
+    const fullHeight: string = "138vh";
 
     if (window.getComputedStyle(projectItem).height === heightDefault) {
       projectItem.style.setProperty("height", `${fullHeight}`);

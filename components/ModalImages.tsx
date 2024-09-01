@@ -6,12 +6,14 @@ import { SetStateAction, useRef, useState, useEffect } from "react";
 
 import Image from "next/image";
 
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
 import { IProject } from "@/app/projects/projects";
 
 import styles from "../components/sass_components/Modal.module.scss";
 
 import { IoMdClose } from "react-icons/io";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 
 interface propModal {
@@ -100,18 +102,19 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
                 {name}
               </Link>
             </div>
-
-            <Image
-              onMouseOver={() => effectFocus("1")}
-              onMouseOut={() => effectFocus("0")}
-              ref={refBiggerImage}
-              src={listImages![indexCurrentImage]}
-              width={890}
-              height={490}
-              priority
-              quality={100}
-              alt="Imagem exibida"
-            />
+            <Zoom>
+              <Image
+                onMouseOver={() => effectFocus("1")}
+                onMouseOut={() => effectFocus("0")}
+                ref={refBiggerImage}
+                src={listImages![indexCurrentImage]}
+                width={890}
+                height={490}
+                priority
+                quality={100}
+                alt="Imagem exibida"
+              />
+            </Zoom>
 
             <div ref={refFooterBlur} className={styles.footer_blur}>
               <span className={styles.amountImages}>

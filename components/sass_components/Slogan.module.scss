@@ -15,13 +15,13 @@
     
   }
   
-  // .buttons{
-  //   position: relative;
-  //   @include flex(flex-start,center);
-  //   z-index: 4;
-  //   padding-top: 24vh;
-  //   gap: 5vw;
-  // }
+  .buttons{
+    position: relative;
+    @include flex(flex-start,center);
+    z-index: 4;
+    padding-top: 24vh;
+    gap: 5vw;
+  }
   
   @media (max-width: 780px){
     .slogan_banner{
@@ -42,10 +42,16 @@
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
   .slogan_banner{
     font-size: 1.8em;  
-    padding-top: 10vh;
+    padding-top: 0;
+    top: 10vh;
+  }
+
+  .buttons{
+    gap: 10vw;
+    top: -140px;
   }
 
 }

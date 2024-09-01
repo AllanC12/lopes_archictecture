@@ -31,12 +31,6 @@ const Logo = ({ sizeTitleOne, sizeTitleTwo, width, height }: propsLogo) => {
 
   return (
     <span data-aos="zoom-in-up" className={styles.span_logo} id="begin">
-      {/* <Image
-        src="/images/logo_image.png"
-        width={width}
-        height={height}
-        alt="logomarca"
-      /> */}
       <span
         ref={refTitleOne}
         className={styles.title_part_one}

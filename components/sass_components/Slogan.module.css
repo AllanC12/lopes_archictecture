@@ -1,14 +1,14 @@
 .slogan_banner {
   z-index: 1;
   color: #fff;
-  font-size: 2.8em;
   position: relative;
   top: 20vh;
   overflow-x: hidden;
   -webkit-overflow-x: hidden !important;
 }
 .slogan_banner .span_slogan {
-  display: block;
+  margin-left: 15px;
+  font-size: 2.7em;
 }
 
 .buttons {
@@ -19,31 +19,36 @@
   z-index: 4;
   padding-top: 24vh;
   gap: 5vw;
+  margin-left: 15px;
 }
 
 @media (max-width: 780px) {
-  .slogan_banner {
+  .span_slogan {
     font-size: 2.5em;
   }
 }
 @media (max-width: 500px) {
-  .slogan_banner {
-    font-size: 2.2em;
-    top: 24vh;
-    padding-bottom: 15vh;
-  }
-  .buttons {
-    padding-top: 18vh;
-  }
-}
-@media (max-width: 500px) {
-  .slogan_banner {
-    font-size: 1.8em;
-    padding-top: 0;
-    top: 10vh;
+  .span_slogan {
+    font-size: 1.6em !important;
   }
   .buttons {
     gap: 10vw;
-    top: -140px;
+    padding-top: 25vh;
+    font-size: 1em;
+  }
+}
+@media (max-width: 450px) {
+  .span_slogan {
+    font-size: 1.3em !important;
+  }
+}
+@media (max-width: 450px) {
+  .span_slogan {
+    font-size: 1.2em !important;
+  }
+}
+@media (min-width: 1900px) {
+  .span_slogan {
+    font-size: 3.5em !important;
   }
 }/*# sourceMappingURL=Slogan.module.css.map */

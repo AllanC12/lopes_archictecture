@@ -35,14 +35,7 @@ const Slogan = () => {
               className={styles.span_slogan}
               data-aos="fade-right"
             >
-              Onde a funcionalidade 
-            </span>
-            <span
-              ref={span_two}
-              className={styles.span_slogan}
-              data-aos="fade-left"
-            >
-             guia a estética.
+              Onde a funcionalidade guia a estética.
             </span>
           </p>
           <div className={styles.buttons}>

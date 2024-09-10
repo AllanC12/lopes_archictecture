@@ -21,7 +21,9 @@
             left: 0;
             top: 0;
         }
+
     }
+
 
 }
 
@@ -30,6 +32,10 @@
         background-size: cover;
         padding: 24vh 1%;
 
+    }
+
+    .tablet_resolution{
+        display: block !important;
     }
 }
 

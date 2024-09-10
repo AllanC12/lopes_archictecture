@@ -110,8 +110,6 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
                 src={listImages![indexCurrentImage]}
                 width={890}
                 height={490}
-                priority
-                quality={100}
                 alt="Imagem exibida"
               />
             </Zoom>

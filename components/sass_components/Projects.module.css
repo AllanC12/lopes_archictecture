@@ -1,8 +1,7 @@
 .projects {
   width: 100%;
   max-width: 1300px;
-  margin: 65vh auto 0 auto;
-  padding: 9vh 0;
+  margin: 40vh auto 0 auto;
 }
 .projects .title_session_projects {
   font-size: 34px;
@@ -84,6 +83,7 @@
   font-size: 20px;
   transition: 0.5s;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .projects .session_projects .list_projects .project .view_image:hover {
   background-color: #000;

@@ -22,8 +22,8 @@ const Footer = () => {
   },[])
 
   return (
-    <footer id="contacts" className={styles.footer}>
-      <div className={styles.social_medias}>
+    <footer className={styles.footer}>
+      <div id="contacts" className={styles.social_medias}>
         <Link data-aos="fade-right" target="_blank" href={urlWhatsApp} className={styles.whatsapp}>
           <FaWhatsapp />
         </Link>
@@ -40,9 +40,9 @@ const Footer = () => {
         Rua Américo Batista dos Santos Júnior - 102 - Centro - São Francisco de
         Paula MG
       </Link>
-      <div className={styles.logo}>
+      {/* <div className={styles.logo}>
         <Logo sizeTitleOne={22} sizeTitleTwo={15} width={40} height={40} />
-      </div>
+      </div> */}
     </footer>
   );
 };

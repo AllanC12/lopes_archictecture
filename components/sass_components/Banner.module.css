@@ -34,7 +34,7 @@
 @media (max-width: 500px) {
   .banner {
     height: 100vh !important;
-    background-image: url("../../public/images/project_1/img_r1.jpg");
+    background-image: url("../../public/images/mob_one.png");
   }
   .slide_banner {
     display: none;

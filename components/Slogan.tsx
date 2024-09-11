@@ -6,7 +6,7 @@ import styles from "../components/sass_components/Slogan.module.css";
 
 import { initAnimationsAos } from "../aos/aos";
 
-import ButtonBanner from "./buttons/ButtonBanner";
+import ButtonAbout from "./buttons/ButtonAbout";
 import ButtonContacts from "./buttons/ButtonContacts";
 
 const Slogan = () => {
@@ -29,7 +29,7 @@ const Slogan = () => {
     <>
       {showSlogan && (
         <>
-          <p className={styles.slogan_banner}>
+          <div className={styles.slogan_banner}>
             <span
               ref={span_one}
               className={styles.span_slogan}
@@ -37,9 +37,9 @@ const Slogan = () => {
             >
               Onde a funcionalidade guia a estética.
             </span>
-          </p>
+          </div>
           <div className={styles.buttons}>
-            <ButtonBanner valueBtn="Sobre" />
+            <ButtonAbout valueBtn="Sobre" />
             <ButtonContacts valueBtn="Contatos" />
           </div>
         </>

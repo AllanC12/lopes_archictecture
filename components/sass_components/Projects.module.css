@@ -1,17 +1,17 @@
 .projects {
   width: 100%;
   max-width: 1300px;
-  margin: 40vh auto 0 auto;
+  margin: 34vh auto 0 auto;
 }
 .projects .title_session_projects {
-  font-size: 34px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
+  max-width: 30%;
+  font-size: 34px;
   gap: 2vw;
   padding: 5vh 0 0 0;
   border-bottom: 6px solid #000;
-  max-width: 30%;
   font-weight: bold;
   text-align: center;
 }
@@ -148,6 +148,10 @@
   }
 }
 @media (max-width: 768px) {
+  .title_session_projects {
+    font-size: 28px !important;
+    max-width: 50% !important;
+  }
   .session_projects {
     flex-wrap: wrap;
   }

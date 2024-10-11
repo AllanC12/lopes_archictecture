@@ -7,8 +7,6 @@ import { SetStateAction, useRef, useState, useEffect } from "react";
 import Image from "next/image";
 
 import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
-
 
 import { IProject } from "@/app/projects/projects";
 
@@ -103,7 +101,7 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
                 {name}
               </Link>
             </div>
-            <Zoom >
+            <Zoom>
               <Image
                 onMouseOver={() => effectFocus("1")}
                 onMouseOut={() => effectFocus("0")}
@@ -114,6 +112,7 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
                 alt="Imagem exibida"
               />
             </Zoom>
+
 
             <div ref={refFooterBlur} className={styles.footer_blur}>
               <span className={styles.amountImages}>

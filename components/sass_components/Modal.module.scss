@@ -122,9 +122,6 @@
 
 }
 
-.overlayVisibleWrapper :global([data-rmiz-modal-overlay="visible"]){
-    background-color: rgba($color: #0000, $alpha: 0.5) !important;
-}
 
 @media (max-width: 768px){
     .image_main_slide{

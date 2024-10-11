@@ -20,7 +20,7 @@
   color: #fff;
 }
 .header .icon_menu {
-  z-index: 3;
+  z-index: 5;
 }
 
 .header:hover {

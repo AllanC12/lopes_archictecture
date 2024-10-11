@@ -3,16 +3,15 @@
 .projects{
     width: 100%;
     max-width: 1300px;
-    margin: 65vh auto 0 auto;
-    padding: 9vh 0;
+    margin: 39vh auto 0 auto;
 
     .title_session_projects{
+        @include flex(flex-start,center);
+        max-width: 30%;
         font-size: 34px;
-        @include flex(flex-start,flex-end);
         gap: 2vw;
         padding: 5vh 0 0 0;
         border-bottom: 6px solid #000;
-        max-width: 30%;
         font-weight: bold;
         text-align: center;
 
@@ -88,6 +87,7 @@
                     font-size: 20px;
                     transition: .5s;
                     margin-bottom: 5px;
+                    cursor: pointer;
                 }
 
                 .view_image:hover{
@@ -174,6 +174,11 @@
 }
 
 @media (max-width: 768px){
+
+    .title_session_projects{
+        font-size: 28px !important;
+        max-width: 50% !important;
+    }
 
     .session_projects{
        flex-wrap: wrap;

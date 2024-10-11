@@ -9,6 +9,7 @@ import Image from "next/image";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
+
 import { IProject } from "@/app/projects/projects";
 
 import styles from "../components/sass_components/Modal.module.scss";
@@ -73,7 +74,7 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
   });
 
   return (
-    <div className={styles.modal}>
+    <div className={`${styles.overlayVisibleWrapper} ${styles.modal}`}>
       <div className={styles.closeModal}>
         <IoMdClose onClick={() => setShowModal(false)} />
       </div>
@@ -102,7 +103,7 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
                 {name}
               </Link>
             </div>
-            <Zoom>
+            <Zoom >
               <Image
                 onMouseOver={() => effectFocus("1")}
                 onMouseOut={() => effectFocus("0")}
@@ -110,8 +111,6 @@ const ModalImages = ({ setShowModal, project }: propModal) => {
                 src={listImages![indexCurrentImage]}
                 width={890}
                 height={490}
-                priority
-                quality={100}
                 alt="Imagem exibida"
               />
             </Zoom>

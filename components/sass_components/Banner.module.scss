@@ -21,7 +21,9 @@
             left: 0;
             top: 0;
         }
+
     }
+
 
 }
 
@@ -31,12 +33,16 @@
         padding: 24vh 1%;
 
     }
+
+    .tablet_resolution{
+        display: block !important;
+    }
 }
 
 @media (max-width: 500px){
     .banner{
         height: 100vh !important;
-        background-image: url('../../public/images/project_1/img_r1.jpg');
+        background-image: url('../../public/images/mob_one.png');
     }
 
     .slide_banner{

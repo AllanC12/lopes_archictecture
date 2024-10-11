@@ -19,3 +19,7 @@ body{
     -webkit-overflow: hidden;
 
 }
+
+[data-rmiz-modal-overlay="visible"]{
+    background-color: rgba(14, 13, 13,0.6) !important;
+}

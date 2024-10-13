@@ -24,6 +24,8 @@ const Projects = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
   const [projectClicked, setProjectClicked] = useState<IProject | null>(null);
   let animationBorder: Function;
+  const heightDescriptionProjectRef = useRef<HTMLParagraphElement>(null)
+
 
   const showDetailsProject = (e: MouseEvent) => {
     const target = e.target as HTMLElement;
@@ -31,7 +33,8 @@ const Projects = () => {
     const projectItem = projectWraper.parentElement as HTMLDivElement;
     const arrowProject = projectItem.childNodes[0].childNodes[2] as SVGElement;
     const heightDefault: string = "55px";
-    const fullHeight: string = "138vh";
+    const fullHeight: string = "auto";
+    
 
     if (window.getComputedStyle(projectItem).height === heightDefault) {
       projectItem.style.setProperty("height", `${fullHeight}`);
@@ -122,7 +125,7 @@ const Projects = () => {
                     <span><b>Software:</b> {item.software}</span>
                   </div>
                   <div className={styles.item_headline}>
-                    <p className={styles.description_project}>
+                    <p ref={heightDescriptionProjectRef} className={styles.description_project}>
                       <b>Descrição: </b>
                       {item.description}
                     </p>

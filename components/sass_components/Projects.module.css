@@ -65,7 +65,7 @@
   font-size: 45px;
   position: absolute;
   right: 1.4vw;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .projects .session_projects .list_projects .project .headline {
   display: flex;

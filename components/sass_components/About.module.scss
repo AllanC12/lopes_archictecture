@@ -52,7 +52,7 @@
         }
     
         .container_text_photo{
-            @include flex(center,flex-start);
+            @include flex(center,center);
             gap: 80px;
             padding: 4%;
         }

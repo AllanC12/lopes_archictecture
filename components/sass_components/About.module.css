@@ -47,7 +47,7 @@
 .wraper_about .about .container_text_photo {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 80px;
   padding: 4%;
 }

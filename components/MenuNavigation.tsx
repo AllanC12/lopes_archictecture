@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef } from "react";
 
 import Image from "next/image";
 
@@ -9,50 +9,60 @@ import { Link } from "react-scroll";
 
 interface propsMenuNavigation {
   menuOpen: boolean;
+  setMenuOpen: Dispatch<SetStateAction<boolean>>
 }
 
-const MenuNavigation = ({ menuOpen }: propsMenuNavigation) => {
+const MenuNavigation = ({ menuOpen,setMenuOpen }: propsMenuNavigation) => {
   const menuNavigation = useRef<HTMLElement | null>(null);
+  const listLinksRef = useRef<HTMLUListElement>(null)
+  const listLinks = listLinksRef.current
+
+  const closeMenuBar = () => {
+    menuNavigation.current?.style.setProperty("right", "-200px");
+    setTimeout(() => {
+      menuNavigation.current?.style.setProperty("display","none")
+    }, 500);
+  }
+
+  const openMenuBar = () => {
+    menuNavigation.current?.style.setProperty("display","block")
+    setTimeout(() => {
+      menuNavigation.current?.style.setProperty("right", "0px");
+    }, 100);
+  }
 
   const verifyMenuOpen = () => {
     if (menuOpen) {
-      menuNavigation.current?.style.setProperty("display","block")
-      setTimeout(() => {
-        menuNavigation.current?.style.setProperty("right", "0px");
-      }, 100);
+      openMenuBar()
     } else {
-      menuNavigation.current?.style.setProperty("right", "-200px");
-      setTimeout(() => {
-        menuNavigation.current?.style.setProperty("display","none")
-      }, 500);
-
+      closeMenuBar()
     }
   };
 
   useEffect(() => {
     verifyMenuOpen();
   }, [menuOpen]);
-
+  
   return (
     <nav ref={menuNavigation} className={styles.menu_navigation}>
-      <ul>
+        <ul ref={listLinksRef} >
         <li>
-          <Link to="init" spy={true} smooth={true} duration={600}>
+          <Link onClick={()=> setMenuOpen(false)} to="init" spy={true} smooth={true} duration={600}>
             Início
           </Link>
         </li>
         <li>
-          <Link to="projects" spy={true} smooth={true} duration={600}>
+          <Link onClick={()=> setMenuOpen(false)} to="projects" spy={true} smooth={true} duration={600}>
             Projetos
           </Link>
         </li>
         <li>
-          <Link to="about" spy={true} smooth={true} duration={600}>
+          <Link onClick={()=> setMenuOpen(false)} to="about" spy={true} smooth={true} duration={600}>
             Sobre
           </Link>
         </li>
         <li>
-          <Link to="contacts" spy={true} smooth={true} duration={600}>
+          <Link onClick={()=> setMenuOpen(false)} to="contacts" spy={true} smooth={true} duration={600}>
             Contatos
           </Link>
         </li>

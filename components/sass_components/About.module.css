@@ -1,5 +1,5 @@
 .wraper_about {
-  padding-top: 12vh;
+  padding-top: 11vh;
 }
 .wraper_about .about {
   position: relative;
@@ -48,7 +48,7 @@
   justify-content: center;
   align-items: center;
   gap: 80px;
-  padding: 4%;
+  padding: 2% 4% 4% 2%;
 }
 .wraper_about .about .text_about {
   width: 50%;

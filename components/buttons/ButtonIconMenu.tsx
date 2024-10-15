@@ -1,3 +1,6 @@
+'use client'
+
+import {useEffect, useRef} from 'react'
 
 import styles from './sass_buttons/ButtonIconMenu.module.scss';
 
@@ -7,6 +10,17 @@ type Props = {
 }
 
 const ButtonIconMenu = ({menuOpen,setMenuOpen}:Props) => {
+
+  const refCheckbox = useRef<HTMLInputElement>(null)
+
+
+  const controlCheckbox = () => {
+    if(menuOpen){
+      refCheckbox.current!.checked = true
+    }else{
+      refCheckbox.current!.checked = false
+    }
+  }
   
   const handleVisibilityMenu = () => {
     if(menuOpen){
@@ -15,11 +29,15 @@ const ButtonIconMenu = ({menuOpen,setMenuOpen}:Props) => {
       setMenuOpen(true)
     }
   }
+  
+  useEffect(() => {
+    controlCheckbox()
+  },[menuOpen])
 
   return (
     <div onClick={handleVisibilityMenu} className={styles.icon}>
       
-      <input type="checkbox" className={styles.checkbox} />
+      <input ref={refCheckbox} type="checkbox" className={styles.checkbox} />
       <label htmlFor="checkbox" className={styles.toggle}>
         <div className={`${styles.bars} ${styles.bar1}`}></div>
         <div className={`${styles.bars} ${styles.bar2}`}></div>

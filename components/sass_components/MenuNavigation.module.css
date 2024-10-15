@@ -43,7 +43,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1600px) {
   .menu_navigation ul {
     margin-top: 6.5vh !important;
   }

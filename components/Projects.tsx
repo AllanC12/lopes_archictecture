@@ -66,6 +66,7 @@ const Projects = () => {
   }, []);
 
   return (
+    
     <div className={styles.projects} id="projects">
       <h4 className={styles.title_session_projects}>
         <span className={styles.number_session_projects}>1</span>Projetos

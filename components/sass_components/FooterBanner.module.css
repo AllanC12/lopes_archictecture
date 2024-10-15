@@ -2,7 +2,7 @@
   width: 98vw;
   height: 24vh;
   position: absolute;
-  top: 103vh;
+  top: 101vh;
   bottom: 0;
   left: 0;
 }
@@ -12,7 +12,7 @@
   align-items: flex-start;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1115px) {
   .footer_banner {
     top: 112vh !important;
   }

@@ -66,4 +66,9 @@
   .select_language {
     top: 56vh !important;
   }
+}
+@media only screen and (max-width: 769px) and (orientation: landscape) {
+  .select_language {
+    top: 45vh !important;
+  }
 }/*# sourceMappingURL=MenuNavigation.module.css.map */

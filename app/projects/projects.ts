@@ -16,7 +16,7 @@ export interface IProject {
 export const listProjects: IProject[] = [
     { id: 1,
       name: "Casa Boa Vista",
-      location: "São Francisco de Paula - Bairro Explanada - MG - Brasil",
+      location: "São Francisco de Paula - Bairro Esplanada - MG - Brasil",
       lat: "-20.7",
       terrain_area: "221,5 m²",
       build_area: "130 m²",

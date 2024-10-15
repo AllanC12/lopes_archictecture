@@ -1,7 +1,7 @@
 @import "../../mixins/mixin.scss";
 
 .wraper_about{
-    padding-top: 12vh;
+    padding-top: 11vh;
 
     .about{
         position: relative;
@@ -53,7 +53,7 @@
         .container_text_photo{
             @include flex(center,center);
             gap: 80px;
-            padding: 4%;
+            padding: 2% 4% 4% 2%;
         }
     
         .text_about{
@@ -61,8 +61,9 @@
             max-width: 700px;
             order: 1;
             
-    
+            
             .text{
+                margin-top: 18px;
                 font-size: 1.5em;
                 color: #f5f6f7;
             }

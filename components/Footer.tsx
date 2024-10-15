@@ -32,7 +32,6 @@ const Footer = () => {
         </Link>
       </div>
       <Link
-        data-aos="flip-left"
         href="https://maps.app.goo.gl/Vf5k7q96WaJfhuuD9"
         target="_blank"
         className={styles.address}

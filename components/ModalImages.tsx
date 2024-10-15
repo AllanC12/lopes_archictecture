@@ -11,6 +11,7 @@ import Zoom from "react-medium-image-zoom";
 import { IProject } from "@/app/projects/projects";
 
 import styles from "../components/sass_components/Modal.module.scss";
+import 'react-medium-image-zoom/dist/styles.css'
 
 import { IoMdClose } from "react-icons/io";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";

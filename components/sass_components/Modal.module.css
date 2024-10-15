@@ -81,9 +81,6 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-.modal .slides .main_slide .image_main_slide .rmiz__overlay {
-  background-color: rgba(241, 3, 3, 0.9) !important;
-}
 .modal .slides .main_slide .image_main_slide .footer_blur {
   position: absolute;
   bottom: 0;

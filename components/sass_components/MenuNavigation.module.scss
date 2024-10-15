@@ -52,7 +52,7 @@
 
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1600px){
   .menu_navigation ul{
     margin-top: 6.5vh !important;
   }
@@ -81,3 +81,8 @@
   }
 }
 
+@media only screen and (max-width: 769px) and (orientation: landscape) {
+  .select_language{
+    top: 45vh !important;
+  }
+} 

@@ -1,12 +1,11 @@
 .wraper_about {
-  padding-top: 6vh;
+  padding-top: 12vh;
 }
 .wraper_about .about {
   position: relative;
   max-width: 1300px;
   margin: 0 auto;
   background-color: #000;
-  padding: 5vh 0;
 }
 .wraper_about .about .title_session_about {
   display: flex;

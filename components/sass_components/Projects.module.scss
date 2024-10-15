@@ -4,13 +4,14 @@
     width: 100%;
     max-width: 1300px;
     margin: 39vh auto 0 auto;
+    padding-top: 15px;
 
     .title_session_projects{
         @include flex(flex-start,center);
         max-width: 30%;
         font-size: 34px;
         gap: 2vw;
-        padding: 5vh 0 0 0;
+        padding: 9vh 0 0 0;
         border-bottom: 6px solid #000;
         font-weight: bold;
         text-align: center;

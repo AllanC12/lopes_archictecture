@@ -9,8 +9,6 @@ import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 
-import Logo from "./Logo";
-
 import styles from "../components/sass_components/Footer.module.css";
 
 const Footer = () => {
@@ -39,9 +37,6 @@ const Footer = () => {
         Rua Américo Batista dos Santos Júnior - 102 - Centro - São Francisco de
         Paula MG
       </Link>
-      {/* <div className={styles.logo}>
-        <Logo sizeTitleOne={22} sizeTitleTwo={15} width={40} height={40} />
-      </div> */}
     </footer>
   );
 };

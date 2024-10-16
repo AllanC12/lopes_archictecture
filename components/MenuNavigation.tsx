@@ -14,8 +14,6 @@ interface propsMenuNavigation {
 
 const MenuNavigation = ({ menuOpen,setMenuOpen }: propsMenuNavigation) => {
   const menuNavigation = useRef<HTMLElement | null>(null);
-  const listLinksRef = useRef<HTMLUListElement>(null)
-  const listLinks = listLinksRef.current
 
   const closeMenuBar = () => {
     menuNavigation.current?.style.setProperty("right", "-200px");
@@ -45,7 +43,7 @@ const MenuNavigation = ({ menuOpen,setMenuOpen }: propsMenuNavigation) => {
   
   return (
     <nav ref={menuNavigation} className={styles.menu_navigation}>
-        <ul ref={listLinksRef} >
+        <ul>
         <li>
           <Link onClick={()=> setMenuOpen(false)} to="init" spy={true} smooth={true} duration={600}>
             Início

@@ -1,6 +1,5 @@
 'use client'
 
-import { Braah_One } from "next/font/google";
 import styles from "../components/sass_components/Curtain.module.css";
 
 import { useRef,useEffect,useState, RefObject } from "react";

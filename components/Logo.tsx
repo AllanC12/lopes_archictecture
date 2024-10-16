@@ -4,8 +4,6 @@ import { useRef, useEffect } from "react";
 
 import { initAnimationsAos } from "@/aos/aos";
 
-import Image from "next/image";
-
 import styles from "./sass_components/Logo.module.scss";
 
 interface propsLogo {

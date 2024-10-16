@@ -13,8 +13,6 @@ const Slogan = () => {
 
   const [showSlogan, setShowSlogan] = useState<Boolean>(false);
   const span_one = useRef<HTMLSpanElement>(null);
-  const span_two = useRef<HTMLSpanElement>(null);
-  const span_three = useRef<HTMLSpanElement>(null);
   
   useEffect(() => {
     initAnimationsAos()

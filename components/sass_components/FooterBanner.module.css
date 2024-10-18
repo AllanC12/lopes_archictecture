@@ -21,4 +21,9 @@
   .footer_banner {
     top: 116vh !important;
   }
+}
+@media (min-height: 1024px) {
+  .footer_banner {
+    top: 100vh !important;
+  }
 }/*# sourceMappingURL=FooterBanner.module.css.map */

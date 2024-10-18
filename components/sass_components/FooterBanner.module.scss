@@ -13,6 +13,12 @@
   }
 }
 
+@media (min-width: 1950px){
+  .footer_banner{
+   display: none;
+  }
+}
+
 
 @media (max-width: 1115px) {
   .footer_banner {
@@ -29,7 +35,7 @@
 
 @media (min-height: 1024px){
   .footer_banner{
-    top: 100vh !important;
+    top: 102vh !important;
   }
 }
 

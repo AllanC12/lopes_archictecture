@@ -12,6 +12,11 @@
   align-items: flex-start;
 }
 
+@media only screen and (orientation: portrait) {
+  .footer_banner {
+    display: none !important;
+  }
+}
 @media (min-width: 1950px) {
   .footer_banner {
     display: none;

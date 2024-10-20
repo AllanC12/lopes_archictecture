@@ -26,28 +26,18 @@ const Banner = () => {
         data-aos="fade-left"
         className={styles.slide_banner}
       >
-        <Image
-          className={styles.selected}
-          src="/images/banner_one.png"
-          layout="fill"
-          objectFit="cover"
-          alt="Imagem de projeto"
-          quality={100}
-        />
-        <Image
-          src="/images/banner_two.png"
-          layout="fill"
-          objectFit="cover"
-          alt="Imagem de projeto"
-          quality={100}
-        />
-        <Image
-          src="/images/banner_three.png"
-          layout="fill"
-          objectFit="cover"
-          alt="Imagem de projeto"
-          quality={100}
-        />
+        <div
+          style={{ backgroundImage: `url(/images/banner_one.png);` }}
+          className={`${styles.selected} ${styles.banner_img} ${styles.banner_one}`}
+        ></div>
+        <div
+          style={{ backgroundImage: `url(/images/banner_two.png);` }}
+          className={`${styles.banner_img} ${styles.banner_two}`}
+        ></div>
+        <div
+          style={{ backgroundImage: `url(/images/banner_three.png);` }}
+          className={`${styles.banner_img} ${styles.banner_three}`}
+        ></div>
       </div>
       <FooterBanner />
     </div>

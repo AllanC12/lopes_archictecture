@@ -22,6 +22,17 @@
   margin-left: 8px;
 }
 
+@media only screen and (orientation: portrait) {
+  .slogan_banner {
+    margin-top: 30vh;
+  }
+  .span_slogan {
+    font-size: 1.4em;
+  }
+  .buttons {
+    margin-left: 25%;
+  }
+}
 @media (max-width: 780px) {
   .span_slogan {
     font-size: 2.5em;

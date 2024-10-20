@@ -22,6 +22,15 @@
   top: 0;
 }
 
+@media only screen and (orientation: portrait) {
+  .banner {
+    height: 100vh !important;
+    background-image: url("../../public/images/1_mod_ret.jpg");
+  }
+  .slide_banner {
+    display: none;
+  }
+}
 @media (max-width: 780px) {
   .banner {
     background-size: cover;

@@ -143,6 +143,11 @@
   opacity: 1;
 }
 
+@media only screen and (orientation: portrait) {
+  .projects {
+    margin-top: 2vh;
+  }
+}
 @media (max-width: 1070px) {
   .project {
     margin-top: 50px;

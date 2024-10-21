@@ -145,7 +145,7 @@
 
 @media only screen and (orientation: portrait) {
   .projects {
-    margin-top: 2vh;
+    margin-top: 0vh !important;
   }
 }
 @media (max-width: 1070px) {

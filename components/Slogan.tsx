@@ -10,12 +10,17 @@ import ButtonAbout from "./buttons/ButtonAbout";
 import ButtonContacts from "./buttons/ButtonContacts";
 
 const Slogan = () => {
-
+  const mediaQuery = window.matchMedia('(orientation: portrait)')
   const [showSlogan, setShowSlogan] = useState<Boolean>(false);
   const span_one = useRef<HTMLSpanElement>(null);
+
+
   
   useEffect(() => {
     initAnimationsAos()
+    if(mediaQuery.matches){
+      setShowSlogan(true)
+    }
   }, []);
 
   setTimeout(() => {

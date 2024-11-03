@@ -7,8 +7,8 @@
   -webkit-overflow-x: hidden !important;
 }
 .slogan_banner .span_slogan {
-  margin-left: 8px;
   font-size: 2.7em;
+  text-align: center;
 }
 
 .buttons {
@@ -50,10 +50,15 @@
 }
 @media (max-width: 450px) {
   .slogan_banner {
-    margin-top: 23vh;
+    margin-top: 30vh;
+    margin-left: 6%;
   }
   .span_slogan {
-    font-size: 1.4em !important;
+    margin: 10px 0;
+    font-size: 1.2em !important;
+  }
+  .buttons {
+    margin-left: 12%;
   }
 }
 @media (min-width: 1900px) {

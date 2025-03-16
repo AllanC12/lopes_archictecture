@@ -1,5 +1,9 @@
 @import '../../mixins/mixin.scss';
 
+.hide{
+  display: none;
+}
+
 .menu_navigation{
     position: fixed;
     display: none;

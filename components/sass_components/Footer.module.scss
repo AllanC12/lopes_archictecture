@@ -7,8 +7,8 @@
     color: #fff;
     text-align: center;
     margin-top: 10px;
-    padding: 25px 0 70px 0;
-
+    padding: 25px 0 20px 0;
+    position: relative;
 
     .social_medias{
         @include flex(center,center);
@@ -43,5 +43,13 @@
         text-decoration: none;
    }
 
-
+  .developer{
+    font-size: 13px;
+    margin-top: 70px;
+    
+     a{
+      color: #fff;
+      text-wrap: nowrap;
+     }
+  }
 }

@@ -47,7 +47,7 @@ const Projects = () => {
 
   animationBorder = (indexElement: number, border: string) => {
     const borderElementAnimation = refProject.current[indexElement]
-      .childNodes[4] as HTMLDivElement;
+      .childNodes[3] as HTMLDivElement;
     borderElementAnimation.style.setProperty("width", "0px");
 
     setTimeout(() => {
@@ -110,20 +110,24 @@ const Projects = () => {
                   <div className={styles.item_headline}>
                     <span><b>Localização:</b> {item.location}</span>
                   </div>
+                  {item.data_size && (
+                    <>
+                      <div className={styles.item_headline}>
+                            <span><b>Latitude:</b> {item.lat}</span>
+                          </div>
+                          <div className={styles.item_headline}>
+                            <span><b>Área do Terreno:</b> {item.terrain_area}</span>
+                          </div>
+                          <div className={styles.item_headline}>
+                            <span><b>Área Construída:</b> {item.build_area}</span>
+                          </div>
+                          <div className={styles.item_headline}>
+                            <span><b>Área permeável:</b> {item.permeable_area}</span>
+                      </div>
+                    </>
+                  )}
                   <div className={styles.item_headline}>
-                    <span><b>Latitude:</b> {item.lat}</span>
-                  </div>
-                  <div className={styles.item_headline}>
-                    <span><b>Área do Terreno:</b> {item.terrain_area}</span>
-                  </div>
-                  <div className={styles.item_headline}>
-                    <span><b>Área Construída:</b> {item.build_area}</span>
-                  </div>
-                  <div className={styles.item_headline}>
-                    <span><b>Área permeável:</b> {item.permeable_area}</span>
-                  </div>
-                  <div className={styles.item_headline}>
-                    <span><b>Software:</b> {item.software}</span>
+                    <span><b>Software: </b>{item.software}</span>
                   </div>
                   <div className={styles.item_headline}>
                     <p ref={heightDescriptionProjectRef} className={styles.description_project}>
@@ -143,10 +147,10 @@ const Projects = () => {
                   Ver imagens
                 </span>
 
-                <Link href={item.linkForDrive} target="_blank">
+                {/* <Link href={item.linkForDrive} target="_blank">
                   <FaDownload />
                   Baixar no drive
-                </Link>
+                </Link> */}
 
                 <div className={styles.animation_border}></div>
               </div>
@@ -172,19 +176,25 @@ const Projects = () => {
         >
           <Image
             className={styles.selected}
-            src="https://drive.google.com/uc?export=view&id=1abNiPIwTd6IIUilszRTNH8Isrrx7ZY4l"
+            src="/images/casa_boa_vista/10.jpg"
             width={500}
             height={500}
             alt="Imagem de projeto"
           />
           <Image
-            src="https://drive.google.com/uc?export=view&id=1YOLkJH2d3WGmqNlcXhOSQC_8m_myLuTZ"
+            src="/images/casa_boa_vista/11.jpg"
             width={500}
             height={500}
             alt="Imagem de projeto"
           />
           <Image
-            src="https://drive.google.com/uc?export=view&id=1I_ozzGbvd_2nVNh-zKsKhZQwEaItFy46"
+            src="/images/quartinho_isis/3.png"
+            width={500}
+            height={500}
+            alt="Imagem de projeto"
+          />
+          <Image
+            src="/images/quartinho_isis/4.png"
             width={500}
             height={500}
             alt="Imagem de projeto"

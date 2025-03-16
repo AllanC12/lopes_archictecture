@@ -37,6 +37,12 @@ const Footer = () => {
         Rua Américo Batista dos Santos Júnior - 102 - Centro - São Francisco de
         Paula MG
       </Link>
+      <p className={styles.developer}>
+        <span> Developed By </span>
+         <Link href="https://www.instagram.com/allancandido78?utm_source=qr&igsh=Z2txbGdwNDJqNjFq" target="_blank" className={styles.developer}>
+            Allan C.
+         </Link>
+      </p>
     </footer>
   );
 };

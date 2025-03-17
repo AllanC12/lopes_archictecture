@@ -28,7 +28,7 @@ const Slogan = () => {
         <>
           <div className={styles.slogan_banner}>
             <span ref={span_one} className={styles.span_slogan}>
-              Onde a funcionalidade guia a estética.
+             <b>Transformamos ideias em espaços vivos:</b>  arquitetura, urbanismo e design que inspiram e conectam.
             </span>
           </div>
           <div className={styles.buttons}>

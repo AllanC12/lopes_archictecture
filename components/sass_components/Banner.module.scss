@@ -51,7 +51,6 @@
 @media (max-width: 780px){
     .banner{
         background-size: cover;
-        padding: 24vh 1%;
 
     }
 
@@ -62,11 +61,20 @@
 
 @media (max-width: 500px){
     .banner{
-        height: 100vh !important;
+        padding: 10vh 1%;
+    }
+    
+    .banner_one{
         background-image: url('../../public/images/mob_one.png');
     }
-
-    .slide_banner{
-        display: none;
+    .banner_two{
+        background-image: url('../../public/images/mob_two.jpg');
     }
+    .banner_three{
+        background-image: url('../../public/images/mob_three.jpg');
+    }
+
+    // .slide_banner{
+    //     display: none;
+    // }
 }

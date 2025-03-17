@@ -66,7 +66,7 @@ const MenuNavigation = ({ menuOpen,setMenuOpen }: propsMenuNavigation) => {
         </li>
       </ul>
 
-      <div className={styles.select_language}>
+      <div className={`${styles.select_language} ${styles.hide}`}>
         <div className={styles.languages}>
           <Image src="/images/brasil.png" width={20} height={20} alt="Brasil" />
           <Image src="/images/usa.png" width={20} height={20} alt="Brasil" />

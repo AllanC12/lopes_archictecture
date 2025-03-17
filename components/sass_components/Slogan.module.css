@@ -1,6 +1,6 @@
 .slogan_banner {
   z-index: 1;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   top: 20vh;
   overflow-x: hidden;
@@ -28,7 +28,7 @@
     margin-left: 10%;
   }
   .span_slogan {
-    font-size: 1.4em;
+    font-size: 1em;
   }
   .buttons {
     margin-left: 32%;
@@ -41,21 +41,24 @@
   }
 }
 @media (max-width: 500px) {
+  .slogan_banner {
+    color: black;
+  }
   .buttons {
     gap: 10vw;
-    padding-top: 22vh;
+    padding-top: 24vh;
     margin-left: 15%;
     font-size: 1.3em;
   }
 }
 @media (max-width: 450px) {
   .slogan_banner {
-    margin-top: 30vh;
+    margin-top: 12vh;
     margin-left: 6%;
   }
   .span_slogan {
     margin: 10px 0;
-    font-size: 1.2em !important;
+    font-size: 1.4em !important;
   }
   .buttons {
     margin-left: 12%;

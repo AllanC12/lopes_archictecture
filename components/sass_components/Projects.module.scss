@@ -210,9 +210,14 @@
         gap: 0px !important;
     }
 
+    .title_session_projects{
+        padding: 0;
+    }
+
     .projects{
         padding-bottom: 0;
-        margin: 0 auto !important;
+        padding-top: 0;
+        margin: 0px auto !important;
 
         .project{
             margin-top: 20px;
@@ -221,7 +226,7 @@
 
 
     .slide_projects{
-        position:static;
+        position: static;
         width: 100% !important;
         height: 400px !important;
 

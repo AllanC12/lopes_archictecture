@@ -26,8 +26,8 @@ const About = () => {
           <div data-aos="fade-right" className={styles.text_about}>
             <p className={styles.text}>
               Olá, sou Carlos Eduardo Lopes, estudante de Arquitetura e
-              Urbanismo na Anhanguera Divinópolis, atualmente cursando o sexto
-              período. Com 23 anos, estou em uma fase de aprendizado e
+              Urbanismo na Anhanguera Divinópolis, atualmente cursando o sétimo
+              período. Com 24 anos, estou em uma fase de aprendizado e
               crescimento contínuos, onde busco aliar criatividade e técnica em
               meus projetos. Estou comprometido em desenvolver soluções
               inovadoras que equilibrem estética, funcionalidade e

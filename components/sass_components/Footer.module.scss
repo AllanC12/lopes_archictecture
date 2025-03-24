@@ -10,6 +10,10 @@
     padding: 25px 0 20px 0;
     position: relative;
 
+    a{
+      font-family: "Hanken Grotesk", sans-serif !important;
+    }
+
     .social_medias{
         @include flex(center,center);
         gap: 15px;
@@ -23,6 +27,7 @@
           font-size: 30px;
           color: #000;
           transition: .5s;
+
         }
 
         .whatsapp:hover{
@@ -50,6 +55,7 @@
      a{
       color: #fff;
       text-wrap: nowrap;
+
      }
   }
 }

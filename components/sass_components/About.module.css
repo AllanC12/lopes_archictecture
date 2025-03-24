@@ -18,6 +18,7 @@
   padding: 5vh 0 0 0;
   border-bottom: 6px solid #fff;
   font-weight: bold;
+  font-family: "Hanken Grotesk", sans-serif !important;
 }
 .wraper_about .about .title_session_about .number_session_about {
   display: flex;
@@ -59,6 +60,7 @@
   margin-top: 18px;
   font-size: 1.5em;
   color: #f5f6f7;
+  font-family: "Lora", serif !important;
 }
 .wraper_about .about .container_photo {
   width: 50%;
@@ -86,6 +88,9 @@
   .wraper_about {
     padding: 4vh 0 !important;
   }
+  .wraper_about .about {
+    top: 45px;
+  }
   .container_text_photo {
     flex-wrap: wrap;
   }
@@ -105,6 +110,19 @@
     font-size: 1.5em !important;
     color: #f5f6f7;
   }
+  .photo {
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 0px 50px 0px 100px;
+  }
+  .photo img {
+    position: relative;
+    top: 10px !important;
+    left: 10px !important;
+    max-width: 105%;
+    height: 100%;
+    border-radius: 0px 50px 0px 100px;
+  }
 }
 @media (max-width: 520px) {
   .title_session_about {
@@ -113,6 +131,10 @@
   }
 }
 @media (max-width: 420px) {
+  .container_photo {
+    width: 85% !important;
+    max-width: 85% !important;
+  }
   .title_session_about {
     font-size: 26px !important;
   }

@@ -8,6 +8,9 @@
   padding: 25px 0 20px 0;
   position: relative;
 }
+.footer a {
+  font-family: "Hanken Grotesk", sans-serif !important;
+}
 .footer .social_medias {
   display: flex;
   justify-content: center;

@@ -7,8 +7,8 @@
   -webkit-overflow-x: hidden !important;
 }
 .slogan_banner .span_slogan {
-  font-size: 2.7em;
   text-align: center;
+  font-size: 1.8em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start !important;
@@ -17,11 +17,8 @@
 }
 .slogan_banner .title_main {
   display: block;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: bold;
-}
-.slogan_banner .sub_title_slogan {
-  margin-right: 10% !important;
 }
 
 .buttons {
@@ -35,6 +32,21 @@
   margin-left: 8px;
 }
 
+@media (min-width: 1800px) {
+  .title_main {
+    display: block;
+    font-size: 2.2em !important;
+    font-weight: bold;
+  }
+  .sub_title_slogan {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 1200px) {
+  .title_main {
+    font-size: 2px !important;
+  }
+}
 @media only screen and (orientation: portrait) {
   .slogan_banner {
     margin-top: 30vh;
@@ -75,16 +87,5 @@
   }
   .buttons {
     margin-left: 12%;
-  }
-}
-@media (min-width: 1900px) {
-  .span_slogan {
-    font-size: 3.5em;
-  }
-  .title_main {
-    display: block;
-    font-size: 2em;
-    font-family: "Hanken Grotesk", sans-serif !important;
-    margin-left: -14%;
   }
 }/*# sourceMappingURL=Slogan.module.css.map */

@@ -1,26 +1,31 @@
 @import '../../mixins/mixin.scss';
 
 .slogan_banner{
-    z-index: 1;
-    color: #ffffff;
-    position: relative;
-    top: 20vh;
-    overflow-x: hidden;
-    -webkit-overflow-x: hidden !important;
-    
-    .title_main{
+  z-index: 1;
+  color: #ffffff;
+  position: relative;
+  top: 20vh;
+  overflow-x: hidden;
+  -webkit-overflow-x: hidden !important;
+
+  .span_slogan{
+    text-align: center;
+    font-size: 1.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    padding-left: 1%;
+
+  }
+
+     .title_main{
       display: block;
-      font-size: 2em;
-      margin-left: -14%;
+      font-size: 1.6em;
       font-weight: bold;
     }
     
-    .span_slogan{
-      font-size: 2.7em;
-      text-align: center;
-   }
-    
-  }
+}
   
   .buttons{
     position: relative;
@@ -29,6 +34,24 @@
     padding-top: 24vh;
     gap: 5vw;
     margin-left: 8px;
+  }
+
+  @media (min-width: 1800px){
+   .title_main{
+      display: block;
+      font-size: 2.2em !important;
+      font-weight: bold;
+    }
+    
+    .sub_title_slogan{
+      font-size: 1.3em;
+    }
+  }
+
+  @media (max-width: 1200px){
+    .title_main{
+      font-size: 2px !important;
+    }
   }
 
   @media only screen and (orientation: portrait){
@@ -52,8 +75,6 @@
     }
   }
 
-
-  
 
 @media (max-width: 500px){
   .slogan_banner{
@@ -85,16 +106,3 @@
 }
 
 
-@media (min-width: 1900px){
-  .span_slogan{
-    font-size: 3.5em;
-  }
-
-  .title_main{
-    display: block;
-    font-size: 2em;
-    font-family: "Hanken Grotesk", sans-serif !important;
-    margin-left: -14%;
-
-  }
-}

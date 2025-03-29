@@ -1,27 +1,54 @@
-.button {
-  background-color: #000;
+/* From Uiverse.io by joe-watson-sbf */
+.btn_about {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #fffffe;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.btn_about a {
   font-size: 2em;
-  margin: 10px 0;
-  color: #fff;
-  padding: 1% 3%;
+  text-transform: uppercase;
+}
+
+.btn_about::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  transition: 0.5s ease;
+}
+
+.btn_about:hover {
+  color: #f7f7f8;
+  transition-delay: 0.5s;
+}
+
+.btn_about:hover::before {
+  width: 100%;
+}
+
+.btn_about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #0c0901;
+  transition: 0.15s ease;
   border-radius: 10px;
   border: 2px solid #fff;
-  cursor: pointer;
-  transition: 0.5s !important;
+  z-index: -1;
 }
 
-.button:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-@media (max-width: 500px) {
-  .button {
-    font-size: 1.6em;
-  }
-}
-@media (max-width: 450px) {
-  .button {
-    font-size: 1.4em;
-  }
+.btn_about:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
 }/*# sourceMappingURL=ButtonBanner.module.css.map */

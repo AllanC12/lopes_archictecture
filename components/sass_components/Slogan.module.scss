@@ -7,17 +7,26 @@
     top: 20vh;
     overflow-x: hidden;
     -webkit-overflow-x: hidden !important;
+
+    .span_slogan{
+      font-size: 2.7em;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start !important;
+      align-items: flex-start;
+      padding-left: 1%;
+   }
     
     .title_main{
       display: block;
       font-size: 2em;
-      margin-left: -14%;
       font-weight: bold;
     }
     
-    .span_slogan{
-      font-size: 2.7em;
-      text-align: center;
+
+   .sub_title_slogan{
+      margin-right: 10% !important;
    }
     
   }

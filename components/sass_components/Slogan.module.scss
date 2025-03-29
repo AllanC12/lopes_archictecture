@@ -8,10 +8,16 @@
     overflow-x: hidden;
     -webkit-overflow-x: hidden !important;
     
+    .title_main{
+      display: block;
+      font-size: 2em;
+      margin-left: -14%;
+      font-weight: bold;
+    }
+    
     .span_slogan{
       font-size: 2.7em;
       text-align: center;
-      font-family: "Hanken Grotesk", sans-serif !important;
    }
     
   }
@@ -45,6 +51,8 @@
       font-size: 2.5em;
     }
   }
+
+
   
 
 @media (max-width: 500px){
@@ -80,5 +88,13 @@
 @media (min-width: 1900px){
   .span_slogan{
     font-size: 3.5em;
+  }
+
+  .title_main{
+    display: block;
+    font-size: 2em;
+    font-family: "Hanken Grotesk", sans-serif !important;
+    margin-left: -14%;
+
   }
 }

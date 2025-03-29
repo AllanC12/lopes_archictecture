@@ -6,10 +6,15 @@
   overflow-x: hidden;
   -webkit-overflow-x: hidden !important;
 }
+.slogan_banner .title_main {
+  display: block;
+  font-size: 2em;
+  margin-left: -14%;
+  font-weight: bold;
+}
 .slogan_banner .span_slogan {
   font-size: 2.7em;
   text-align: center;
-  font-family: "Hanken Grotesk", sans-serif !important;
 }
 
 .buttons {
@@ -68,5 +73,11 @@
 @media (min-width: 1900px) {
   .span_slogan {
     font-size: 3.5em;
+  }
+  .title_main {
+    display: block;
+    font-size: 2em;
+    font-family: "Hanken Grotesk", sans-serif !important;
+    margin-left: -14%;
   }
 }/*# sourceMappingURL=Slogan.module.css.map */

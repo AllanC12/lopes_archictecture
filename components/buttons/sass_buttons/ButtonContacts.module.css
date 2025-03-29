@@ -1,5 +1,5 @@
 /* From Uiverse.io by joe-watson-sbf */
-.btn_about {
+.btn_contacts {
   font-size: 17px;
   background: transparent;
   border: none;
@@ -9,12 +9,12 @@
   transition: 0.5s ease;
   cursor: pointer;
 }
-.btn_about a {
+.btn_contacts a {
   font-size: 1.8em;
   text-transform: uppercase;
 }
 
-.btn_about::before {
+.btn_contacts::before {
   content: "";
   position: absolute;
   left: 0;
@@ -24,16 +24,16 @@
   transition: 0.4s ease;
 }
 
-.btn_about:hover {
+.btn_contacts:hover {
   color: #f7f7f8;
   transition-delay: 0.5s;
 }
 
-.btn_about:hover::before {
+.btn_contacts:hover::before {
   width: 100%;
 }
 
-.btn_about::after {
+.btn_contacts::after {
   content: "";
   position: absolute;
   left: 0;
@@ -47,8 +47,22 @@
   z-index: -1;
 }
 
-.btn_about:hover::after {
+.btn_contacts:hover::after {
   height: 100%;
   transition-delay: 0.4s;
   color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  .btn_contacts {
+    padding: 0.5em 1em;
+  }
+  .btn_contacts a {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 500px) {
+  .btn_contacts a {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=ButtonContacts.module.css.map */

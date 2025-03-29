@@ -42,11 +42,6 @@
     font-size: 1.3em;
   }
 }
-@media (max-width: 1200px) {
-  .title_main {
-    font-size: 2px !important;
-  }
-}
 @media only screen and (orientation: portrait) {
   .slogan_banner {
     margin-top: 30vh;
@@ -60,32 +55,40 @@
     padding-top: 21vh;
   }
 }
+@media (max-width: 870px) {
+  .title_main {
+    font-size: 1.3em !important;
+  }
+  .sub_title_slogan {
+    font-size: 0.7em !important;
+  }
+}
 @media (max-width: 780px) {
-  .span_slogan {
-    font-size: 2.5em;
+  .title_main {
+    font-size: 0.9em !important;
+  }
+  .sub_title_slogan {
+    font-size: 0.5em !important;
   }
 }
 @media (max-width: 500px) {
   .slogan_banner {
-    color: black;
+    top: -20vh !important;
+    left: -6%;
   }
   .buttons {
-    gap: 10vw;
-    padding-top: 24vh;
+    gap: 14vw;
+    top: -35vh;
     margin-left: 15%;
-    font-size: 1.3em;
   }
-}
-@media (max-width: 450px) {
-  .slogan_banner {
-    margin-top: 12vh;
-    margin-left: 6%;
+  .title_main {
+    font-size: 1em !important;
+  }
+  .sub_title_slogan {
+    font-size: 0.6em !important;
   }
   .span_slogan {
-    margin: 10px 0;
-    font-size: 1.4em !important;
-  }
-  .buttons {
-    margin-left: 12%;
+    justify-content: center !important;
+    align-items: center !important;
   }
 }/*# sourceMappingURL=Slogan.module.css.map */

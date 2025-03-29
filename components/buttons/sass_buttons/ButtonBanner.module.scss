@@ -4,7 +4,7 @@
   background: transparent;
   border: none;
   padding: 1em 1.5em;
-  color: #fffffe;
+  color: #fff;
   position: relative;
   transition: 0.5s ease;
   cursor: pointer;
@@ -52,4 +52,21 @@
   height: 100%;
   transition-delay: 0.4s;
   color: aliceblue;
+}
+
+@media (max-width: 768px){
+  .btn_about {
+    padding: 0.5em 1em;
+
+    a{
+      font-size: 1.2em;
+    }
+  }
+}
+@media (max-width: 500px){
+  .btn_about {
+    a{
+      font-size: 1em;
+    }
+  }
 }

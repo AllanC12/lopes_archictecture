@@ -93,3 +93,14 @@
     }
 }
 
+@media (max-width: 500px){
+    .container_projects{
+        flex-direction: column;
+    }
+
+    .project{
+        margin-bottom: 3%;
+        width: 100% !important;
+    }
+}
+

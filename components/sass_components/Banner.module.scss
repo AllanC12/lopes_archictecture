@@ -62,16 +62,26 @@
 @media (max-width: 500px){
     .banner{
        padding: 12vh 1%;
+
+       .slide_banner{
+            height: 100vh !important;
+        
+       }
     }
     
     .banner_one{
         background-image: url('../../public/images/mob_one.png');
+        // background-size: cover !important; descomentar ao receber imagens mobile
     }
     .banner_two{
         background-image: url('../../public/images/mob_two.jpg');
+        // background-size: cover !important; descomentar ao receber imagens mobile
+
     }
     .banner_three{
         background-image: url('../../public/images/mob_three.jpg');
+        // background-size: cover !important;  descomentar ao receber imagens mobile
+
     }
 
     // .slide_banner{

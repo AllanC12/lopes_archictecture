@@ -50,8 +50,8 @@
     gap: 0;
   }
   .close_project {
-    left: 2vw !important;
-    top: 3vh !important;
+    left: 1vw !important;
+    top: 1vh !important;
     z-index: 999;
   }
   .d_flex {

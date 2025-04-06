@@ -52,6 +52,9 @@
   .banner {
     padding: 12vh 1%;
   }
+  .banner .slide_banner {
+    height: 100vh !important;
+  }
   .banner_one {
     background-image: url("../../public/images/mob_one.png");
   }

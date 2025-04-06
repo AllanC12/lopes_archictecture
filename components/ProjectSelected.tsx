@@ -86,7 +86,7 @@ const ProjectSelected: React.FC<ProjectSelectedProps> = ({setProject, project}) 
              </div>
 
              <div className={`${styles.details_project_build_area} ${styles.d_flex}`}>
-                <h4>Área do construída:</h4>
+                <h4>Área construída:</h4>
                 <span>{project?.build_area}</span>
              </div>
 

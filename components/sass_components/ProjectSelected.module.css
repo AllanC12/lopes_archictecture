@@ -1,0 +1,69 @@
+.d_flex {
+  display: flex;
+  gap: 1%;
+}
+
+.project_selected {
+  margin-top: 2vh;
+  display: flex;
+  padding: 1%;
+  gap: 1%;
+  justify-content: center;
+  box-shadow: -1px 1px 5px 4px rgb(181, 179, 181);
+  position: relative;
+}
+.project_selected .slide_project {
+  width: 50%;
+  box-shadow: -1px 0px 5px 4px rgb(214, 207, 214);
+}
+.project_selected .details_project {
+  margin-top: 1.5%;
+  width: 50%;
+}
+.project_selected .details_project .title_project {
+  text-align: center;
+  font-size: 1.6em;
+}
+.project_selected .details_project .description_project {
+  margin-top: 4px;
+}
+.project_selected .details_project .details_project_location {
+  margin-top: 5px;
+  display: flex;
+  gap: 1%;
+}
+.project_selected .close_project {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1vh 1vw;
+  cursor: pointer;
+}
+.project_selected .close_project svg {
+  font-size: 2em;
+}
+
+@media (max-width: 1000px) {
+  .project_selected {
+    flex-direction: column;
+    gap: 0;
+  }
+  .d_flex {
+    flex-direction: column;
+    gap: 0;
+  }
+  .slide_project {
+    width: 100% !important;
+  }
+  .details_project {
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  .details_project {
+    margin-top: 20px !important;
+  }
+  .description_project {
+    text-align: center;
+  }
+}/*# sourceMappingURL=ProjectSelected.module.css.map */

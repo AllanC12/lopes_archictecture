@@ -27,15 +27,15 @@ const Banner = () => {
         className={styles.slide_banner}
       >
         <div
-          style={{ backgroundImage: `url(/images/banner_one.png);` }}
+          style={{ backgroundImage: `url(/images/banner_one.png)` }}
           className={`${styles.selected} ${styles.banner_img} ${styles.banner_one}`}
         ></div>
         <div
-          style={{ backgroundImage: `url(/images/banner_two.png);` }}
+          style={{ backgroundImage: `url(/images/banner_two.png)` }}
           className={`${styles.banner_img} ${styles.banner_two}`}
         ></div>
         <div
-          style={{ backgroundImage: `url(/images/banner_three.png);` }}
+          style={{ backgroundImage: `url(/images/banner_three.png)` }}
           className={`${styles.banner_img} ${styles.banner_three}`}
         ></div>
       </div>

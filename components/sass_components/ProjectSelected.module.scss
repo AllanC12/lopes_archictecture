@@ -59,6 +59,12 @@
         gap: 0;
     }
 
+    .close_project{
+      left: 2vw !important;
+      top: 3vh !important;
+      z-index: 999;
+    }
+
     .d_flex{
         flex-direction: column;
         gap: 0;

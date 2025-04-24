@@ -38,7 +38,7 @@ const Footer = () => {
       </Link>
       <p className={styles.developer}>
         <span> Developed By </span>
-         <Link href="https://www.instagram.com/allancandido78?utm_source=qr&igsh=Z2txbGdwNDJqNjFq" target="_blank" className={styles.developer}>
+         <Link href="https://github.com/AllanC12" target="_blank" className={styles.developer}>
             Allan C.
          </Link>
       </p>

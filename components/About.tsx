@@ -41,7 +41,7 @@ const About = () => {
             <div className={styles.photo}>
               <Image
                 data-aos="fade-down-right"
-                src="/images/architect_.jpg"
+                src="/images/logo_image.png"
                 width={320}
                 height={370}
                 alt="arquiteto"

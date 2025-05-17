@@ -68,7 +68,6 @@
 }
 .wraper_about .about .container_photo .photo {
   position: relative;
-  border: 2px solid #fff;
   border-radius: 0px 50px 0px 100px;
 }
 .wraper_about .about .container_photo .photo img {
@@ -86,7 +85,7 @@
     max-width: 40% !important;
   }
   .wraper_about {
-    padding: 4vh 0 !important;
+    padding: 1vh 0 !important;
   }
   .wraper_about .about {
     top: 45px;
@@ -112,7 +111,6 @@
   }
   .photo {
     position: relative;
-    border: 2px solid #fff;
     border-radius: 0px 50px 0px 100px;
   }
   .photo img {
@@ -128,6 +126,7 @@
   .title_session_about {
     font-size: 28px !important;
     max-width: 50% !important;
+    text-wrap: nowrap;
   }
 }
 @media (max-width: 420px) {

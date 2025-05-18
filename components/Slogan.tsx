@@ -28,7 +28,8 @@ const Slogan = () => {
         <>
           <div className={styles.slogan_banner}>
             <span ref={span_one} className={styles.span_slogan}>
-             <b>Transformamos ideias em espaços vivos:</b>  arquitetura, urbanismo e design que inspiram e conectam.
+               <span className={styles.title_main}>Transformando ideias em espaços vivos.</span> 
+               <span className={styles.sub_title_slogan}> Arquitetura, Urbanismo e Design que inspiram.</span>
             </span>
           </div>
           <div className={styles.buttons}>

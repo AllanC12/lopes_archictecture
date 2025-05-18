@@ -29,6 +29,8 @@
   color: #fff;
   font-size: 1.4em;
   cursor: pointer;
+  transition: 0.5s;
+  text-transform: uppercase;
 }
 .menu_navigation ul li:hover {
   background-color: #3b3a3a;

@@ -30,16 +30,15 @@ const Footer = () => {
         </Link>
       </div>
       <Link
-        href="https://maps.app.goo.gl/Vf5k7q96WaJfhuuD9"
+        href="https://maps.app.goo.gl/Uc4pA2k7ZyG94Nwh6"
         target="_blank"
         className={styles.address}
       >
-        Rua Américo Batista dos Santos Júnior - 102 - Centro - São Francisco de
-        Paula MG
+        São Francisco de Paula - MG - Brasil
       </Link>
       <p className={styles.developer}>
         <span> Developed By </span>
-         <Link href="https://www.instagram.com/allancandido78?utm_source=qr&igsh=Z2txbGdwNDJqNjFq" target="_blank" className={styles.developer}>
+         <Link href="https://github.com/AllanC12" target="_blank" className={styles.developer}>
             Allan C.
          </Link>
       </p>

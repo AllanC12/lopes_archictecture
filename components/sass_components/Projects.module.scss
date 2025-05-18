@@ -3,18 +3,20 @@
 .projects{
     width: 100%;
     max-width: 1300px;
-    margin: 39vh auto 0 auto;
+    margin: 30vh auto 0 auto;
     padding-top: 15px;
+
 
     .title_session_projects{
         @include flex(flex-start,center);
         max-width: 30%;
-        font-size: 34px;
+        font-size: 37px;
         gap: 2vw;
         padding: 9vh 0 0 0;
         border-bottom: 6px solid #000;
         font-weight: bold;
         text-align: center;
+        text-transform: uppercase;
 
         .number_session_projects{
             @include flex(center,center);
@@ -26,216 +28,93 @@
 
     }
 
-    .session_projects{
-        @include flex(center,flex-start);
-        border-top: 1px solid #ccc;
-        gap: 50px;
 
-        .list_projects{
-            order: 1;
-            padding: 2vw 0;
-            width: 50%;
-    
-            .project{
-                padding: 20px 2vw;
-                border-bottom: 1px solid #ccc;
-                transition: 1s;
-                overflow: hidden;
-                height:55px;
-                position: relative;
+    .container_projects{
+        width: 100%;
+        margin-top: 2vh;
+        min-height: 50vh;
+        display: flex;
+        justify-content: center;
+        padding: 5vh 0;
+        gap: 1%;
+        color: #fff;
+        -webkit-box-shadow: -1px 1px 5px 4px rgba(181,179,181,1);
+        -moz-box-shadow: -1px 1px 5px 4px rgba(181,179,181,1);
+        box-shadow: -1px 1px 5px 4px rgba(181,179,181,1);
 
-                .name_project{
-                    font-size: 26px;
-                    cursor: pointer;
-                    font-weight: 100;
-                }
-                
-                .wraper_project{
-                    @include flex(space-between,flex-start);
-                    gap: 30px;
-
-                    .arrow_project{
-                        width: 40px;
-                        height: 40px;
-                        z-index: 1;
-                        cursor: pointer
-                        
-                    }
-                   
-                   .arrow{
-                    font-size: 45px;
-                    position: absolute;
-                    right: 1.4vw;
-                    transition: .3s;
-                  }
-
-
-                }
-
-                .headline{
-                    @include flex(flex-start,flex-start);
-                    flex-direction: column;
-                    gap: 10px;
-                }
-
-                .description_project{
-                    margin: 0px 0 30px 0;
-                    max-width: 500px;
-                }
-
-                .view_image{
-                    margin-right: 20px;
-                    font-size: 20px;
-                    transition: .5s;
-                    margin-bottom: 5px;
-                    cursor: pointer;
-                }
-
-                .view_image:hover{
-                    background-color: #000;
-                    color: #fff;
-                    border: 1px solid #000;
-                    border-radius:5px;
-                    padding: 8px 15px;
-                }
-
-                a{
-                    color: #000;
-                    font-size: 20px;
-                    text-decoration: none;
-                    transition: .5s;
-                    margin-bottom: 5px;
-
-                    svg{
-                        font-size: 20px;
-                        margin-right: 10px;
-                    }
-
-                }
-
-                a:hover{
-                    background-color: #000;
-                    color: #fff;
-                    border: 1px solid #000;
-                    border-radius:5px;
-                    padding: 10px 15px;
-                }
-
-                .animation_border{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    height: 1px;
-                    background-color: #000;
-                    transition: width .6s ease !important;
-                }
-
-                .buttonAllProjects{
-                    width: 100%;
-                    height: 90px;
-                }
-    
-            }
-    
-    
-        }
-
-        .slide_projects{
+        .project{
+            width: 48%;
+            height: 45vh;
             position: relative;
-            width: 50%;
-            height: 400px;
+            background-position: center;
+            overflow: hidden; /* Garante que o zoom não ultrapasse os limites do contêiner */
+            background-size: cover; //contai para manter a proporção da imagem
+            // background-repeat: no-repeat; descomentar em caso de contain
+            cursor: pointer;
 
-            img{
-                object-fit: contain;
-                opacity: 0;
+            &::before {
+                content: "";
                 position: absolute;
                 top: 0;
-                right: 0;
-                max-height: 100%;
-                max-width: 100%;
-                transition: 1s;
-                
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover; //contain para manter a proporção da imagem
+                background-repeat: no-repeat;
+                background-image: inherit; /* Usa a mesma imagem de fundo definida no elemento pai */
+                transition: transform 0.7s ease-in-out; /* Suaviza o efeito de zoom */
+                z-index: 0; /* Garante que o pseudo-elemento fique atrás do conteúdo */
+              }
+
+              &:hover::before {
+                transform: scale(1.05); /* Aplica o zoom ao passar o mouse */
+              }
+            
+
+            .project_title{
+                position: absolute;
+                bottom: 3vh;
+                left: 5vh;
+                font-size: 1.5em;
+                font-weight: normal;
             }
 
-            .selected{
-                opacity: 1;
-            }
         }
     }
 
-
-
+  
 
 }
 
-@media only screen and (orientation: portrait){
+@media (max-width: 1366px){
     .projects{
-        margin-top: 0vh !important;
-    }
-}
-
-@media (max-width: 1070px){
-    .project{
-        margin-top: 50px;
-    }
-}
-
-@media (max-width: 768px){
-
-
-    .title_session_projects{
-        font-size: 28px !important;
-        max-width: 50% !important;
-    }
-
-    .session_projects{
-       flex-wrap: wrap;
-    }
-
-    .list_projects{
-        order: 2;
-        width: 100% !important;
-        display: block;
-    }
-
-    .slide_projects{
-        height: 300px !important;
+        margin-top: 28vh;
     }
 }
 
 @media (max-width: 500px){
-
-    .session_projects{
-        width: 100%;
-        gap: 0px !important;
+    .container_projects{
+        flex-direction: column;
     }
 
-    .title_session_projects{
-        padding: 0;
+    .project{
+        margin-bottom: 3%;
+        width: 100% !important;
     }
 
     .projects{
-        padding-bottom: 0;
+        margin-top: 0;
         padding-top: 0;
-        margin: 0px auto !important;
-
-        .project{
-            margin-top: 20px;
-        }
     }
 
-
-    .slide_projects{
-        position: static;
-        width: 100% !important;
-        height: 400px !important;
-
-        img{
-            height: 100%;
-            width: 100%;
-
-        }
+    .title_session_projects{
+        padding-top: 0 !important;
+        font-size: 26px !important;
     }
 
+    .number_session_projects{
+        padding: 15px !important;
+    }
 }
 

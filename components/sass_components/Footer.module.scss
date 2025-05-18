@@ -6,9 +6,12 @@
     border-top: 1px solid #fff;
     color: #fff;
     text-align: center;
-    margin-top: 10px;
     padding: 25px 0 20px 0;
     position: relative;
+
+    a{
+      font-family: "Hanken Grotesk", sans-serif !important;
+    }
 
     .social_medias{
         @include flex(center,center);
@@ -23,6 +26,7 @@
           font-size: 30px;
           color: #000;
           transition: .5s;
+
         }
 
         .whatsapp:hover{
@@ -50,6 +54,14 @@
      a{
       color: #fff;
       text-wrap: nowrap;
+
      }
+  }
+}
+
+@media(max-width: 786px){
+  .footer{
+        margin-top: 25px;
+
   }
 }

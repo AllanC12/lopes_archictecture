@@ -1,0 +1,27 @@
+.button_slide{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    
+
+    svg{
+        width: 15px;
+        height: 15px;
+        fill: #080000;
+    }
+
+
+}
+
+.button_slide_prev{
+    margin-left: 10px;
+}
+
+.button_slide_next{
+    margin-right: 10px;
+}

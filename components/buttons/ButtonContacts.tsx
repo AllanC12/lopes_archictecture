@@ -9,10 +9,8 @@ type Props = {
 
 const ButtonContacts = ({ valueBtn }: Props) => {
   return (
-    <button data-aos="flip-right" className={styles.button}>
-      <span className={styles.text_container}>
-        <Link to="contacts" spy={true} smooth={true} duration={600} className={styles.text}>{valueBtn}</Link>
-      </span>
+    <button data-aos="flip-right" className={styles.btn_contacts}>
+        <Link to="about" spy={true} smooth={true} duration={600} className={styles.text}>{valueBtn}</Link>
     </button>
   );
 };

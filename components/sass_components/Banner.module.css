@@ -50,7 +50,11 @@
 }
 @media (max-width: 500px) {
   .banner {
-    padding: 10vh 1%;
+    padding: 12vh 1%;
+    height: 75vh;
+  }
+  .banner .slide_banner {
+    height: 100vh !important;
   }
   .banner_one {
     background-image: url("../../public/images/mob_one.png");

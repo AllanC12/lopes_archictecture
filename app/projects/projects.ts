@@ -95,7 +95,7 @@ export const listProjects: IProject[] = [
           "/images/republica/12.jpg",
           "/images/republica/13.jpg",
           "/images/republica/14.jpg",
-          "/images/republica/15.png",
+          "/images/republica/bg_proj.png",
 
       ],
       bg_proj: "/images/republica/bg_proj.png",

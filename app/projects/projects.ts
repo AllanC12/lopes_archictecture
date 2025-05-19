@@ -69,5 +69,37 @@ export const listProjects: IProject[] = [
       bg_proj: "/images/quartinho_isis/2.png",
       description:"O projeto foi pensado em baixo custo, sem mudanças de estrutura no ambiente além do rebaixo de gesso inexistente no quarto original. Com sugestão de layout e mobiliário, o Quartinho Isis foi pensado em conforto e interação do bebê até idade infantil, por volta dos 7 ou 8 anos. Com berço que se transforma em cama e altura dos móveis acessível para esta faixa de idade, o quarto possibilita pleno desfruto por parte de sua nova residente.",
       animation_prop: "fade-left"
+    },
+    { id: 3,
+      name: "Quarto BLUE/M - República",
+      location: "Divinópolis - MG - Brasil",
+      data_size: false,
+      lat: "",
+      terrain_area: "",
+      build_area: "",
+      permeable_area: "",
+      software: "SketchUp e Enscape",
+      linkForDrive: "",
+      images: [
+          "/images/republica/1.png",
+          "/images/republica/2.png",
+          "/images/republica/3.png",
+          "/images/republica/4.png",
+          "/images/republica/5.png",
+          "/images/republica/6.png",
+          "/images/republica/7.png",
+          "/images/republica/8.png",
+          "/images/republica/9.png",
+          "/images/republica/10.jpg",
+          "/images/republica/11.jpg",
+          "/images/republica/12.jpg",
+          "/images/republica/13.jpg",
+          "/images/republica/14.jpg",
+          "/images/republica/15.png",
+
+      ],
+      bg_proj: "/images/republica/bg_proj.png",
+      description:"O projeto foi desenvolvido para acomodar estudantes do sexo masculino em um espaço compacto, mas eficiente. O ambiente integrado favorece a convivência, enquanto microespaços de estudo garantem foco e privacidade. Armários individuais contribuem para organizar o espaço e equilibrar interação e independência entre os usuários.",
+      animation_prop: "fade-right"
     }
   ];

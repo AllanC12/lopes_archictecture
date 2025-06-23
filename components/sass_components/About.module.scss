@@ -79,7 +79,7 @@
     
             .photo{
               position: relative;
-         //   border: 2px solid #fff; add when image profile
+              border: 2px solid #fff; 
               border-radius: 0px 50px 0px 100px;
     
               img{
@@ -142,7 +142,7 @@
 
     .photo{
         position: relative;
-        // border: 2px solid #fff;
+        border: 2px solid #fff;
         border-radius: 0px 50px 0px 100px;
 
         img{
@@ -165,9 +165,9 @@
         text-wrap: nowrap;
     }
 
-    // .number_session_about{
-    //     padding: 15px !important;
-    // }
+    .number_session_about{
+        padding: 15px !important;
+    }
 }
 
 @media (max-width: 420px){

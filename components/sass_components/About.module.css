@@ -68,6 +68,7 @@
 }
 .wraper_about .about .container_photo .photo {
   position: relative;
+  border: 2px solid #fff;
   border-radius: 0px 50px 0px 100px;
 }
 .wraper_about .about .container_photo .photo img {
@@ -111,6 +112,7 @@
   }
   .photo {
     position: relative;
+    border: 2px solid #fff;
     border-radius: 0px 50px 0px 100px;
   }
   .photo img {
@@ -127,6 +129,9 @@
     font-size: 28px !important;
     max-width: 50% !important;
     text-wrap: nowrap;
+  }
+  .number_session_about {
+    padding: 15px !important;
   }
 }
 @media (max-width: 420px) {

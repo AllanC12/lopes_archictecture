@@ -38,8 +38,8 @@ const Footer = () => {
       </Link>
       <p className={styles.developer}>
         <span> Developed By </span>
-         <Link href="https://github.com/AllanC12" target="_blank" className={styles.developer}>
-            Allan C.
+         <Link href="https://www.instagram.com/ansoft3/profilecard/?igsh=MWd5NGp0YzdzYXlwdg==" target="_blank" className={styles.developer}>
+            Ansoft
          </Link>
       </p>
     </footer>
